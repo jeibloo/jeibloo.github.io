@@ -1,18 +1,32 @@
 body{
-  font-family: "Libre Franklin", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Roboto", "Libre Franklin", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Squada One", "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 a {
   color: #000
 }
 
+#sidebar-wrapper {
+    /*background: linear-gradient(180deg, #32333B 0%, #32333B 51%, #1C1C27 75%);*/
+    /* how we skew the sidebar */
+    background-image: url("../images/thekong_lossy.webp");
+    background-position: top;
+    -webkit-clip-path: polygon(100% 0, 93.75% 100%, 0 100%, 0 0);
+    clip-path: polygon(100% 0, 100% 93.75%, 0 98%, 0 0)
+}
+
+#sidebar-brand {
+  padding-top: 10rem;
+}
+
 .skew-box-top {
-  background-color: red;
-  margin-top: 5px;
+  background-color: rgba(0,0,0,0.1);
+  outline-color: invert;
+  margin-top: 20px;
   padding: 1% 10px; /* Added a percentage value for top/bottom padding to keep the wrapper inside of the parent */
   -webkit-transform: skewY(-10deg);
   -moz-transform: skewY(-10deg);
@@ -27,4 +41,46 @@ a {
   -ms-transform: skewY(10deg);
   -o-transform: skewY(10deg);
   transform: skewY(10deg);
+}
+
+.sidebar-nav li {
+  line-height: 30px;
+}
+.sidebar-nav li a:hover {
+  background: rgba(255,255,255,0.0);
+}
+.parallax {
+  background-image: url("../images/thekong_lossy.webp");
+
+  /* Set a specific height */
+  height: 600px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size:  auto;
+}
+
+.text-anim {
+  width: 14rem;
+  height: 2rem;
+  -webkit-transition: -webkit-transform 2s,opacity 1s,background 2s,width 1s,height 2s,font-size 1s;
+  -webkit-border-radius: 5px;
+  -o-transition-property: width,height,-o-transform,background,font-size,opacity;
+  -o-transition-duration: 1s,1s,1s,1s,1s,1s;
+  -moz-transition-property: width,height,-o-transform,background,font-size,opacity;
+  -moz-transition-duration: 1s,1s,1s,1s,1s,1s;
+  transition-property: width,height,transform,background,font-size,opacity;
+  transition-duration: 1s,1s,1s,1s,1s,1s;
+  border-radius: 0.0rem 0.0rem 0.0rem 0.0rem;
+  opacity:0.9;
+}
+
+.text-anim:hover {
+  opacity:1;
+  background:#05C8FF;
+  color: #FFFFFF;
+  width: 16rem;
+  height: 2rem;
 }

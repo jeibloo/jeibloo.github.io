@@ -25,22 +25,18 @@
 #sidebar-wrapper {
     z-index: 1000;
     position: fixed;
-    left: 200px;
-    width: 0;
-    height: 100%;
-    margin-left: -200px;
+    left: 100px;
+    width: 0%;
+    height: 90%;
+    margin-left: -100px;
     overflow-y: auto;
-    background: #34A4DA;
     -webkit-transition: all 0.75s ease;
     -moz-transition: all 0.75s ease;
     -o-transition: all 0.75s ease;
-    transition: all 0.75s ease;
+    transition: all 0.60s ease;
     border-radius: 0rem 0.0rem 0.5rem 0rem;
-    background: linear-gradient(180deg, #494A53 0%, #32333B 51%, #1C1C27 75%);
     background-position: center;
     background-size: auto;
-    -webkit-clip-path: polygon(100% 0, 57.75% 100%, 0 100%, 0 0);
-    clip-path: polygon(100% 0, 100% 57.75%, 0 100%, 0 0);
 }
 
 #wrapper.toggled #sidebar-wrapper {
@@ -92,11 +88,11 @@
 }
 
 .sidebar-nav > .sidebar-brand {
-    height: 80px;
-    text-indent: 25px;
-    font-size: 60px;
-    line-height: 60px;
-    font-family: "Lobster", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    height: 70px;
+    text-indent: 22px;
+    font-size: 34px;
+    line-height: 50px;
+    font-family: "Monoton", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 
 }
 
