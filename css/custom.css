@@ -1,7 +1,32 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+html {
+  /*For the page background color*/
+  background: #32333B;
+}
 body{
   font-family: "Roboto", "Libre Franklin", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin-bottom: 60px;
 }
 
+#page-content-wrapper {
+  /*For the page background color*/
+  background: #32333B;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /*Fixed height of footer*/
+  height: 180px;
+  -webkit-clip-path: polygon(100% 0, 100% 0, 0 100%, 0 0);
+  clip-path: polygon(35% 0, 100% 0, 100% 100%, 0 100%);
+  background-image: url("../images/thekong_lossy.webp");
+  background-position: center;
+}
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   font-family: "Squada One", "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
@@ -17,7 +42,7 @@ body{
 
 
 a {
-  color: #000
+  color: #eceeef
 }
 
 /*#profile-shape {
@@ -32,9 +57,6 @@ a {
   -webkit-clip-path: clip-path: polygon(66% 1%, 64% 49%, 96% 100%, 50% 69%, 4% 100%, 35% 48%);
   clip-path: polygon(66% 1%, 64% 49%, 96% 100%, 50% 69%, 4% 100%, 35% 48%);
 }*/
-.profile-shape {
-
-}
 
 #sidebar-wrapper {
   /*background: linear-gradient(180deg, #32333B 0%, #32333B 51%, #1C1C27 75%);*/
@@ -105,4 +127,18 @@ a {
   color: #FFFFFF;
   width: 16rem;
   height: 2rem;
+}
+
+.container-multi {
+  margin-bottom: 3rem;
+  background-color: #eceeef;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2rem;
+  padding-bottom: 10rem;
+  border-radius: 0.1rem 0.1rem 0.1rem 0.1rem;
+}
+
+.nav-link {
+  border-radius: 0.1rem 0.1rem 0.1rem 0.1rem;
 }

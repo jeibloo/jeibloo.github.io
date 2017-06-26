@@ -27,7 +27,7 @@
     position: fixed;
     left: 100px;
     width: 0%;
-    height: 90%;
+    height: 80%;
     margin-left: -100px;
     overflow-y: auto;
     -webkit-transition: all 0.75s ease;
