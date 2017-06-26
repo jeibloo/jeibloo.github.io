@@ -6,21 +6,43 @@ body{
   font-family: "Squada One", "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
+#sidebar-brand {
+  padding-top: 10rem;
+  font-family: "Monoton", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.sidebar-nav li {
+  font-family: "Squada One", cursive;
+}
+
+
 a {
   color: #000
 }
 
-#sidebar-wrapper {
-    /*background: linear-gradient(180deg, #32333B 0%, #32333B 51%, #1C1C27 75%);*/
-    /* how we skew the sidebar */
-    background-image: url("../images/thekong_lossy.webp");
-    background-position: top;
-    -webkit-clip-path: polygon(100% 0, 93.75% 100%, 0 100%, 0 0);
-    clip-path: polygon(100% 0, 100% 93.75%, 0 98%, 0 0)
+/*#profile-shape {
+  position: absolute;
+  z-index: auto;
+  height: 100%;
+  width: 100%;
+  transform-origin: 50% 50%;
+  overflow: hidden;
+  background-image: url("../images/profile.gif");
+  background-position: center;
+  -webkit-clip-path: clip-path: polygon(66% 1%, 64% 49%, 96% 100%, 50% 69%, 4% 100%, 35% 48%);
+  clip-path: polygon(66% 1%, 64% 49%, 96% 100%, 50% 69%, 4% 100%, 35% 48%);
+}*/
+.profile-shape {
+
 }
 
-#sidebar-brand {
-  padding-top: 10rem;
+#sidebar-wrapper {
+  /*background: linear-gradient(180deg, #32333B 0%, #32333B 51%, #1C1C27 75%);*/
+  /* how we skew the sidebar */
+  background-image: url("../images/thekong_lossy.webp");
+  background-position: top;
+  -webkit-clip-path: polygon(100% 0, 89.75% 100%, 0 100%, 0 0);
+  clip-path: polygon(100% 0, 100% 89.75%, 0 98%, 0 0)
 }
 
 .skew-box-top {
@@ -79,7 +101,7 @@ a {
 
 .text-anim:hover {
   opacity:1;
-  background:#05C8FF;
+  background:#00AFE0;
   color: #FFFFFF;
   width: 16rem;
   height: 2rem;
