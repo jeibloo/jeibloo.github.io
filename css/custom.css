@@ -16,19 +16,32 @@ body{
   background: #32333B;
 }
 
+#wrapper, #wrapper.toggled {
+  background: #32333B;
+}
+
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   /*Fixed height of footer*/
-  height: 180px;
-  -webkit-clip-path: polygon(100% 0, 100% 0, 0 100%, 0 0);
-  clip-path: polygon(35% 0, 100% 0, 100% 100%, 0 100%);
-  background-image: url("../images/thekong_lossy.webp");
+  height: 11%;
+  /*-webkit-clip-path: polygon(100% 0, 100% 0, 0 100%, 0 0);
+  clip-path: polygon(35% 0, 100% 0, 100% 100%, 0 100%);*/
+  background-image: url("../images/bigbossthumbsup.gif");
   background-position: center;
 }
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   font-family: "Squada One", "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.nav-tabs {
+  border-bottom: 0px solid #eee;
+  border-top: 0px solid #eee;
+}
+
+.nav-link {
+  border-radius: 0.0rem 0.0rem 0.0rem 0.0rem;
 }
 
 #sidebar-brand {
@@ -64,7 +77,7 @@ a {
   background-image: url("../images/thekong_lossy.webp");
   background-position: top;
   -webkit-clip-path: polygon(100% 0, 89.75% 100%, 0 100%, 0 0);
-  clip-path: polygon(100% 0, 100% 89.75%, 0 98%, 0 0)
+  clip-path: polygon(100% 0, 100% 89.75%, 85% 100%, 0 100%, 0 0)
 }
 
 .skew-box-top {
@@ -72,11 +85,11 @@ a {
   outline-color: invert;
   margin-top: 20px;
   padding: 1% 10px; /* Added a percentage value for top/bottom padding to keep the wrapper inside of the parent */
-  -webkit-transform: skewY(-10deg);
-  -moz-transform: skewY(-10deg);
-  -ms-transform: skewY(-10deg);
-  -o-transform: skewY(-10deg);
-  transform: skewY(-10deg);
+  -webkit-transform: skewY(-5deg);
+  -moz-transform: skewY(-5deg);
+  -ms-transform: skewY(-5deg);
+  -o-transform: skewY(-5deg);
+  transform: skewY(-5deg);
 }
 
 .skew-box-top > .skew-box-bot {
@@ -136,9 +149,5 @@ a {
   background-size: cover;
   padding: 2rem;
   padding-bottom: 10rem;
-  border-radius: 0.1rem 0.1rem 0.1rem 0.1rem;
-}
-
-.nav-link {
   border-radius: 0.1rem 0.1rem 0.1rem 0.1rem;
 }

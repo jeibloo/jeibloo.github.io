@@ -67,6 +67,11 @@
             </div>
           </div>
         </ul>
+        <footer class="footer">
+          <div class="container text-center">
+            <p>Don't tell me</p>
+          </div>
+        </footer>
       </div>
       <!-- Sidebar end -->
 
@@ -74,17 +79,17 @@
       <div id="page-content-wrapper">
         <div class="container-fluid" style="padding-bottom: 2rem";>
           <div class="row">
-            <div class="col-lg-6">
-              <ul class="nav nav-tabs">
+            <div class="col-lg-6" style="background-color: #909090; border-radius: 0.1rem 0.1rem 0.1rem 0.1rem;">
+              <ul class="nav nav-tabs justify-content-center">
                 <li class="nav-item">
-                  <a class="nav-link" style="background-color: #00AFE0;" href="#program-switch">Programming</a>
+                  <a onclick="show('ProgrammingPage')" class="nav-link" href="#program-switch">Programming</a>
                 </li>
               </ul>
             </div>
-            <div class="col-lg-6">
-              <ul class="nav nav-tabs">
-                <li class="nav-item">
-                  <a class="nav-link"  style="background-color: #00AFE0;" href="#design-switch">Copywriting</a>
+            <div class="col-lg-6" style="background-color: #909090; border-radius: 0.1rem 0.1rem 0.1rem 0.1rem;">
+              <ul class="nav nav-tabs justify-content-center">
+                <li class="nav-item text-center">
+                  <a  onclick="show('DesignPage')" class="nav-link" href="#design-switch">Design</a>
                 </li>
               </ul>
             </div>
@@ -134,29 +139,55 @@
         </p>
       </div>
       <!-- Designing }:> -->
-      <div id="DesignPage" class="container-multi">
-        <p>
-          Design is god, design is life.
-          Design is god, design is life.
-          Design is god, design is life.
-          Design is god, design is life.
-          Design is god, design is life.
-          Design is god, design is life.
-          Design is god, design is life.
-          Design is god, design is life.
-          Design is god, design is life.
-          Design is god, design is life.
-          Design is god, design is life.
-          Design is god, design is life.
-          Design is god, design is life.
-          Design is god, design is life.
-          Design is god, design is life.
-          Design is god, design is life.
-          Design is god, design is life.
-          Design is god, design is life.
-          Design is god, design is life.
-          Design is god, design is life.
-        </p>
+      <div id="DesignPage" class="container-multi" style="display: none;">
+        <div class="container-fluid">
+          <p>
+            Design is god, design is life.
+            Design is god, design is life.
+            Design is god, design is life.
+            Design is god, design is life.
+            Design is god, design is life.
+            Design is god, design is life.
+            Design is god, design is life.
+            Design is god, design is life.
+            Design is god, design is life.
+            Design is god, design is life.
+            Design is god, design is life.
+            Design is god, design is life.
+            Design is god, design is life.
+            Design is god, design is life.
+            Design is god, design is life.
+            Design is god, design is life.
+            Design is god, design is life.
+            Design is god, design is life.
+            Design is god, design is life.
+            Design is god, design is life.
+          </p>
+        </div>
+        <div class="container-fluid">
+          <p>
+            Design is god, design is life.
+            Design is god, design is life.
+            Design is god, design is life.
+            Design is god, design is life.
+            Design is god, design is life.
+            Design is god, design is life.
+            Design is god, design is life.
+            Design is god, design is life.
+            Design is god, design is life.
+            Design is god, design is life.
+            Design is god, design is life.
+            Design is god, design is life.
+            Design is god, design is life.
+            Design is god, design is life.
+            Design is god, design is life.
+            Design is god, design is life.
+            Design is god, design is life.
+            Design is god, design is life.
+            Design is god, design is life.
+            Design is god, design is life.
+          </p>
+        </div>
       </div>
     </div>
     <!-- Content Wrappin Endin -->
@@ -179,11 +210,27 @@
     </script>
     <!-- Switchin tabs, switchin lives -->
     <script>
+      function show(elementID) {
+        var elementType = document.getElementById(elementID).id;
+        console.log("Start of if");
+        if (elementType == "ProgrammingPage") {
+          ProgrammingPage.style.display = 'block';
+          DesignPage.style.display = 'none'
+          console.log("Inside if");
+        } else {
+          console.log("Inside else");
+          DesignPage.style.display = 'block';
+          ProgrammingPage.style.display = 'none';
+        }
+      }
+    </script>
+    <!--script>
     $("#program-switch").click(function(p) {
       p.preventDefault();
-      $("#")
+      $("#ProgrammingPage").toggleClass("toggled");
+      $("#DesignPage").style.display = 'none';
     });
-    </script>
+  </script-->
 
   </body>
 </html>
