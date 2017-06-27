@@ -40,6 +40,13 @@ body{
   border-top: 0px solid #eee;
 }
 
+.nav-item, .nav-fill {
+  -webkit-box-flex: 3;
+  -webkit-flex: 3 3 auto;
+  -ms-flex: 3 3 auto;
+  flex: 3 3 auto;
+}
+
 .nav-link {
   border-radius: 0.0rem 0.0rem 0.0rem 0.0rem;
 }
