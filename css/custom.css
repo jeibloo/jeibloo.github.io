@@ -151,10 +151,17 @@ a {
 
 .container-multi {
   margin-bottom: 3rem;
-  background-color: #eceeef;
+  /*background-color: #eceeef;
+  Just to see where it at you know ;)*/
   background-repeat: no-repeat;
   background-size: cover;
   padding: 2rem;
   padding-bottom: 10rem;
   border-radius: 0.1rem 0.1rem 0.1rem 0.1rem;
+}
+
+#jobcards {
+  background-color: #eceeef;
+  padding: 2rem;
+  margin: 2rem;
 }
