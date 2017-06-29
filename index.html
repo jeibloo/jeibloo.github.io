@@ -25,6 +25,7 @@
             stringsElement: document.getElementById('typed-strings'),
             typeSpeed: 30,
             backDelay: 500,
+            cursorChar: "_",
             loop: false,
             contentType: 'html', // or text
             // defaults to null for infinite loop
@@ -137,10 +138,8 @@
                 <li  onclick="show('ProgrammingPage')" href="#program-switch" class="nav-item text-center">
                   <div class="type-wrap" style="color: #eceeef;">
                       <div id="typed-strings">
-                          <span>Programming!</span>
-                          <p>Or maybe it's developing?...<p>
-                          <p>Coding...?</p>
-                          <p>Developing/Coding/Programming :)</p>
+                          <span>Programming...or maybe it's <em>developing</em>...</span>
+                          <p>Developing/Programming</p>
                       </div>
                       <span id="typed" style="white-space:pre;"></span>
                   </div>
@@ -151,8 +150,8 @@
             <!-- Design bb -->
             <div class="col-lg-6" style="border-radius: -0.1rem 0.1rem 0.1rem -0.1rem;">
               <ul class="nav nav-tabs justify-content-center">
-                <li class="nav-item text-center">
-                  <a  onclick="show('DesignPage')" class="nav-link" href="#design-switch">Design</a>
+                <li onclick="show('DesignPage')" href="#design-switch" class="nav-item text-center">
+                  <a  onclick="show('DesignPage')" href="#design-switch">Design</a>
                 </li>
               </ul>
             </div>
@@ -320,14 +319,6 @@
             </div>
           </div>
           <div id="jobcards" class="container col-lg-7 text-center">
-            <div class="container">
-              <h3> Silly me Villiany </h3>
-            </div>
-            <div class="container">
-              <p> Don't take things for granted </p>
-            </div>
-          </div>
-          <div id="jobcards" class="container col-lg-3 text-center">
             <div class="container">
               <h3> Silly me Villiany </h3>
             </div>
