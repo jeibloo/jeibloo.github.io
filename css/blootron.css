@@ -2,22 +2,28 @@ html, body {
   margin: 0;
   padding: 0;
 }
+
 html {
   /*For the page background color*/
-  background: #32333B;
+  background: #6F717E;
 }
-body{
-  font-family: "Roboto", "Libre Franklin", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  font-family: "Rajdhani", "Squada One", "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+  font-family: "Source Sans Pro", "Roboto", "Libre Franklin", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   margin-bottom: 60px;
 }
 
 #page-content-wrapper {
   /*For the page background color*/
-  background: #32333B;
+  background: #6F717E;
 }
 
 #wrapper, #wrapper.toggled {
-  background: #32333B;
+  background: #6F717E;
 }
 
 .footer {
@@ -25,14 +31,12 @@ body{
   bottom: 0;
   width: 100%;
   /*Fixed height of footer*/
-  height: 11%;
-  /*-webkit-clip-path: polygon(100% 0, 100% 0, 0 100%, 0 0);
-  clip-path: polygon(35% 0, 100% 0, 100% 100%, 0 100%);*/
-  background-image: url("../images/bigbossthumbsup.gif");
-  background-position: center;
-}
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-  font-family: "Squada One", "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  height: 7.5%;
+  background-color: #32333B;
+  -webkit-clip-path: polygon(100% 0, 100% 0, 0 100%, 0 0);
+  clip-path: polygon(0% 0%, 97.5% 0%, 100% 30%, 100% 100%, 0% 100%);
+  /*background-image: url("../images/bigbossthumbsup.gif");
+  background-position: center;*/
 }
 
 .nav-tabs {
@@ -40,6 +44,9 @@ body{
   border-top: 0px solid #eee;
 }
 
+.nav-item {
+  padding-top: 1rem;
+}
 /*.nav-item, .nav-fill {
   -webkit-box-flex: 3;
   -webkit-flex: 3 3 auto;
@@ -47,8 +54,11 @@ body{
   flex: 3 3 auto;
 }*/
 
-.nav-link {
+.nav-link .nav-tabs {
+  border: 0px;
   border-radius: 0.0rem 0.0rem 0.0rem 0.0rem;
+  border-top-right-radius: 0rem;
+  border-top-left-radius: 0rem;
 }
 
 #sidebar-brand {
@@ -57,7 +67,7 @@ body{
 }
 
 .sidebar-nav li {
-  font-family: "Squada One", cursive;
+  font-family: "Rajdhani", "Squada One", cursive;
 }
 
 
@@ -81,22 +91,27 @@ a {
 #sidebar-wrapper {
   /*background: linear-gradient(180deg, #32333B 0%, #32333B 51%, #1C1C27 75%);*/
   /* how we skew the sidebar */
-  background-image: url("../images/thekong_lossy.webp");
-  background-position: top;
-  -webkit-clip-path: polygon(100% 0, 89.75% 100%, 0 100%, 0 0);
-  clip-path: polygon(100% 0, 100% 89.75%, 85% 100%, 0 100%, 0 0)
+  /*background-image: url("../images/thekong_lossy.webp");
+  background-position: top;*/
+  background-color: #32333B;
+  -webkit-clip-path: polygon(85% 0%, 100% 5%, 100% 95%, 85% 100%, 0% 100%, 0% 0%);
+  clip-path: polygon(85% 0%, 100% 5%, 100% 95%, 85% 100%, 0% 100%, 0% 0%);
+  margin-top: 75px;
+  margin-bottom: 75px;
+  height: 831.19px;
 }
 
 .skew-box-top {
   background-color: rgba(0,0,0,0.1);
   outline-color: invert;
   margin-top: 20px;
-  padding: 1% 10px; /* Added a percentage value for top/bottom padding to keep the wrapper inside of the parent */
-  -webkit-transform: skewY(-5deg);
-  -moz-transform: skewY(-5deg);
-  -ms-transform: skewY(-5deg);
-  -o-transform: skewY(-5deg);
-  transform: skewY(-5deg);
+  padding: 1% 10px;
+  /* Added a percentage value for top/bottom padding to keep the wrapper inside of the parent */
+  -webkit-transform: skewY(-10deg);
+  -moz-transform: skewY(-10deg);
+  -ms-transform: skewY(-10deg);
+  -o-transform: skewY(-10deg);
+  transform: skewY(-7.5deg);
 }
 
 .skew-box-top > .skew-box-bot {
@@ -104,9 +119,13 @@ a {
   -moz-transform: skewY(10deg);
   -ms-transform: skewY(10deg);
   -o-transform: skewY(10deg);
-  transform: skewY(10deg);
+  transform: skewY(7.5deg);
 }
 
+.sidebar-nav{
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+}
 .sidebar-nav li {
   line-height: 30px;
 }
@@ -114,7 +133,8 @@ a {
   background: rgba(255,255,255,0.0);
 }
 .parallax {
-  background-image: url("../images/thekong_lossy.webp");
+  /*background-image: url("../images/thekong_lossy.webp");*/
+  background-color: #6F717E;
 
   /* Set a specific height */
   height: 600px;
@@ -128,7 +148,7 @@ a {
 
 .text-anim {
   width: 14rem;
-  height: 2rem;
+  height: 3rem;
   -webkit-transition: -webkit-transform 2s,opacity 1s,background 2s,width 1s,height 2s,font-size 1s;
   -webkit-border-radius: 5px;
   -o-transition-property: width,height,-o-transform,background,font-size,opacity;
@@ -137,16 +157,17 @@ a {
   -moz-transition-duration: 1s,1s,1s,1s,1s,1s;
   transition-property: width,height,transform,background,font-size,opacity;
   transition-duration: 1s,1s,1s,1s,1s,1s;
+  transition: all 0.60s ease;
   border-radius: 0.0rem 0.0rem 0.0rem 0.0rem;
-  opacity:0.9;
+  opacity:0.5;
 }
 
 .text-anim:hover {
   opacity:1;
-  background:#00AFE0;
+  background:#6F717E;
   color: #FFFFFF;
-  width: 16rem;
-  height: 2rem;
+  width: 15.6rem;
+  height: 3rem;
 }
 
 .container-multi {

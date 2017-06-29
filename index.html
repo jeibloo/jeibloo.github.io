@@ -11,13 +11,13 @@
     <title>BLooTRon</title>
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Monoton|Roboto|Squada+One|Libre+Franklin|Open+Sans|Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rajdhani|Source+Sans+Pro|Monoton|Roboto|Squada+One|Libre+Franklin|Open+Sans|Lobster" rel="stylesheet">
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/simple-sidebar.css">
-    <link rel="stylesheet" href="./css/custom.css">
+    <link rel="stylesheet" href="./css/blootron.css">
   </head>
 
   <body>
@@ -25,7 +25,7 @@
     <div id="wrapper" class="toggled">
       <!-- Sidebar -->
       <div id="sidebar-wrapper" class="parallax">
-        <ul class="sidebar-nav" style="padding-top: 2rem;">
+        <ul class="sidebar-nav">
           <li class="sidebar-brand">
             <a href="#">
               <span style="font-family: "Monoton", cursive;">
@@ -33,17 +33,31 @@
               </span>
             </a>
           </li>
-          <div class="col-sm-12 text-center justify-content-center" style="padding-top: 2.0rem; padding-bottom: 2.5rem;">
+          <div class="col-sm-12 text-center justify-content-center" style="padding-top: 2.0rem; padding-right: 25px; padding-bottom: 2.5rem;">
             <img class="rounded-circle img-fluid" src="./images/profile.gif" width="175" height="175">
           </div>
-          <div class="skew-box-top text-center text-anim">
+          <div class="text-center text-anim">
+            <li>
+              <a href="#"> H O M E </a>
+            </li>
+          </div>
+          <div class="text-center text-anim">
+            <li>
+              <a href="#"> A B O U T </a>
+            </li>
+          </div>
+          <div class="text-center text-anim">
+            <li>
+              <a href="mailto:jason@blootron.com"> E M A I L </a>
+            </li>
+          </div>
+          <!--div class="skew-box-top text-center text-anim">
             <li>
               <a href="#">
                 「」Home
               </a>
             </li>
             <div class="skew-box-bot">
-              <!-- This is empty on purpose -->
             </div>
           </div>
           <div class="skew-box-top text-center text-anim">
@@ -53,7 +67,6 @@
               </a>
             </li>
             <div class="skew-box-bot">
-              <!-- This is empty on purpose -->
             </div>
           </div>
           <div class="skew-box-top text-center text-anim">
@@ -63,24 +76,19 @@
               </a>
             </li>
             <div class="skew-box-bot">
-              <!-- This is empty on purpose -->
             </div>
           </div>
+        -->
         </ul>
-        <footer class="footer">
-          <div class="container text-center">
-            <p>Don't tell me</p>
-          </div>
-        </footer>
       </div>
       <!-- Sidebar end -->
 
       <!-- Content Wrappin for navtabs -->
       <div id="page-content-wrapper">
-        <div class="container-fluid" style="padding-bottom: 2rem; border-radius: 0.1rem 0.1rem 0.1rem 0.1rem;";>
+        <div class="container-fluid" style="padding-bottom: 1.5rem; border-radius: 0.1rem 0.1rem 0.1rem 0.1rem;";>
           <div class="row" style="border-radius: 0.1rem 0.1rem 0.1rem 0.1rem;">
             <!-- Program like Mork -->
-            <div class="col-lg-4" style="background-color: #909090; border-radius: 0.1rem -0.1rem -0.1rem 0.1rem;">
+            <div class="col-lg-4" style="; border-radius: 0.1rem -0.1rem -0.1rem 0.1rem;">
               <ul class="nav nav-tabs justify-content-center">
                 <li class="nav-item text-center">
                   <a onclick="show('ProgrammingPage')" class="nav-link" href="#program-switch">Programming</a>
@@ -89,19 +97,10 @@
             </div>
 
             <!-- Design bb -->
-            <div class="col-lg-4" style="background-color: #909090; border-radius: -0.1rem 0.1rem 0.1rem -0.1rem;">
+            <div class="col-lg-4" style="border-radius: -0.1rem 0.1rem 0.1rem -0.1rem;">
               <ul class="nav nav-tabs justify-content-center">
                 <li class="nav-item text-center">
                   <a  onclick="show('DesignPage')" class="nav-link" href="#design-switch">Design</a>
-                </li>
-              </ul>
-            </div>
-
-            <!-- Secret menuz 4 the mobilers -->
-            <div class="col-lg-4" style="background-color: #909090; border-radius: -0.1rem 0.1rem 0.1rem -0.1rem;">
-              <ul class="nav nav-tabs justify-content-center">
-                <li class="nav-item text-center">
-                  <a  onclick="show('DesignPage')" class="nav-link" href="#design-switch">Hide Sidemenu</a>
                 </li>
               </ul>
             </div>
@@ -168,6 +167,19 @@
       </div>
     </div>
     <!-- Content Wrappin Endin -->
+
+    <div class="container-fluid justify-content-end text-center footer" style="bottom: 0; position: absolute; width: 100%; left: -0px;">
+      <p>
+        You raff u ruise
+        You raff u ruise
+        You raff u ruise
+        You raff u ruise
+        You raff u ruise
+        You raff u ruise
+        You raff u ruise
+
+      </p>
+    </div>
 
     <!-- Scripppp Lifeeeee -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
