@@ -97,7 +97,7 @@ a, a:visited {
   background-color: #32333B;
   -webkit-clip-path: polygon(85% 0%, 100% 5%, 100% 95%, 85% 100%, 0% 100%, 0% 0%);
   clip-path: polygon(85% 0%, 100% 5%, 100% 95%, 85% 100%, 0% 100%, 0% 0%);
-  margin-top: 75px;
+  margin-top: 57.5px;
   margin-bottom: 75px;
   height: 810px;
 }
@@ -158,7 +158,7 @@ a, a:visited {
   -moz-transition-duration: 1s,1s,1s,1s,1s,1s;
   transition-property: width,height,transform,background,font-size,opacity;
   transition-duration: 1s,1s,1s,1s,1s,1s;
-  transition: all 0.60s ease;
+  transition: all 0.30s ease;
   border-radius: 0.0rem 0.0rem 0.0rem 0.0rem;
   opacity:0.5;
 }
