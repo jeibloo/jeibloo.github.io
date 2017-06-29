@@ -14,7 +14,7 @@ html {
 
 body {
   font-family: "Source Sans Pro", "Roboto", "Libre Franklin", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
   color: #6F717E;
 }
 
@@ -32,7 +32,7 @@ body {
   bottom: 0;
   width: 100%;
   /*Fixed height of footer*/
-  height: 5%;
+  height: 60px;
   background-color: #32333B;
   -webkit-clip-path: polygon(100% 0, 100% 0, 0 100%, 0 0);
   clip-path: polygon(0% 0%, 97.5% 0%, 100% 30%, 100% 100%, 0% 100%);
@@ -72,8 +72,8 @@ body {
 }
 
 
-a {
-  color: #eceeef
+a, a:visited {
+  color: #eceeef;
 }
 
 /*#profile-shape {
