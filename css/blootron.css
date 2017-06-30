@@ -191,9 +191,18 @@ a, a:visited {
 
 #jobcards {
   background-color: #eceeef;
-  padding: 2rem;
+  background-image: url("../images/codepic.png");
+  padding: 3rem;
+  border-radius: 0.15rem;
   margin: 1rem;
-}    <style>
+}
+
+#jobcards > #jobcards-pic {
+  /*padding: 0rem;
+  margin: 0rem;
+  height: 39px;
+  overflow: hidden;*/
+}
 
 /* code for animated blinking cursor */
 .typed-cursor{
