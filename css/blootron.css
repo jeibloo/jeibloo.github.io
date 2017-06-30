@@ -34,6 +34,8 @@ body {
   /*Fixed height of footer*/
   height: 60px;
   background-color: #32333B;
+  color: #eceeef;
+  background: linear-gradient(45deg,#6772A4, #3D3949);
   -webkit-clip-path: polygon(100% 0, 100% 0, 0 100%, 0 0);
   clip-path: polygon(0% 0%, 97.5% 0%, 100% 30%, 100% 100%, 0% 100%);
   /*background-image: url("../images/bigbossthumbsup.gif");
@@ -93,13 +95,18 @@ a, a:visited {
   /*background: linear-gradient(180deg, #32333B 0%, #32333B 51%, #1C1C27 75%);*/
   /* how we skew the sidebar */
   /*background-image: url("../images/thekong_lossy.webp");
-  background-position: top;*/
-  background-color: #32333B;
+  background-position: top;
+  background-color: #32333B;*/
+  background: linear-gradient(45deg,#476892,#59355D);
   -webkit-clip-path: polygon(85% 0%, 100% 5%, 100% 95%, 85% 100%, 0% 100%, 0% 0%);
   clip-path: polygon(85% 0%, 100% 5%, 100% 95%, 85% 100%, 0% 100%, 0% 0%);
   margin-top: 57.5px;
-  margin-bottom: 75px;
-  height: 810px;
+  margin-bottom: 70px;
+  height: 805px;
+}
+
+#about-page {
+
 }
 
 .skew-box-top {
