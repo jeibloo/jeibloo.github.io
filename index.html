@@ -23,9 +23,10 @@
 
         Typed.new("#typed", {
             stringsElement: document.getElementById('typed-strings'),
-            typeSpeed: 30,
-            backDelay: 500,
-            cursorChar: "_",
+            typeSpeed: 60,
+            backDelay: 2000,
+            backSpeed: 30,
+            cursorChar: "|",
             loop: false,
             contentType: 'html', // or text
             // defaults to null for infinite loop
@@ -99,10 +100,11 @@
       <!-- Left Sidebar -->
       <div id="sidebar-wrapper" class="parallax">
         <ul class="sidebar-nav">
-          <li class="sidebar-brand">
+          <li class="sidebar-brand text-center" style="padding-left: 1.25rem; padding-right: 2rem;">
             <a href="#">
               <span style="font-family: "Monoton", cursive;">
-              Blootron
+                Jason
+                Nova
               </span>
             </a>
           </li>
@@ -138,8 +140,8 @@
                 <li  onclick="show('ProgrammingPage')" href="#program-switch" class="nav-item text-center">
                   <div class="type-wrap" style="color: #eceeef;">
                       <div id="typed-strings">
-                          <span>Programming...or maybe it's <em>developing</em>...</span>
-                          <p>Developing/Programming</p>
+                          <span style="font-size: 1.5rem;">Programming...developing...どっちでもいい..</span>
+                          <h6>Developer/Programming Projects</h6>
                       </div>
                       <span id="typed" style="white-space:pre;"></span>
                   </div>
@@ -334,13 +336,13 @@
     </div>
     <!-- Content Wrappin Endin -->
 
-    <div class="container-fluid justify-content-end text-center footer" style="bottom: 0; width: 100%; left: -0px;">
+    <!--div class="container-fluid justify-content-end text-center footer" style="bottom: 0; width: 100%; left: -0px;">
       <div class="container" style="padding: 2rem; padding-top: 1rem; padding-bottom: 0rem;">
         <p style="margin-bottom: 0rem;">
           Toast 4 the dutch
         </p>
       </div>
-    </div>
+    </div Aint feelin it-->
 
     <!-- Scripppp Lifeeeee -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

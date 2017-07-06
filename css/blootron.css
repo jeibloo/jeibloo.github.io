@@ -12,10 +12,15 @@ html {
   font-family: "Rajdhani", "Squada One", "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
+#topbar-titles {
+  font-size: 2rem;
+}
+
 body {
   font-family: "Source Sans Pro", "Roboto", "Libre Franklin", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   margin-bottom: 80px;
   color: #6F717E;
+  font-size: 1.25rem;
 }
 
 #page-content-wrapper {
@@ -70,7 +75,7 @@ body {
 }
 
 .sidebar-nav li {
-  font-family: "Rajdhani", "Squada One", cursive;
+  font-family: "Source Sans Pro", "Squada One", cursive;
 }
 
 
@@ -97,12 +102,15 @@ a, a:visited {
   /*background-image: url("../images/thekong_lossy.webp");
   background-position: top;
   background-color: #32333B;*/
-  background: linear-gradient(45deg,#476892,#59355D);
+  -moz-box-shadow:inset -1px -1px 16px #000000;
+  -webkit-box-shadow:inset -1px -1px 16px #000000;
+  box-shadow:inset -1px -1px 16px #000000;
+  background: linear-gradient(45deg,#476892,#59355D);*/
   -webkit-clip-path: polygon(85% 0%, 100% 5%, 100% 95%, 85% 100%, 0% 100%, 0% 0%);
   clip-path: polygon(85% 0%, 100% 5%, 100% 95%, 85% 100%, 0% 100%, 0% 0%);
   margin-top: 57.5px;
   margin-bottom: 70px;
-  height: 805px;
+  height: 865px;
 }
 
 #about-page {
@@ -191,10 +199,14 @@ a, a:visited {
 
 #jobcards {
   background-color: #eceeef;
-  background-image: url("../images/codepic.png");
+  /*background-image: url("http://cdn.wallpapersafari.com/3/93/xYHCry.jpg");*/
+  background-position: ;
   padding: 3rem;
   border-radius: 0.15rem;
   margin: 1rem;
+  -moz-box-shadow:inset -3px -1px 18px #000000;
+  -webkit-box-shadow:inset -3px -1px 18px #000000;
+  box-shadow:inset -3px -1px 18px #000000;
 }
 
 #jobcards > #jobcards-pic {
