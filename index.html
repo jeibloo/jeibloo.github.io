@@ -113,12 +113,12 @@
           </div>
           <div class="text-center text-anim" style="padding-right: 25px; padding-top: 10px;">
             <li>
-              <a href="#"> H O M E </a>
+              <a onclick="show('ProgrammingPage')" href="#program-switch"> H O M E </a>
             </li>
           </div>
           <div class="text-center text-anim" style="padding-right: 25px; padding-top: 10px;">
             <li>
-              <a href="#"> A B O U T </a>
+              <a onclick="show('AboutPage')" href="#about-switch"> A B O U T </a>
             </li>
           </div>
           <div class="text-center text-anim" style="padding-right: 25px; padding-top: 10px;">
@@ -157,6 +157,17 @@
                 </li>
               </ul>
             </div>
+        </div>
+      </div>
+
+      <div id="AboutPage" class="container" style="display: none;">
+        <div id="jobcards" class="container col-lg-9 text-center">
+          <div id="jobcards-pic">
+            <h1> JASON THE NOVA </h1>
+          </div>
+          <div class="container">
+            <p> Where are you </p>
+          </div>
         </div>
       </div>
 
@@ -364,10 +375,16 @@
         var elementType = document.getElementById(elementID).id;
         if (elementType == "ProgrammingPage") {
           ProgrammingPage.style.display = 'block';
-          DesignPage.style.display = 'none'
-        } else {
+          DesignPage.style.display = 'none';
+          AboutPage.style.display = 'none';
+        } else if (elementType == "DesignPage") {
           DesignPage.style.display = 'block';
           ProgrammingPage.style.display = 'none';
+          AboutPage.style.display = 'none';
+        } else {
+          DesignPage.style.display = 'none';
+          ProgrammingPage.style.display = 'none';
+          AboutPage.style.display = 'block';
         }
       }
     </script>

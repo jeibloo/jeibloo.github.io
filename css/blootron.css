@@ -5,8 +5,10 @@ html, body {
 
 html {
   /*For the page background color*/
-  /*background: #6F717E;*/
-  background: #4EF8E8;
+  /* EDGY */
+  background: #6F717E;
+  /* FUN N' SUNNY
+  background: #4EF8E8;*/
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
@@ -20,22 +22,27 @@ html {
 body {
   font-family: "Source Sans Pro", "Roboto", "Libre Franklin", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   margin-bottom: 80px;
-  /*color: #6F717E;*/
-  /*background: #6F717E;*/
-  background: #4EF8E8;
+  /* EDGY */
+  background: #6F717E;
+  /* FUN N' SUNNY
+  background: #4EF8E8;*/
   font-size: 1.25rem;
 }
 
 #page-content-wrapper {
   /*For the page background color*/
-  /*background: #6F717E;*/
+  /* EDGY */
+  background: #6F717E;
+  /* FUN N' SUNNY
   background: #4EF8E8;
-  background: linear-gradient(45deg,#4EF8E8,#4EF8EC);
+  background: linear-gradient(45deg,#4EF8E8,#4EF8EC);*/
 }
 
 #wrapper, #wrapper.toggled {
-  /*background: #6F717E;*/
-  background: #4EF8E8;
+  /* EDGY */
+  background: #6F717E;
+  /* FUN N' SUNNY
+  background: #4EF8E8;*/
 }
 
 .footer {
@@ -110,21 +117,19 @@ a, a:visited {
   /*background-image: url("../images/thekong_lossy.webp");
   background-position: top;
   background-color: #32333B;*/
-  /*-moz-box-shadow:inset -1px -1px 16px #000000;
-  -webkit-box-shadow:inset -1px -1px 16px #000000;
-  box-shadow:inset -1px -1px 16px #000000;*/
-  /*background: linear-gradient(45deg,#476892,#59355D);*/
-  background: linear-gradient(45deg,#67FC4F,#FFC250);
-  /*background: #67FC4F;*/
+  -moz-box-shadow:inset 0px -1px 10px #000000;
+  -webkit-box-shadow:inset 0px -1px 10px #000000;
+  box-shadow:inset 0px -1px 10px #000000;
+  /* EDGY */
+  background: linear-gradient(45deg,#476892,#59355D);
+  /* FUN N' SUNNY
+  background: #4EF8E8;
+  background: linear-gradient(45deg,#67FC4F,#FFC250);*/
   -webkit-clip-path: polygon(85% 0%, 100% 5%, 100% 95%, 85% 100%, 0% 100%, 0% 0%);
   clip-path: polygon(85% 0%, 100% 5%, 100% 95%, 85% 100%, 0% 100%, 0% 0%);
   margin-top: 57.5px;
   margin-bottom: 70px;
   height: 865px;
-}
-
-#about-page {
-
 }
 
 .skew-box-top {
@@ -190,8 +195,10 @@ a, a:visited {
 
 .text-anim:hover {
   opacity:1;
-  /*background:#6F717E;*/
-  background: #4EF8E8;
+  /* EDGY */
+  background: #6F717E;
+  /* FUN N' SUNNY
+  background: #4EF8E8;*/
   color: #FFFFFF;
   width: 15.6rem;
   height: 3rem;
