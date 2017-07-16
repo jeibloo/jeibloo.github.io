@@ -26,22 +26,22 @@ html {
   -webkit-border-radius: 60px;
 }
 
-.line {
-  stroke-dasharray: 300;
-  stroke-dashoffset: 300;
-  animation: offset 3s linear forwards;
+#JN_top {
+  stroke-dasharray: 100px;
+  stroke-dashoffset: 100px;
+  animation: offset 3.5s linear forwards;
 }
 
 @keyframes offset {
   to {
-    stroke-dashoffset: 0;
+    stroke-dashoffset: 0px;
   }
 
 }
 
 svg path {
   stroke: #000000;
-  stroke-width: 3px;
+  stroke-width: 1px;
 }
 
 .container {
