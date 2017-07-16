@@ -18,8 +18,8 @@ html {
 }
 
 #circle {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   background: #4EF8E8;
   border-radius: 60px;
   -moz-border-radius: 60px;
@@ -27,9 +27,19 @@ html {
 }
 
 #JN_top {
-  stroke-dasharray: 100px;
-  stroke-dashoffset: 100px;
-  animation: offset 3.5s linear forwards;
+  animation-name: fadeIn;
+  animation-duration: 2s;
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+  /*stroke-dasharray: 120px;
+  stroke-dashoffset: 120px;
+  animation: fadein 4s ease-in-out forwards;
+  animation-delay: 0.65s;
+  animation-timing-function: cubic-bezier(.3,.66,.3,1));
 }
 
 @keyframes offset {
@@ -37,7 +47,7 @@ html {
     stroke-dashoffset: 0px;
   }
 
-}
+}*/
 
 svg path {
   stroke: #000000;
