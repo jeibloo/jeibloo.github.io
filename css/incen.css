@@ -26,10 +26,14 @@ html {
   -webkit-border-radius: 60px;
 }
 
-#JN_top {
+#name_title {
+  font-size: 3.5rem;
+}
+
+#JN_cover {
   animation: fadeIn 3s ease forwards;
   animation-delay: 0.5s;
-  animation: fadeOut 3.5s infinite;
+  animation: fadeOut 4s infinite;
 }
 
 @keyframes fadeIn {
@@ -39,6 +43,14 @@ html {
 @keyframes fadeOut {
   100% {opacity: 1;}
   30% {opacity: .3;}
+}
+@keyframes offset {
+  from {
+    stroke-dashoffset: 100px;
+  }
+  to {
+    stroke-dashoffset: 0px;
+  }
 }
   /*stroke-dasharray: 120px;
   stroke-dashoffset: 120px;
