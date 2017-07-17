@@ -4,11 +4,27 @@ html, body {
 }
 
 html {
-  /*For the page background color*/
-  /* EDGY */
-  /*background: #6F717E;*/
-  /* FUN N' SUNNY
-  background: #4EF8E8;*/
+
+}
+
+body {
+  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin-bottom: 80px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+
+a, a:visited {
+  color: #eceeef;
+  color: #292b2c;
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
@@ -30,7 +46,7 @@ html {
   font-size: 3.5rem;
 }
 
-#JN_cover {
+#JN, #PGM, #DSN {
   animation: fadeIn 3s ease forwards;
   animation-delay: 0.5s;
   animation: fadeOut 4s infinite;
@@ -43,14 +59,6 @@ html {
 @keyframes fadeOut {
   100% {opacity: 1;}
   30% {opacity: .3;}
-}
-@keyframes offset {
-  from {
-    stroke-dashoffset: 100px;
-  }
-  to {
-    stroke-dashoffset: 0px;
-  }
 }
   /*stroke-dasharray: 120px;
   stroke-dashoffset: 120px;
@@ -69,67 +77,4 @@ html {
 svg path {
   stroke: #000000;
   stroke-width: 1px;
-}
-
-.container {
-  /*background: #FFC250;*/
-}
-
-body {
-  /*font-family: "Source Sans Pro", "Roboto", "Libre Franklin", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  */
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  margin-bottom: 80px;
-  /* EDGY
-  background: #6F717E;*/
-  /* FUN N' SUNNY
-  background: #4EF8E8;*/
-}
-
-a, a:visited {
-  color: #eceeef;
-  color: #292b2c;
-}
-
-.text-anim {
-  width: 14rem;
-  height: 3rem;
-  -webkit-transition: -webkit-transform 2s,opacity 1s,background 2s,width 1s,height 2s,font-size 1s;
-  -webkit-border-radius: 5px;
-  -o-transition-property: width,height,-o-transform,background,font-size,opacity;
-  -o-transition-duration: 1s,1s,1s,1s,1s,1s;
-  -moz-transition-property: width,height,-o-transform,background,font-size,opacity;
-  -moz-transition-duration: 1s,1s,1s,1s,1s,1s;
-  transition-property: width,height,transform,background,font-size,opacity;
-  transition-duration: 1s,1s,1s,1s,1s,1s;
-  transition: all 0.30s ease;
-  border-radius: 0.0rem 0.0rem 0.0rem 0.0rem;
-  opacity:0.5;
-}
-
-.text-anim:hover {
-  opacity:1;
-  /* EDGY */
-  background: #6F717E;
-  /* FUN N' SUNNY
-  background: #4EF8E8;*/
-  color: #FFFFFF;
-  width: 15.6rem;
-  height: 3rem;
-}
-
-.typed-cursor{
-    opacity: 1;
-    font-weight: 100;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    -ms-animation: blink 0.7s infinite;
-    -o-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
-}
-
-.typed-fade-out{
-    opacity: 0;
-    animation: 0;
-    transition: opacity .25s;
 }
