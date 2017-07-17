@@ -27,14 +27,18 @@ html {
 }
 
 #JN_top {
-  animation: fadeIn 2s ease forwards;
+  animation: fadeIn 3s ease forwards;
   animation-delay: 0.5s;
-  opacity: 0;
+  animation: fadeOut 3.5s infinite;
 }
 
 @keyframes fadeIn {
-  0% {opacity: 0;}
+  50% {opacity: 0;}
   100% {opacity: 1;}
+}
+@keyframes fadeOut {
+  100% {opacity: 1;}
+  30% {opacity: .3;}
 }
   /*stroke-dasharray: 120px;
   stroke-dashoffset: 120px;
