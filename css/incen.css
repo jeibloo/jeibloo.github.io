@@ -33,25 +33,23 @@ body {
   margin-top: 5%;
 }
 
-.footer:hover {
-  color: #4EF8E8;
-  text-decoration: none;
-  transition: all 0.5s ease;
-}
-
 a, a:visited {
-  color: #4EF8E8;
+  color: #FF505D;
 }
 
-a:hover {
+a:hover, a:focus {
   color: #fff;
   text-decoration: none;
-  transition: all 0.5s ease;
+  transition: all .5s ease;
 }
 
-a:hover:after {
-  transition: all 0.5s ease;
-  color: #00E6CE;
+a:hover::before {
+  color: #FF505D;
+}
+
+a:hover::after {
+  color: #FF505D;
+  transition: all .5s ease;
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
@@ -63,43 +61,31 @@ a:hover:after {
 #LGO {
   width: 100px;
   height: 100px;
+  position: relative;
   background: #4EF8E8;
   border-radius: 60px;
   -moz-border-radius: 60px;
   -webkit-border-radius: 60px;
-  animation: fadeIn 5s ease forwards;
-  animation-delay: 1s;
-  animation: fadeOut 6s forwards;
+  animation: color 3s ease infinite alternate;
+  animation-delay: 2s;
 }
 
 #JN, #PGM, #DSN {
-  animation: fadeIn 3s ease forwards;
+  animation: fade 3s ease infinite alternate;
   animation-delay: 2s;
-  animation: fadeOut 4s infinite;
-}
-  /*stroke-dasharray: 120px;
-  stroke-dashoffset: 120px;
-  animation: fadein 4s ease-in-out forwards;
-  animation-delay: 0.65s;
-  animation-timing-function: cubic-bezier(.3,.66,.3,1));
 }
 
-@keyframes offset {
-  to {
-    stroke-dashoffset: 0px;
-  }
-
-}*/
-
-@keyframes fadeIn {
-  50% {opacity: 0;}
+@keyframes color {
+  0% {background: #4EF8E8;}
+  100% {background: #FF505D;}
+  from { transform: scale(1,1); }
+  to { transform: scale(1.1,1.1); }
+}
+@keyframes fade {
+  0% {opacity: .2;}
+  25% {opacity: .5;}
   100% {opacity: 1;}
 }
-@keyframes fadeOut {
-  100% {opacity: 1;}
-  30% {opacity: .3;}
-}
-
 svg path {
   stroke: #000000;
   stroke-width: 1px;
