@@ -1,10 +1,8 @@
 html, body {
-  height: 100%;
 }
 
 body {
   font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  margin-bottom: 0px;
 }
 
 .PGM_box, .DSN_box {
@@ -15,13 +13,18 @@ body {
   width: 100%;
   background-color: #11111f;
   color: #fff;
-  -webkit-box-shadow: -9px 3px 40px -5px rgba(0,0,0,0.75);
+  -webkit-box-shadow: -15px -11px 34px -16px rgba(0,0,0,0.75);
+  -moz-box-shadow: -15px -11px 34px -16px rgba(0,0,0,0.75);
+  box-shadow: -15px -11px 34px -16px rgba(0,0,0,0.75);
+  /*-webkit-box-shadow: -9px 3px 40px -5px rgba(0,0,0,0.75);
   -moz-box-shadow: -9px 3px 40px -5px rgba(0,0,0,0.75);
   box-shadow: -9px 3px 40px -5px rgba(0,0,0,0.75);
+  */
 }
 
 #PGM_title, #DSN_title {
   margin-bottom: 0px;
+  color: #fff;
 }
 
 .footer {
@@ -31,25 +34,27 @@ body {
   width: 100%;
   height: 60px;
   line-height: 60px;
-  margin-top: 5%;
+  padding-top: 5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 a, a:visited {
-  color: #FF505D;
+  color: #fff;
 }
 
 a:hover, a:focus {
-  color: #fff;
+  color: #FF505D;
   text-decoration: none;
   transition: all .5s ease;
 }
 
 a:hover::before {
-  color: #FF505D;
+  color: #fff;
 }
 
 a:hover::after {
-  color: #FF505D;
+  color: #fff;
   transition: all .5s ease;
 }
 
@@ -71,11 +76,22 @@ a:hover::after {
   animation-delay: 2s;
 }
 
+#FLGO {
+  width: 30px;
+  height: 100px;
+  position: absolute;
+  background: #fff;
+  animation: tendril_move 2s ease-in-out infinite alternate;
+}
+
 #JN, #PGM, #DSN {
   animation: fade 3s ease infinite alternate;
   animation-delay: 2s;
 }
-
+@keyframes tendril_move {
+  from {top: 100%; bottom: 100%;}
+  to {top: 90%; bottom: 90%;}
+}
 @keyframes color {
   0% {background: #4EF8E8;}
   100% {background: #FF505D;}
