@@ -39,6 +39,9 @@ body {
 #PGM_title, #DSN_title {
   margin-bottom: 0px;
   color: #FBFBFB;
+  text-shadow:
+    -1px -1px 1px #111,
+    2px 2px 1px #363636;
 }
 
 .footer {
