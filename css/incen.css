@@ -27,7 +27,7 @@ body {
   width: 100%;
   height: 3px;
   background-color: #FBFBFB;
-  margin-bottom: 2%;
+  margin-bottom: 5%;
   animation: color 4s ease infinite alternate;
   animation-delay: 3s;
 }
@@ -52,8 +52,13 @@ body {
   height: 60px;
   line-height: 60px;
   padding-top: 5%;
+  padding-bottom: 7.5%;
   margin-top: 2%;
   margin-bottom: 2%;
+}
+
+#footer_text {
+  color: #FBFBFB;
 }
 
 a, a:visited {
@@ -81,8 +86,13 @@ a:hover::after {
   font-family: "VT323", "Squada One", "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-#P1, #P2, #P3, #P4, #P5, #P6 {
-  margin-bottom: 20%;
+#P1, #P2, #P3, #P4, #P5, #P6, #P1-info, #P2-info, #P3-info {
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+}
+#D1, #D2, #D3, #D4, #D5, #D6, #D1-info, #D2-info, #D3-info {
+  padding-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 #LGO {
