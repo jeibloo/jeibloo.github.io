@@ -1,4 +1,5 @@
 html, body {
+  background-color: #FBFBFB;
 }
 
 body {
@@ -12,7 +13,7 @@ body {
   */
   width: 100%;
   background-color: #11111f;
-  color: #fff;
+  color: #FBFBFB;
   -webkit-box-shadow: -15px -11px 34px -16px rgba(0,0,0,0.75);
   -moz-box-shadow: -15px -11px 34px -16px rgba(0,0,0,0.75);
   box-shadow: -15px -11px 34px -16px rgba(0,0,0,0.75);
@@ -22,9 +23,22 @@ body {
   */
 }
 
+#divider {
+  width: 100%;
+  height: 3px;
+  background-color: #FBFBFB;
+  margin-bottom: 5%;
+  animation: color 4s ease infinite alternate;
+  animation-delay: 3s;
+}
+
+#PGM_inside, #DSN_inside {
+
+}
+
 #PGM_title, #DSN_title {
   margin-bottom: 0px;
-  color: #fff;
+  color: #FBFBFB;
 }
 
 .footer {
@@ -40,7 +54,7 @@ body {
 }
 
 a, a:visited {
-  color: #fff;
+  color: #FBFBFB;
 }
 
 a:hover, a:focus {
@@ -50,11 +64,11 @@ a:hover, a:focus {
 }
 
 a:hover::before {
-  color: #fff;
+  color: #FBFBFB;
 }
 
 a:hover::after {
-  color: #fff;
+  color: #FBFBFB;
   transition: all .5s ease;
 }
 
@@ -72,27 +86,39 @@ a:hover::after {
   border-radius: 60px;
   -moz-border-radius: 60px;
   -webkit-border-radius: 60px;
-  animation: color 3s ease infinite alternate;
-  animation-delay: 2s;
+  animation: color_scale 4s ease infinite alternate;
+  animation-delay: 3s;
 }
 
 #FLGO {
-  width: 30px;
-  height: 100px;
+  width: 5px;
+  height: 7.5px;
+  /*border-radius: 6px;*/
+  border-top-left-radius: 0;
+  border-top-right-radius: 7.5px;
+  border-bottom-right-radius: 7.5px;
+  border-bottom-left-radius: 7.5px;
+  /*
+  transform: rotate(45deg);
+  */
   position: absolute;
-  background: #fff;
-  animation: tendril_move 2s ease-in-out infinite alternate;
+  background: #FBFBFB;
+  animation: drop_move 5s ease-in infinite;
 }
 
 #JN, #PGM, #DSN {
-  animation: fade 3s ease infinite alternate;
-  animation-delay: 2s;
+  animation: fade 4s ease infinite alternate;
+  animation-delay: 3s;
 }
-@keyframes tendril_move {
-  from {top: 100%; bottom: 100%;}
-  to {top: 90%; bottom: 90%;}
-}
+/*@keyframes drop_move {
+  from {top: 90%; bottom: 90%;}
+  to {top: 100%; bottom: 100%; opacity: 0;}
+}*/
 @keyframes color {
+  0% {background: #FBFBFB;}
+  100% {background: #FF505D;}
+}
+@keyframes color_scale {
   0% {background: #4EF8E8;}
   100% {background: #FF505D;}
   from { transform: scale(1,1); }
