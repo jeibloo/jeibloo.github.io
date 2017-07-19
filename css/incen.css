@@ -81,6 +81,10 @@ a:hover::after {
   font-family: "VT323", "Squada One", "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
+#P1, #P2, #P3, #P4, #P5, #P6 {
+  margin-bottom: 20%;
+}
+
 #LGO {
   width: 100px;
   height: 100px;
@@ -120,6 +124,8 @@ a:hover::after {
 @keyframes color {
   0% {background: #FBFBFB;}
   100% {background: #FF505D;}
+  from { transform: scale(1,1); }
+  to { transform: scale(0.975,1); }
 }
 @keyframes color_scale {
   0% {background: #4EF8E8;}
