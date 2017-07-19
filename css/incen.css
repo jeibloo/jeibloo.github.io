@@ -27,13 +27,13 @@ body {
   width: 100%;
   height: 3px;
   background-color: #FBFBFB;
-  margin-bottom: 5%;
+  margin-bottom: 2%;
   animation: color 4s ease infinite alternate;
   animation-delay: 3s;
 }
 
 #PGM_inside, #DSN_inside {
-
+  padding: 0px;
 }
 
 #PGM_title, #DSN_title {
