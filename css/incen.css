@@ -20,8 +20,7 @@ body {
   height: 3px;
   background-color: #FBFBFB;
   margin-bottom: 7.5%;
-  animation: color 4s ease infinite alternate;
-  animation-delay: 3s;
+  animation: color_fade 6.5s ease forwards alternate;
 }
 
 #divider_vertical {
@@ -29,7 +28,7 @@ body {
   height: 100%;
   background-color: #FBFBFB;
   margin-bottom: 7.5%;
-  animation: color 4s ease infinite alternate;
+  animation: color 5s ease forwards alternate;
   animation-delay: 3s;
 }
 
@@ -117,28 +116,13 @@ a:hover::after {
   border-radius: 60px;
   -moz-border-radius: 60px;
   -webkit-border-radius: 60px;
-  animation: color_scale 4s ease infinite alternate;
+  animation: color_scale 5s ease-out forwards alternate;
+  animation-iteration-count: 1;
   animation-delay: 3s;
 }
 
-/*
-#FLGO {
-  width: 5px;
-  height: 7.5px;
-  border-radius: 6px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 7.5px;
-  border-bottom-right-radius: 7.5px;
-  border-bottom-left-radius: 7.5px;
-  transform: rotate(45deg);
-  position: absolute;
-  background: #FBFBFB;
-  animation: drop_move 5s ease-in infinite;
-}
-*/
-
 #JN, #PGM, #DSN {
-  animation: fade 4s ease infinite alternate;
+  animation: fade 2.5s ease infinite alternate;
   animation-delay: 3s;
 }
 /*@keyframes drop_move {
@@ -146,16 +130,24 @@ a:hover::after {
   to {top: 100%; bottom: 100%; opacity: 0;}
 }*/
 @keyframes color {
-  0% {background: #FBFBFB;}
+  10% {background: #FBFBFB;}
+  35% {background: #CBFF50;}
   100% {background: #FF505D;}
   from { transform: scale(1,1); }
   to { transform: scale(0.975,1); }
 }
 @keyframes color_scale {
-  0% {background: #4EF8E8;}
+  10% {background: #4EF8E8;}
+  35% {background: #CBFF50;}
   100% {background: #FF505D;}
   from { transform: scale(1,1); }
   to { transform: scale(1.1,1.1); }
+}
+@keyframes color_fade {
+  50% {background: #FBFBFB;}
+  100% {background: #FF505D;}
+  from { transform: scale(0.95,1); }
+  to { transform: scale(1.1,1); }
 }
 @keyframes fade {
   0% {opacity: .2;}
