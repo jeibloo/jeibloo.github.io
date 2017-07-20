@@ -20,7 +20,7 @@ body {
   height: 3px;
   background-color: #FBFBFB;
   margin-bottom: 7.5%;
-  animation: color_fade 6.5s ease forwards alternate;
+  animation: color_fade 4s ease forwards alternate;
 }
 
 #divider_vertical {
@@ -28,7 +28,7 @@ body {
   height: 100%;
   background-color: #FBFBFB;
   margin-bottom: 7.5%;
-  animation: color 5s ease forwards alternate;
+  animation: color 4s ease forwards alternate;
   animation-delay: 3s;
 }
 
@@ -36,12 +36,12 @@ body {
   padding: 5%;
 }
 
-#PGM_title, #DSN_title {
+#PGM_title, #DSN_title, #INT_title {
   margin-bottom: 0px;
   color: #FBFBFB;
   text-shadow:
-    -1px -1px 1px #111,
-    2px 2px 1px #363636;
+    -2px -2px 2px #111,
+    -2px -2px 1px #363636;
 }
 
 .footer {
@@ -116,7 +116,7 @@ a:hover::after {
   border-radius: 60px;
   -moz-border-radius: 60px;
   -webkit-border-radius: 60px;
-  animation: color_scale 5s ease-out forwards alternate;
+  animation: color_scale 4s ease-out forwards alternate;
   animation-iteration-count: 1;
   animation-delay: 3s;
 }
@@ -129,6 +129,21 @@ a:hover::after {
   from {top: 90%; bottom: 90%;}
   to {top: 100%; bottom: 100%; opacity: 0;}
 }*/
+
+/*
+#Side_bullets {
+  width: 18px;
+  height: 20px;
+  position: relative;
+  background: #FBFBFB;
+  border-radius: 10px;
+  -webkit-box-shadow: inset 26px 13px 183px -49px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 26px 13px 183px -49px rgba(0,0,0,0.75);
+  box-shadow: inset 26px 13px 183px -49px rgba(0,0,0,0.75);
+}*/
+#Legs {
+  transform: rotate(45%);
+}
 @keyframes color {
   10% {background: #FBFBFB;}
   35% {background: #CBFF50;}
@@ -137,17 +152,21 @@ a:hover::after {
   to { transform: scale(0.975,1); }
 }
 @keyframes color_scale {
-  10% {background: #4EF8E8;}
-  35% {background: #CBFF50;}
+  5% {background: #4EF8E8;}
+  9% {background: #CBFF50;}
   100% {background: #FF505D;}
   from { transform: scale(1,1); }
-  to { transform: scale(1.1,1.1); }
+  to { transform: scale(1.5,1.5);}
 }
 @keyframes color_fade {
   50% {background: #FBFBFB;}
   100% {background: #FF505D;}
-  from { transform: scale(0.95,1); }
+  from { transform: scale(0.2,0.2); }
   to { transform: scale(1.1,1); }
+}
+@keyframes color_text {
+  0% {color: inherit;}
+  100% {color: #FF505D;}
 }
 @keyframes fade {
   0% {opacity: .2;}
