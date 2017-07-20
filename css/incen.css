@@ -83,8 +83,6 @@ a:hover::after {
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-  /*font-family: "Rajdhani", "Squada One", "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  */
   font-family: "VT323", "Squada One", "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
@@ -92,18 +90,11 @@ a:hover::after {
   height: 60px;
   padding: 0px;
   margin: 0px;
-  /*
-  padding-bottom: 20px;
-  margin-bottom: 10px;
-  */
 }
 #D1, #D2, #D3, #D4, #D5, #D6, #D1-info, #D2-info, #D3-info {
   height: 60px;
   padding: 0px;
   margin: 0px;
-  /*padding-bottom: 20px;
-  margin-bottom: 10px;
-  */
 }
 #Holder {
   padding: 0px;
@@ -127,19 +118,18 @@ a:hover::after {
   animation: fade 3s ease infinite alternate;
   animation-delay: 3s;
 }
-#Legs {
-  transform: rotate(45%);
+.JN_box {
+  animation: shadow 3s ease infinite alternate;
+  animation-delay: 3s;
 }
 @keyframes color {
   10% {background: #FBFBFB;}
-  35% {background: #CBFF50;}
   100% {background: #FF505D;}
   from { transform: scale(1,1); }
   to { transform: scale(0.975,1); }
 }
 @keyframes color_scale {
   5% {background: #4EF8E8;}
-  9% {background: #CBFF50;}
   100% {background: #FF505D;}
   from { transform: scale(1,1); }
   to { transform: scale(1.2,1.2);}
@@ -149,6 +139,14 @@ a:hover::after {
   100% {background: #FF505D;}
   from { transform: scale(0.2,0.2); }
   to { transform: scale(1.1,1); }
+}
+@keyframes shadow {
+  from {
+    box-shadow: -7px -4px 12px 3px rgba(0, 0, 0, 0.0);
+  }
+  to {
+    box-shadow: -7px -4px 12px 3px rgba(0, 0, 0, 0.15);
+  }
 }
 @keyframes color_text {
   0% {color: inherit;}
