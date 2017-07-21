@@ -15,6 +15,7 @@ p {
 .TEC_DSGN_box {
   background-color: #11111f;
   color: #FBFBFB;
+  box-shadow: 9px 10px 12px 0px rgba(182,180,180,1);
   animation: shadow_box 5s ease infinite alternate;
   animation-delay: 1s;
 }
@@ -153,7 +154,7 @@ a:hover::after {
 }
 @keyframes shadow_box {
   100% {
-    box-shadow: 12px 15px 20px 0px rgba(162,160,160,0.75);
+    box-shadow: 12px 15px 20px 0px rgba(132,130,130,1);
     transform: scale(1,1);
   }
 }
