@@ -4,20 +4,19 @@ html, body {
 
 body {
   font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  text-rendering: optimizeLegibility;
 }
 
 p {
-  text-indent: 50px;
-  text-align: justify;
+  text-rendering: optimizeLegibility;
+  text-align: justify-left;
 }
 
-.PGM_box, .DSN_box {
-  width: 100%;
+.TEC_DSGN_box {
   background-color: #11111f;
   color: #FBFBFB;
-  -webkit-box-shadow: -15px -11px 34px -16px rgba(0,0,0,0.75);
-  -moz-box-shadow: -15px -11px 34px -16px rgba(0,0,0,0.75);
-  box-shadow: -15px -11px 34px -16px rgba(0,0,0,0.75);
+  animation: shadow_box 5s ease infinite alternate;
+  animation-delay: 1s;
 }
 
 #divider_horizontal {
@@ -37,11 +36,11 @@ p {
   animation-delay: 3s;
 }
 
-#PGM_DSN {
+#TEC_DSGN {
   padding: 5%;
 }
 
-#PGM_title, #DSN_title, #INT_title {
+#TEC_title, #DSGN_title, #INT_title {
   margin-bottom: 0px;
   color: #FBFBFB;
   position: relative;
@@ -114,19 +113,16 @@ a:hover::after {
   border-radius: 60px;
   -moz-border-radius: 60px;
   -webkit-border-radius: 60px;
-  animation: color_scale 4s ease-out forwards alternate;
-  animation-iteration-count: 1;
-  animation-delay: 3s;
+  animation: color_scale 5s ease-out forwards alternate;
 }
 
-#JN, #PGM, #DSN {
+#JN, #TEC, #DSGN {
   animation: fade 3s ease infinite alternate;
   animation-delay: 1s;
 }
 .JN_box {
-  transform: scale(0.965,0.965);
-  animation: shadow 3s ease infinite alternate;
-  animation-delay: 1s;
+  transform: scale(0.94,0.94);
+  animation: shadow_header 5s ease-in-out infinite alternate;
 }
 @keyframes color {
   10% {background: #FBFBFB;}
@@ -146,12 +142,18 @@ a:hover::after {
   from { transform: scale(0.2,0.2); }
   to { transform: scale(1.1,1); }
 }
-@keyframes shadow {
+@keyframes shadow_header {
   0% {
-    box-shadow: -7px -4px 12px 3px rgba(0, 0, 0, 0.0);
+    box-shadow: 12px 15px 20px 0px rgba(162,160,160,0.75);
   }
   100% {
-    box-shadow: -7px -4px 12px 3px rgba(0, 0, 0, 0.15);
+    box-shadow: 12px 15px 20px 0px rgba(162,160,160,0.5);
+    transform: scale(1,1);
+  }
+}
+@keyframes shadow_box {
+  100% {
+    box-shadow: 12px 15px 20px 0px rgba(162,160,160,0.75);
     transform: scale(1,1);
   }
 }
@@ -173,8 +175,8 @@ a:hover::after {
   100% {transform: translateY(0px);}
 }
 @keyframes fade {
-  0% {opacity: .3;}
-  25% {opacity: .5;}
+  0% {opacity: .5;}
+  25% {opacity: .7;}
   100% {opacity: 1;}
 }
 svg path {
