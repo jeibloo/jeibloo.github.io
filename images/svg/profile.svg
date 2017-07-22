@@ -806,11 +806,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.1584435"
-     inkscape:cx="104.45701"
-     inkscape:cy="267.11928"
+     inkscape:zoom="3.0525001"
+     inkscape:cx="131.38874"
+     inkscape:cy="261.01144"
      inkscape:document-units="px"
-     inkscape:current-layer="layer9"
+     inkscape:current-layer="layer6"
      showgrid="false"
      units="px"
      inkscape:snap-grids="false"
@@ -1146,7 +1146,7 @@
        height="59.246849"
        width="109.99705"
        clip-path="url(#clipPath14088)"
-       transform="rotate(7.2707312,50.841674,32.664997)" />
+       transform="matrix(0.77172705,0.09845985,-0.09845985,0.77172705,15.617201,2.8416036)" />
   </g>
   <g
      inkscape:groupmode="layer"
