@@ -9,7 +9,8 @@ body {
 
 p {
   text-rendering: optimizeLegibility;
-  text-align: justify-left;
+  text-align: justify;
+  line-height: 180%;
 }
 
 .TEC_DSGN_box {
@@ -68,6 +69,16 @@ p {
   color: #FBFBFB;
 }
 
+#txt1 {
+  font-size: 120%;
+  color: #FF505D;
+}
+#txt1:hover, #txt1:focus {
+  color: #FBFBFB;
+  text-decoration: none;
+  transition: all .5s ease;
+}
+
 a, a:visited {
   color: #FBFBFB;
 }
@@ -116,7 +127,6 @@ a:hover::after {
   -webkit-border-radius: 60px;
   animation: color_scale 5s ease-out forwards alternate;
 }
-
 #JN, #TEC, #DSGN {
   animation: fade 3s ease infinite alternate;
   animation-delay: 1s;
