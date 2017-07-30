@@ -106,20 +106,24 @@
   <g
      inkscape:groupmode="layer"
      id="layer5"
-     inkscape:label="base">
-    <circle
-       style="opacity:1;fill:#fffffe;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.98681317"
+     inkscape:label="base"
+     style="display:inline">
+    <ellipse
+       style="opacity:1;fill:#fbfbfd;fill-opacity:0.0627451;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0"
        id="path7701"
-       cx="2.1166666"
-       cy="2.1166668"
-       r="2.1166666" />
+       cx="2.9923577"
+       cy="0.1421247"
+       rx="2.4153209"
+       ry="1.5911953"
+       transform="matrix(0.73987782,0.67274126,-0.68469911,0.72882586,0,0)" />
   </g>
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(0,-292.76665)"
-     sodipodi:insensitive="true">
+     sodipodi:insensitive="true"
+     style="display:inline">
     <circle
        style="opacity:1;fill:url(#linearGradient7664);fill-opacity:1;stroke:none;stroke-width:0.98000008;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path7648"
@@ -136,12 +140,15 @@
   <g
      inkscape:groupmode="layer"
      id="layer4"
-     inkscape:label="Layer 2" />
+     inkscape:label="Layer 2"
+     sodipodi:insensitive="true"
+     style="display:inline" />
   <g
      inkscape:groupmode="layer"
      id="layer6"
      inkscape:label="thing"
-     sodipodi:insensitive="true">
+     sodipodi:insensitive="true"
+     style="display:inline">
     <circle
        style="opacity:1;fill:#111124;fill-opacity:0.99340659;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.98681317"
        id="path7704"
