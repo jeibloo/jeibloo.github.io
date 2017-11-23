@@ -2,16 +2,18 @@ html, body {
 }
 
 html {
-  background-image: url("");
+  background-image: url("../images/Mishima.jpeg");
+  background-position: center;
+  background-repeat: repeat;
 }
 
 body {
   font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   text-rendering: optimizeLegibility;
   height: 100%;
-  margin-left: 5%;
-  margin-right: 5%;
-  background-color: #FBFBFB;
+  margin-left: 7.4%;
+  margin-right: 7.4%;
+  background-color: rgba(251, 251, 251, 0.5);#FBFBFB;
 }
 
 p {
@@ -25,7 +27,7 @@ p {
   color: #FBFBFB;
   margin-bottom: 8.5%;
   height: 300%;
-  box-shadow: 9px 10px 12px 0px rgba(182,180,180,1);
+  box-shadow: 9px 10px 12px 0px rgba(182,180,180,0);
   animation: shadow_box 5s ease infinite alternate;
   animation-delay: 1s;
 }
