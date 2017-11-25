@@ -7,9 +7,9 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-color: rgba(251, 251, 251, 0);#FBFBFB;
-  -moz-animation: fadeIn 2s; /* Firefox */
-  -webkit-animation: fadeIn 2s; /* Safari and Chrome */
-  -o-animation: fadeIn 2s; /* Opera */
+  -moz-animation: fadeIn 0.5s; /* Firefox */
+  -webkit-animation: fadeIn 0.5s; /* Safari and Chrome */
+  -o-animation: fadeIn 0.5s; /* Opera */
 }
 
 body {
