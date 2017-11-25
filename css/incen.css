@@ -2,23 +2,20 @@ html, body {
 }
 
 html {
-  background-image: url("../images/Mishima.webp");
+  background-image: url("../images/Mishima.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: rgba(251, 251, 251, 0);#FBFBFB;
-  -moz-animation: fadeIn 0.5s; /* Firefox */
-  -webkit-animation: fadeIn 0.5s; /* Safari and Chrome */
-  -o-animation: fadeIn 0.5s; /* Opera */
+  background-color: rgba(251, 251, 251, 0.4);
+  -moz-animation: fadeIn 1s; /* Firefox */
+  -webkit-animation: fadeIn 1s; /* Safari and Chrome */
+  -o-animation: fadeIn 1s; /* Opera */
 }
 
 body {
   font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont;
   text-rendering: optimizeLegibility;
-  height: 100%;
-  margin-left: 10%;
-  margin-right: 10%;
-  background-color: rgba(251, 251, 251, 0.5);
+  background-color: rgba(251, 251, 251, 0.0);
 }
 
 p {
@@ -26,6 +23,13 @@ p {
   text-rendering: optimizeLegibility;
   text-align: left;
   line-height: 180%;
+}
+
+.outside_container {
+  margin-left: 25%;
+  margin-right: 25%;
+  background-color: rgba(251, 251, 251, 0.5);
+  height: 100%;
 }
 
 .TEC_DSGN_box {
@@ -139,6 +143,10 @@ a:hover::after {
   animation: fade 3s ease infinite alternate;
   animation-delay: 1s;
 }
+#padding_TEC_DSGN_box {
+  padding: 10%;
+  padding-bottom: 0%;
+}
 .JN_box {
   transform: scale(0.94,0.94);
   animation: shadow_header 5s ease-in-out infinite alternate;
@@ -206,4 +214,19 @@ a:hover::after {
 svg path {
   stroke: #000000;
   stroke-width: 1px;
+}
+
+@media screen and (max-width: 800px) {
+  .outside_container {
+    margin-right: 0%;
+    margin-left: 0%;
+    height: auto;
+  }
+  #inside_container {
+    padding: 0%;
+  }
+  #padding_TEC_DSGN_box {
+    padding: 0%;
+    padding-top: 10%;
+  }
 }
