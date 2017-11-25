@@ -42,6 +42,11 @@ p {
   animation-delay: 1s;
 }
 
+#inside_container {
+  height: 100%;
+  padding-top: 5%;
+}
+
 #divider_horizontal {
   width: 100%;
   height: 3px;
@@ -228,5 +233,16 @@ svg path {
   #padding_TEC_DSGN_box {
     padding: 0%;
     padding-top: 10%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .outside_container {
+    margin-right: 0%;
+    margin-left: 0%;
+  }
+  #inside_container {
+    padding: 0%;
+    padding-top: 20%;
   }
 }
