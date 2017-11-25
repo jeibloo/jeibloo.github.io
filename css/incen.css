@@ -26,8 +26,8 @@ p {
 }
 
 .outside_container {
-  margin-left: 25%;
-  margin-right: 25%;
+  margin-left: 10%;
+  margin-right: 10%;
   background-color: rgba(251, 251, 251, 0.5);
   height: 100%;
 }
