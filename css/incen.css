@@ -28,8 +28,13 @@ p {
 .outside_container {
   margin-left: 10%;
   margin-right: 10%;
-  background-color: rgba(251, 251, 251, 0.5);
   height: 100%;
+  background-color: rgba(251, 251, 251, 0.75);
+}
+
+#inside_container {
+  height: 100%;
+  padding-top: 5%;
 }
 
 .TEC_DSGN_box {
@@ -42,9 +47,9 @@ p {
   animation-delay: 1s;
 }
 
-#inside_container {
-  height: 100%;
-  padding-top: 5%;
+#padding_TEC_DSGN_box {
+  padding: 10%;
+  padding-bottom: 0%;
 }
 
 #divider_horizontal {
