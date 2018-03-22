@@ -2,11 +2,12 @@ html, body {
 }
 
 html {
-  background-image: url("../images/Mishima.png");
+  /*background-image: url("../images/Mishima.png");
+  */
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: rgba(251, 251, 251, 0.4);
+  background-color: rgba(251, 251, 251, 0.75);
   -moz-animation: fadeIn 1s; /* Firefox */
   -webkit-animation: fadeIn 1s; /* Safari and Chrome */
   -o-animation: fadeIn 1s; /* Opera */
