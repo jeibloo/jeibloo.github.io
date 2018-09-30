@@ -53,26 +53,7 @@ h1,p {
   height: 200px;
   background-color: #000000;
 }
-#bar_x1 {
-  position: relative;
-  border-radius: 0px 0px 2px 2px;
-  bottom: 200px;
-  width: 8px;
-  height: 50px;
-  margin-left: 6px;
-  background-color: #f0f0f0;
-  animation: h1 var(--animation-time) ease-in-out infinite alternate;
-}
-#bar_x2 {
-  position: relative;
-  border-radius: 0px 0px 2px 2px;
-  bottom: 200px;
-  width: 8px;
-  height: 50px;
-  margin-left: 6px;
-  background-color: #f0f0f0;
-}
-#bar_x3 {
+#bar3 {
   position: relative;
   border-radius: 0px 0px 2px 2px;
   bottom: 200px;
@@ -118,7 +99,7 @@ h1,p {
 }
 @media (min-width:2000px) {
   #bar3 {
-    bottom: 255px;
+    bottom: 250px;
   }
   .top_frame {
     padding-right: 40%;
