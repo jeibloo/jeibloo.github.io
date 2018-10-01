@@ -17,7 +17,6 @@ h1 {
 
 .top_frame {
   background-color: rgba(240, 240, 240, 1);
-  padding: 35%;
   padding-bottom: 10%;
   padding-top: 15%;
 }
@@ -35,8 +34,8 @@ h1 {
   bottom: 0;
 }
 .frame_inner {
-  padding-right: 15%;
-  padding-left: 15%
+  padding-right: 10%;
+  padding-left: 10%
 }
 .rotate_jp {
   writing-mode: vertical-lr;
@@ -48,6 +47,19 @@ h1 {
 .col-4 {
   padding-left: 10%;
 }
+#main_title {
+  font-size: 6em;
+  text-align: center;
+  padding: 0 10px 10px 10px;
+  border-radius: 3px;
+  border-top: 3px solid #464646;
+}
+#left_text {
+}
+#right_text {
+  border-right: 5px solid #000000;
+  border-radius: 3px;
+}
 #don {
   justify-content: flex-start;
   /*
@@ -57,27 +69,29 @@ h1 {
   margin-top: 10px;
   margin-left: 10px;
 }
-#bar,#bar1,#bar2,#bar3 {
+/*#bar,#bar1,#bar2,#bar3 {
   border-radius: 7px;
 }
 #bar {
-  width: 100%;
-  height: 7px;
+  width: 75%;
+  height: 5px;
+  justify-content: space-around;
+  text-align: center;
   background-color: #000000;
   transform: scale(1, 1);
   animation: bar 3s ease-in-out infinite alternate;
-}
+}*/
 #bar1 {
   width: 54px;
   height: 2px;
   margin-bottom: 10%;
   background-color: #000000;
 }
-#bar2 {
+/*#bar2 {
   width: 3px;
   height: 200px;
   background-color: #000000;
-}
+}*/
 #bar3 {
   position: relative;
   border-radius: 0px 0px 22px 22px;
@@ -136,14 +150,8 @@ h1 {
   .bot_frame {
     padding-top: 0%;
   }
-  .top_frame {
-    padding-right: 33.5%;
-  }
 }
 @media (min-width:2000px) {
-  .top_frame {
-    padding-right: 40%;
-  }
 }
 @media (min-height:1300px) {
 }
