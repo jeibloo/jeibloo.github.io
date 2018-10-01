@@ -2,6 +2,9 @@
 
 html, body {
   background-color: rgba(230, 230, 025, 1);
+  background-image: radial-gradient(#3F219E 6%, transparent 2%), radial-gradient(#3F219E 5%, transparent 6%);
+  /* Do yourself a favour and go to http://haya2now.jp/en.html */
+  background-size: 15px 15px;
   height: 100%;
 }
 
@@ -27,7 +30,7 @@ h1 {
 .ashi {
   padding-left: 10%;
   padding-right: 10%;
-  margin-top: 25%;
+  padding-top: 15%;
   position: relative;
   bottom: 0;
 }
@@ -130,9 +133,6 @@ h1 {
   }
 }
 @media (min-width:1000px) {
-  .ashi {
-    margin-top: 10%;
-  }
   .bot_frame {
     padding-top: 0%;
   }
