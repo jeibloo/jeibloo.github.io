@@ -17,6 +17,7 @@ h1 {
 
 .top_frame {
   background-color: rgba(245, 245, 245, 1);
+  width: 100%;
   padding-bottom: 10%;
   padding-top: 15%;
 }
@@ -55,19 +56,13 @@ h1 {
 #left_text {
 }
 #right_text {
-  border-right: 5px solid #000000;
-  border-radius: 3px;
 }
 #don {
   justify-content: flex-start;
-  /*
-  margin-top: -40px;
-  margin-left: 22px;
-  */
   margin-top: 10px;
   margin-left: 10px;
 }
-/*#bar,#bar1,#bar2,#bar3 {
+#bar,#bar1,#bar2,#bar3 {
   border-radius: 7px;
 }
 #bar {
@@ -78,18 +73,18 @@ h1 {
   background-color: #000000;
   transform: scale(1, 1);
   animation: bar 3s ease-in-out infinite alternate;
-}*/
+}
 #bar1 {
   width: 54px;
   height: 2px;
   margin-bottom: 10%;
   background-color: #000000;
 }
-/*#bar2 {
+#bar2 {
   width: 3px;
   height: 200px;
   background-color: #000000;
-}*/
+}
 #bar3 {
   position: relative;
   border-radius: 0px 0px 22px 22px;
@@ -133,6 +128,9 @@ h1 {
     padding: 0px;
     justify-content: space-around;
   }
+  .row {
+    width: 98%;
+  }
   .top_frame {
     padding-left: 1%;
     padding-right: 1%;
@@ -142,6 +140,9 @@ h1 {
   }
   .col-4 {
     padding-left: 1%;
+  }
+  .col-1 {
+    visibility: collapse;
   }
 }
 @media (min-width:1000px) {
