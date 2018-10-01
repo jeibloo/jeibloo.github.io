@@ -16,7 +16,7 @@ h1 {
 }
 
 .top_frame {
-  background-color: rgba(240, 240, 240, 1);
+  background-color: rgba(245, 245, 245, 1);
   padding-bottom: 10%;
   padding-top: 15%;
 }
@@ -51,8 +51,6 @@ h1 {
   font-size: 6em;
   text-align: center;
   padding: 0 10px 10px 10px;
-  border-radius: 3px;
-  border-top: 3px solid #464646;
 }
 #left_text {
 }
@@ -97,7 +95,7 @@ h1 {
   border-radius: 0px 0px 22px 22px;
   width: 48px;
   height: 130px;
-  background-color: #f0f0f0;
+  background-color: rgba(245, 245, 245, 1);
 }
 @keyframes h1 {
   0% {}
