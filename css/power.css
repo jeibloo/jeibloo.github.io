@@ -5,8 +5,11 @@ html, body {
   height: 100%;
 }
 
-h1,p {
+h1,h4,p {
   font-family: "VT323", "Nico Moji";
+}
+h1 {
+  text-align: right;
 }
 
 .top_frame {
@@ -18,7 +21,7 @@ h1,p {
 .bot_frame {
   width: 100%;
   padding: 10%;
-  padding-top: 15%;
+  padding-top: 0%;
   padding-bottom: 0%;
 }
 .ashi {
@@ -31,6 +34,25 @@ h1,p {
 .frame_inner {
   padding-right: 15%;
   padding-left: 15%
+}
+.rotate_jp {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+}
+.rotate{
+  transform: rotate(-90deg);
+}
+.col-4 {
+  padding-left: 10%;
+}
+#don {
+  justify-content: flex-start;
+  /*
+  margin-top: -40px;
+  margin-left: 22px;
+  */
+  margin-top: 10px;
+  margin-left: 10px;
 }
 #bar,#bar1,#bar2,#bar3 {
   border-radius: 7px;
@@ -55,11 +77,9 @@ h1,p {
 }
 #bar3 {
   position: relative;
-  border-radius: 0px 0px 2px 2px;
-  bottom: 200px;
-  width: 8px;
-  height: 50px;
-  margin-left: 6px;
+  border-radius: 0px 0px 22px 22px;
+  width: 48px;
+  height: 130px;
   background-color: #f0f0f0;
 }
 @keyframes h1 {
@@ -77,37 +97,53 @@ h1,p {
     transform: scale(0.90,.98);
   }
 }
-@media (min-width:800px) {
+@media (max-width:1080px) and (min-height: 1000px) {
+  #bar2 {
+    height: 300px;
+  }
+}
+@media (max-width: 800px) and (min-height:100px) {
   #bar3 {
-    bottom: 190px;
-    height: 50px;
+    display: none
+  }
+  #bar2 {
+    width: 0px; height: 0px;
+    visibility: hidden;
+  }
+  #don {
+    width: 0px; height: 0px;
+    visibility: hidden;
+  }
+  .row, .bot_frame {
+    padding: 0px;
+    justify-content: space-around;
+  }
+  .top_frame {
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+  h1 {
+    text-align: center;
+  }
+  .col-4 {
+    padding-left: 1%;
   }
 }
 @media (min-width:1000px) {
-  #bar3 {
-    bottom: 200px;
-  }
   .ashi {
     margin-top: 10%;
   }
   .bot_frame {
-    padding-top: 10%;
+    padding-top: 0%;
   }
   .top_frame {
     padding-right: 33.5%;
   }
 }
 @media (min-width:2000px) {
-  #bar3 {
-    bottom: 250px;
-  }
   .top_frame {
     padding-right: 40%;
   }
 }
 @media (min-height:1300px) {
-  #bar3 {
-    bottom: 190px;
-    height: 50px;
-  }
 }
