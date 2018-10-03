@@ -105,7 +105,7 @@ box-shadow: inset 0px -28px 14px -23px rgba(0,0,0,0.05);
   text-align: justify;
 }
 #right_text > p {
-  font-size: calc(1em + .20vw);
+  font-size: calc(1em + .30vw);
 }
 #center_text {
   text-align: left;
@@ -145,6 +145,9 @@ box-shadow: inset 0px -28px 14px -23px rgba(0,0,0,0.05);
   .frame_inner {
     padding-left: 40rem;
     padding-right: 40rem;
+  }
+  #right_text > p {
+    font-size: calc(1em + .20vw);
   }
 }
 @media (max-width:1300px) {
