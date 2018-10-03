@@ -7,12 +7,17 @@ html, body {
   background-size: 15px 15px;
   height: 100%;
 }
+html {
+}
 
 h1,h4,p {
   font-family: "VT323", "Nico Moji";
 }
 h1 {
   text-align: right;
+}
+p {
+  font-size: calc(1em + .20vw);
 }
 
 .top_frame {
@@ -24,13 +29,13 @@ h1 {
 .bot_frame {
   width: 100%;
   padding: 10%;
-  padding-top: 0%;
-  padding-bottom: 0%;
+  padding-top: 7%;
+  padding-bottom: 15%;
 }
 .ashi {
   padding-left: 10%;
   padding-right: 10%;
-  padding-top: 15%;
+  padding-bottom: 2.5%;
   position: relative;
   bottom: 0;
 }
@@ -45,112 +50,64 @@ h1 {
 .rotate{
   transform: rotate(-90deg);
 }
-.col-4 {
-  padding-left: 10%;
+.col-3, .col-4 {
+  padding-left: 5%;
+  padding-right: 5%;
 }
 #main_title {
   font-size: 6em;
   text-align: center;
   padding: 0 10px 10px 10px;
 }
-#left_text {
+#email {
+  justify-content: flex-start;
+  text-align: left;
+}
+#trapperz {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+/* CONTENT */
+#left_text, #center_text, #right_text {
+  text-align: justify;
 }
 #right_text {
+  border-top: 3px solid; border-bottom: 3px solid;
+  border-radius: 2px;
 }
+#left_text {
+  border-left: 3px solid;
+
+}
+/* */
+
 #don {
-  justify-content: flex-start;
-  margin-top: 10px;
-  margin-left: 10px;
+  font-size: calc(1em + 8vw);
+  text-shadow: 4px 15px rgba(0, 0, 0, .45);
+  overflow: hidden;
+  position: relative;
+  float: left;
+  left: -1em;
 }
 #bar,#bar1,#bar2,#bar3 {
   border-radius: 7px;
 }
-#bar {
-  width: 75%;
-  height: 5px;
-  justify-content: space-around;
-  text-align: center;
-  background-color: #000000;
-  transform: scale(1, 1);
-  animation: bar 3s ease-in-out infinite alternate;
-}
-#bar1 {
-  width: 54px;
-  height: 2px;
-  margin-bottom: 10%;
-  background-color: #000000;
-}
 #bar2 {
   width: 3px;
-  height: 200px;
+  height: 30em;
   background-color: #000000;
 }
 #bar3 {
   position: relative;
+  margin-right: 100px;
   border-radius: 0px 0px 22px 22px;
   width: 48px;
-  height: 130px;
+  height: 30px;
   background-color: rgba(245, 245, 245, 1);
-}
-@keyframes h1 {
-  0% {}
-  100% {
-    transform: scale(1,2);
-  }
-}
-@keyframes bar {
-  0% {
-    box-shadow: 3px 4px 10px 0px rgba(162,160,160,0.2);
-  }
-  100% {
-    box-shadow: 2px 3px 7px 0px rgba(162,160,160,0.1);
-    transform: scale(0.90,.98);
-  }
 }
 @media (max-width:1080px) and (min-height: 1000px) {
   #bar2 {
     height: 300px;
   }
-}
-@media (max-width: 800px) and (min-height:100px) {
-  #bar3 {
-    display: none
-  }
-  #bar2 {
-    width: 0px; height: 0px;
-    visibility: hidden;
-  }
-  #don {
-    width: 0px; height: 0px;
-    visibility: hidden;
-  }
-  .row, .bot_frame {
-    padding: 0px;
-    justify-content: space-around;
-  }
-  .row {
-    width: 98%;
-  }
-  .top_frame {
-    padding-left: 1%;
-    padding-right: 1%;
-  }
-  h1 {
-    text-align: center;
-  }
-  .col-4 {
-    padding-left: 1%;
-  }
-  .col-1 {
-    visibility: collapse;
-  }
-}
-@media (min-width:1000px) {
-  .bot_frame {
-    padding-top: 0%;
-  }
-}
-@media (min-width:2000px) {
-}
-@media (min-height:1300px) {
 }
