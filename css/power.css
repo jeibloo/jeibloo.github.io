@@ -54,6 +54,9 @@ p {
   padding-left: 5%;
   padding-right: 5%;
 }
+.row{
+  width: 100%;
+}
 #main_title {
   font-size: 6em;
   text-align: center;
@@ -77,18 +80,16 @@ p {
   border-radius: 2px;
 }
 #left_text {
-  border-left: 3px solid;
-
+  border-right: 3px solid;
 }
 /* */
 
 #don {
   font-size: calc(1em + 8vw);
   text-shadow: 4px 15px rgba(0, 0, 0, .45);
-  overflow: hidden;
-  position: relative;
-  float: left;
-  left: -1em;
+  position: absolute;
+  transform: rotate(90deg);
+  left: -2em;
 }
 #bar,#bar1,#bar2,#bar3 {
   border-radius: 7px;
