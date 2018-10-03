@@ -11,14 +11,17 @@ html, body {
 html {
 }
 
-h1,h4,p {
+h1 {
+  font-family: "VT323", "Nico Moji";
+}
+h4,p {
   font-family: "VT323", "Nico Moji";
 }
 h1 {
   text-align: right;
 }
 p {
-  font-size: calc(1em + .20vw);
+  font-size: calc(1em + .15vw);
 }
 
 .top_frame {
@@ -94,7 +97,7 @@ p {
   text-align: justify;
 }
 #right_text > p {
-  font-size: calc(1em + .30vw);
+  font-size: calc(1em + .20vw);
 }
 #center_text {
   text-align: left;
@@ -131,10 +134,11 @@ p {
 }
 @media (max-width:1100px) {
   #don {
-    margin-top: -3rem;
-    transform: none;
-    padding-top: 1.75rem;
-    left: 0em;
+    display: none;
+  }
+  #jyuukou {
+    margin-left: 0;
+    margin-right: 95%;
   }
 }
 @keyframes hover_don {
