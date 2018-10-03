@@ -43,7 +43,7 @@ p {
   bottom: 0;
 }
 .frame_inner {
-  padding-top: 7.5%;
+  padding-top: 15%;
   padding-right: 10%;
   padding-left: 10%
 }
@@ -71,6 +71,7 @@ p {
   color: rgba(210, 210, 210, 1);
   animation: fade_jyuukou 4s ease-in 1;
   animation-fill-mode: forwards;
+  position: fixed;
 }
 #jyuukou > p {
   font-family: "VT323", "Sawarabi Mincho";
