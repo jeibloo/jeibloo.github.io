@@ -46,9 +46,10 @@ box-shadow: inset 0px -28px 14px -23px rgba(0,0,0,0.05);
   bottom: 0;
 }
 .frame_inner {
-  padding-top: 15%;
-  padding-right: 60rem;
-  padding-left: 60rem;
+  padding-top: 12.5%;
+  padding-right: 69rem;
+  padding-left: 69rem;
+  justify-content: center;
 }
 .rotate_jp {
   writing-mode: vertical-lr;
@@ -81,7 +82,7 @@ box-shadow: inset 0px -28px 14px -23px rgba(0,0,0,0.05);
 }
 #main_title1 {
   font-size: 6.5em;
-  text-align: center;
+  width: 250px;
   /*background-color: #000000; color: rgba(230,230,025,1);
   */
 }
@@ -141,10 +142,12 @@ box-shadow: inset 0px -28px 14px -23px rgba(0,0,0,0.05);
   height: 30px;
   background-color: rgba(245, 245, 245, 1);
 }
+@media (max-width:2500px) {
+}
 @media (max-width:1980px) {
   .frame_inner {
-    padding-left: 40rem;
-    padding-right: 40rem;
+    padding-left: 50rem;
+    padding-right: 50rem;
   }
   #right_text > p {
     font-size: calc(1em + .20vw);
@@ -159,20 +162,26 @@ box-shadow: inset 0px -28px 14px -23px rgba(0,0,0,0.05);
     margin-right: 95%;
   }
   .frame_inner {
-    padding-left: 20rem;
-    padding-right: 20rem;
+    padding-left: 30rem;
+    padding-right: 30rem;
   }
 }
 @media (max-width:1028px) {
   .frame_inner {
-    padding-left: 12rem;
-    padding-right: 12rem;
+    padding-left: 22.5rem;
+    padding-right: 22.5rem;
+  }
+}
+@media (max-width:820px) {
+  .frame_inner {
+    padding-left: 15rem;
+    padding-right: 15rem;
   }
 }
 @media (max-width:450px) {
   .frame_inner {
-    padding-left: 0rem;
-    padding-right: 0rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
   .bot_frame {
     padding-top: 20px;
@@ -190,6 +199,9 @@ box-shadow: inset 0px -28px 14px -23px rgba(0,0,0,0.05);
     margin-top: 0rem;
     padding-top: 1.75rem;
     border: 3.75px solid;
+  }
+  #main_title1 {
+    width: 185px;
   }
 }
 @keyframes hover_don2 {
