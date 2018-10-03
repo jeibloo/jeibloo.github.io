@@ -66,6 +66,8 @@ p {
   border-top: none;
   font-size: 1rem;
   color: rgba(210, 210, 210, 1);
+  animation: fade_jyuukou 4s ease-in 1;
+  animation-fill-mode: forwards;
 }
 #jyuukou > p {
   font-family: "VT323", "Sawarabi Mincho";
@@ -105,10 +107,11 @@ p {
 
 #don {
   font-size: calc(1em + 8vw);
-  text-shadow: 4px 15px rgba(0, 0, 0, .45);
+  text-shadow: 6px 18px rgba(0, 0, 0, .45);
   position: absolute;
   transform: rotate(90deg);
   left: -2em;
+  animation: hover_don 5s ease-in-out infinite alternate;
 }
 #bar,#bar1,#bar2,#bar3 {
   border-radius: 7px;
@@ -132,5 +135,28 @@ p {
     transform: none;
     padding-top: 1.75rem;
     left: 0em;
+  }
+}
+@keyframes hover_don {
+  0% {
+    text-shadow: 6px 18px rgba(0, 0, 0, .45);
+    color: #7660BB;
+  }
+  50%{
+    color: #573FA6;
+  }
+  100% {
+    text-shadow: 2px 10px rgba(0, 0, 0, .85);
+    color: #3F219E;
+  }
+}
+@keyframes fade_jyuukou {
+  0% {
+    border: 1px solid rgba(220,220,220,.75);
+    color: rgba(210, 210, 210, 1);
+  }
+  100% {
+    border: 1px solid rgba(220,220,220,1);
+    color: rgba(140, 140, 140, 1);
   }
 }
