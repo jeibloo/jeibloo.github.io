@@ -142,9 +142,11 @@ box-shadow: inset 0px -28px 14px -23px rgba(0,0,0,0.05);
   background-color: rgba(245, 245, 245, 1);
 }
 @media (min-width:2500px) {
-  .col-sm-4 {
-    padding-left: 30px;
-    padding-right: 30px;
+  #right_text {
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 3em;
+    padding-bottom: 3em;
   }
 }
 @media (min-width:1900px) {
