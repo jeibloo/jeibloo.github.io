@@ -1,4 +1,5 @@
 .wf-nicomoji { font-family: "Nico Moji"; }
+.wf-sawarabimincho { font-family: "Sawarabi Mincho"; }
 
 html, body {
   background-color: rgba(230, 230, 025, 1);
@@ -24,7 +25,6 @@ p {
   background-color: rgba(245, 245, 245, 1);
   width: 100%;
   padding-bottom: 10%;
-  padding-top: 15%;
 }
 .bot_frame {
   width: 100%;
@@ -40,12 +40,12 @@ p {
   bottom: 0;
 }
 .frame_inner {
+  padding-top: 7.5%;
   padding-right: 10%;
   padding-left: 10%
 }
 .rotate_jp {
   writing-mode: vertical-lr;
-  text-orientation: upright;
 }
 .rotate{
   transform: rotate(-90deg);
@@ -56,6 +56,17 @@ p {
 }
 .row{
   width: 100%;
+}
+#jyuukou, #jyuukou > p {
+  font-family: "VT323", "Sawarabi Mincho";
+  font-size: 1rem;
+  margin-left: 97.5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  border-radius: 0 0 10px 0;
+  border: 1px solid rgba(220,220,220,.75);
+  border-top: none;
+  color: rgba(200, 200, 200, 1);
 }
 #main_title {
   font-size: 6em;
