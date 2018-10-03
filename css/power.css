@@ -57,16 +57,18 @@ p {
 .row{
   width: 100%;
 }
-#jyuukou, #jyuukou > p {
-  font-family: "VT323", "Sawarabi Mincho";
-  font-size: 1rem;
+#jyuukou {
   margin-left: 97.5%;
-  padding-top: 1%;
-  padding-bottom: 1%;
+  padding-top: .5%;
+  padding-bottom: .5%;
   border-radius: 0 0 10px 0;
   border: 1px solid rgba(220,220,220,.75);
   border-top: none;
-  color: rgba(200, 200, 200, 1);
+  color: rgba(210, 210, 210, 1);
+}
+#jyuukou > p {
+  font-family: "VT323", "Sawarabi Mincho";
+  font-size: .5rem;
 }
 #main_title {
   font-size: 6em;
