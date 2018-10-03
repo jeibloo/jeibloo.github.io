@@ -81,7 +81,6 @@ box-shadow: inset 0px -28px 14px -23px rgba(0,0,0,0.05);
   font-family: "VT323", "Sawarabi Mincho";
 }
 #main_title1 {
-  font-size: 6.5em;
   width: 250px;
   /*background-color: #000000; color: rgba(230,230,025,1);
   */
@@ -102,7 +101,7 @@ box-shadow: inset 0px -28px 14px -23px rgba(0,0,0,0.05);
 #right_text {
   margin-top: -3rem;
   padding-top: 1.75rem;
-  border: 6.75px solid;
+  border: 5px solid;
   text-align: justify;
 }
 #right_text > p {
@@ -180,8 +179,8 @@ box-shadow: inset 0px -28px 14px -23px rgba(0,0,0,0.05);
 }
 @media (max-width:450px) {
   .frame_inner {
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
   .bot_frame {
     padding-top: 20px;
@@ -202,6 +201,9 @@ box-shadow: inset 0px -28px 14px -23px rgba(0,0,0,0.05);
   }
   #main_title1 {
     width: 185px;
+  }
+  #main_title2 {
+    text-align: center;
   }
 }
 @keyframes hover_don2 {
