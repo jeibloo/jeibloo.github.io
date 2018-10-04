@@ -122,25 +122,13 @@ box-shadow: inset 0px -28px 14px -23px rgba(0,0,0,0.05);
   text-shadow: 6px 18px rgba(0, 0, 0, .45);
   color: #7660BB;
   position: absolute;
+  transform: rotate(45deg);
+  left: -1em;
+  /*position: absolute;
   transform: rotate(90deg);
   left: -2em;
   animation: hover_don 5s ease-in-out infinite alternate;
-}
-#bar,#bar1,#bar2,#bar3 {
-  border-radius: 7px;
-}
-#bar2 {
-  width: 3px;
-  height: 30em;
-  background-color: #000000;
-}
-#bar3 {
-  position: relative;
-  margin-right: 100px;
-  border-radius: 0px 0px 22px 22px;
-  width: 48px;
-  height: 30px;
-  background-color: rgba(245, 245, 245, 1);
+  */
 }
 #qr {
   width: 10em;
@@ -152,8 +140,8 @@ box-shadow: inset 0px -28px 14px -23px rgba(0,0,0,0.05);
 }
 @media (min-width:2500px) {
   #right_text {
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-left: 120px;
+    padding-right: 120px;
     padding-top: 3em;
     padding-bottom: 3em;
   }
