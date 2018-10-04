@@ -35,7 +35,7 @@ box-shadow: inset 0px -28px 14px -23px rgba(0,0,0,0.05);
 .bot_frame {
   width: 100%;
   padding: 10%;
-  padding-top: 7%;
+  padding-top: 5%;
   padding-bottom: 15%;
 }
 .ashi {
@@ -95,11 +95,12 @@ box-shadow: inset 0px -28px 14px -23px rgba(0,0,0,0.05);
 #trapperz {
   justify-content: flex-end;
   text-align: right;
+  font-size: 10px;
 }
 
 /* CONTENT */
 #right_text {
-  margin-top: -3rem;
+  margin-top: -2rem;
   padding-top: 1.75rem;
   border: 5px solid;
   text-align: justify;
@@ -140,6 +141,14 @@ box-shadow: inset 0px -28px 14px -23px rgba(0,0,0,0.05);
   width: 48px;
   height: 30px;
   background-color: rgba(245, 245, 245, 1);
+}
+#qr {
+  width: 10em;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -6em;
 }
 @media (min-width:2500px) {
   #right_text {
@@ -206,6 +215,14 @@ box-shadow: inset 0px -28px 14px -23px rgba(0,0,0,0.05);
   #center_text, #left_text, #trapperz {
     display: none;
   }
+  #qr {
+    width: 175px;
+    margin-top: -3em;
+  }
+  #email {
+    margin-bottom: 2em;
+    text-align: center;
+  }
   #right_text {
     margin-top: 0rem;
     padding-top: 1.75rem;
@@ -213,6 +230,9 @@ box-shadow: inset 0px -28px 14px -23px rgba(0,0,0,0.05);
   }
   #main_title1 {
     width: 185px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
   }
   #main_title2 {
     text-align: center;
