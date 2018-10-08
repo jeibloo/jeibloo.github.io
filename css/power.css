@@ -11,7 +11,7 @@ html, body {
 html {
 }
 
-h1,h2 {
+h1,h2,h3 {
   font-family: "VT323", "Nico Moji", sans-serif;
 }
 h4,p,a {
@@ -23,18 +23,39 @@ p {
   font-size: calc(1em + .15vw);
 }
 
+.rotate_jp {
+  writing-mode: vertical-lr;
+}
 .top_frame {
   background-color: rgba(245, 245, 245, 1);
   width: 100%;
-  height: 100%;
+  height: 95%;
+  /*
   -webkit-box-shadow: inset 0px -28px 14px -23px rgba(0,0,0,0.05);
 -moz-box-shadow: inset 0px -28px 14px -23px rgba(0,0,0,0.05);
 box-shadow: inset 0px -28px 14px -23px rgba(0,0,0,0.05);
+*/
   padding-bottom: 10%;
+  position: relative;
+  /*border-color: #B81471;
+  */
+}
+.frame_inner {
+  padding-top: 15%;
+  padding-right: 78rem;
+  padding-left: 78rem;
+  justify-content: center;
+}
+.downer {
+  bottom: 0;
+  position: absolute;
+  padding-right: 60%;
+  padding-left: 20%;
 }
 .bot_frame {
   width: 100%;
   padding: 10%;
+  padding-top: 5%;
   padding-bottom: 16%;
 }
 .ashi {
@@ -43,15 +64,6 @@ box-shadow: inset 0px -28px 14px -23px rgba(0,0,0,0.05);
   padding-bottom: 2.5%;
   position: relative;
   bottom: 0;
-}
-.frame_inner {
-  padding-top: 12.5%;
-  padding-right: 70rem;
-  padding-left: 70rem;
-  justify-content: center;
-}
-.rotate_jp {
-  writing-mode: vertical-lr;
 }
 .rotate{
   transform: rotate(-90deg);
@@ -91,6 +103,16 @@ box-shadow: inset 0px -28px 14px -23px rgba(0,0,0,0.05);
   font-size: 2em;
   text-align: left;
 }
+#btoo {
+  border: 1px solid #000000;
+  background-color: #B81471;
+  color: rgba(245, 245, 245, 1);
+  position: absolute;
+  top: -25px;
+  margin-bottom: 0;
+  animation: blink btoo 4s ease-in 1;
+  animation-fill-mode: forwards;
+}
 #email {
   justify-content: flex-start;
   text-align: left;
@@ -109,7 +131,7 @@ box-shadow: inset 0px -28px 14px -23px rgba(0,0,0,0.05);
 #right_text {
   margin-top: -2rem;
   padding-top: 1.75rem;
-  border: 4px solid;
+  border: 3px solid;
   text-align: justify;
 }
 #right_text > p {
@@ -169,8 +191,8 @@ box-shadow: inset 0px -28px 14px -23px rgba(0,0,0,0.05);
 }
 @media (max-width:1980px) {
   .frame_inner {
-    padding-left: 52rem;
-    padding-right: 52rem;
+    padding-left: 51rem;
+    padding-right: 51rem;
   }
   #right_text > p {
     font-size: calc(1em + .20vw);
@@ -184,18 +206,22 @@ box-shadow: inset 0px -28px 14px -23px rgba(0,0,0,0.05);
     margin-left: 0;
     margin-right: 95%;
   }
-  #main_title2 {
-    text-align: center;
-  }
   .top_frame {
     height: 35em;
   }
+  .downer {
+    padding-right: 12.5%;
+    padding-left: 67.5%;
+  }
   .frame_inner {
-    padding-left: 32rem;
-    padding-right: 32rem;
+    padding-left: 26rem;
+    padding-right: 26rem;
+  }
+  .bot_frame {
+    padding-top: 8.5%;
   }
   .ashi {
-    padding-top: 10%; 
+    padding-top: 10%;
   }
 }
 @media (max-width:1028px) {
@@ -218,9 +244,13 @@ box-shadow: inset 0px -28px 14px -23px rgba(0,0,0,0.05);
     padding-left: 5rem;
     padding-right: 5rem;
   }
+  .downer {
+    padding-right: 33%;
+    padding-left: 33%;
+  }
   .bot_frame {
     padding-top: 20px;
-    height: 75%;
+    height: 57.5%;
   }
   .row {
     margin: 0px;
@@ -249,9 +279,6 @@ box-shadow: inset 0px -28px 14px -23px rgba(0,0,0,0.05);
     margin-left: auto;
     margin-right: auto;
     display: block;
-  }
-  #main_title2 {
-    text-align: center;
   }
 }
 /* SCREEN SIZES */
@@ -288,10 +315,12 @@ box-shadow: inset 0px -28px 14px -23px rgba(0,0,0,0.05);
 @keyframes fade_jyuukou {
   0% {
     border: 1px solid rgba(220,220,220,.75);
+    border-top: none;
     color: rgba(210, 210, 210, 1);
   }
   100% {
     border: 1px solid rgba(0,0,0,1);
+    border-top: none;
     color: rgba(245, 245, 245, 1);
     background-color: #B81471;
   }
