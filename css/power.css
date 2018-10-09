@@ -43,8 +43,8 @@ box-shadow: inset 0px -28px 14px -23px rgba(0,0,0,0.05);
 }
 .frame_inner {
   padding-top: 15%;
-  padding-right: 69rem;
-  padding-left: 69rem;
+  padding-right: 68.5rem;
+  padding-left: 68.5rem;
   justify-content: center;
 }
 .downer {
@@ -92,7 +92,7 @@ box-shadow: inset 0px -28px 14px -23px rgba(0,0,0,0.05);
 #jyuukou > p {
   font-family: "VT323", "Sawarabi Mincho";
 }
-#main_title1 {
+#focus {
   width: 275px;
   /*background-color: #000000; color: rgba(230,230,025,1);
   */
@@ -100,8 +100,11 @@ box-shadow: inset 0px -28px 14px -23px rgba(0,0,0,0.05);
   margin-left: auto;
   margin-right: auto;
 }
-#main_title2 {
+#main_title {
+  padding-left: 15px;
   font-size: 2em;
+  /* offset-x | offset-y | blur-radius | color */
+  text-shadow: 0 2px 0px rgba(184,20,113,1) ;
   text-align: left;
 }
 #btoo {
@@ -109,6 +112,7 @@ box-shadow: inset 0px -28px 14px -23px rgba(0,0,0,0.05);
   border-bottom: 0;
   background-color: #B81471;
   color: rgba(245, 245, 245, 1);
+  184 20 113
   */
   color: #B81471;
   margin-bottom: 0;
@@ -133,11 +137,10 @@ box-shadow: inset 0px -28px 14px -23px rgba(0,0,0,0.05);
 #right_text {
   margin-top: -2rem;
   padding-top: 1.75rem;
-  border: 3px solid;
   text-align: justify;
 }
 #right_text > p {
-  font-size: calc(1em + .30vw);
+  font-size: calc(1em + .40vw);
 }
 #center_text {
   text-align: left;
@@ -169,7 +172,7 @@ box-shadow: inset 0px -28px 14px -23px rgba(0,0,0,0.05);
 
 /* SCREEN SIZES */
 @media (min-width:2500px) {
-  #main_title1 {
+  #main_title {
     width: 300px;
   }
   #right_text {
@@ -180,7 +183,7 @@ box-shadow: inset 0px -28px 14px -23px rgba(0,0,0,0.05);
   }
 }
 @media (min-width:1900px) {
-  #main_title1 {
+  #main_title {
     width: 300px;
   }
   .col-sm-4 {
@@ -269,13 +272,15 @@ box-shadow: inset 0px -28px 14px -23px rgba(0,0,0,0.05);
     padding-top: 1.75rem;
     border: 3.75px solid;
   }
-  #main_title1 {
-    width: 185px;
+  #focus {
+    width: 200px;
     margin-left: auto;
     margin-right: auto;
     display: block;
   }
-  #main_title2 {
+  #main_title {
+    font-size: 1em;
+    padding-left: 0;
     text-align: center;
   }
 }
