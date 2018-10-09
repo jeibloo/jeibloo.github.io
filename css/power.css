@@ -24,7 +24,7 @@ p {
 }
 
 .rotate_jp {
-  writing-mode: vertical-lr;
+  writing-mode: vertical-rl;
 }
 .top_frame {
   background-color: rgba(245, 245, 245, 1);
@@ -131,6 +131,7 @@ p {
 #left_text {
   border-right: 2.5px solid;
   text-align: right;
+  overflow-wrap: inherit;
 }
 /* */
 
