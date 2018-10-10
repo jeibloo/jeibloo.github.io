@@ -131,7 +131,6 @@ p {
 #left_text {
   border-right: 2.5px solid;
   text-align: right;
-  overflow-wrap: inherit;
 }
 /* */
 
@@ -242,7 +241,7 @@ p {
 }
 @media (max-width:450px) {
   .top_frame {
-    height: 40%;
+    height: 50%;
   }
   .frame_inner {
     padding-left: 5rem;
