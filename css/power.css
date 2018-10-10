@@ -246,7 +246,7 @@ p {
 }
 @media (max-width:450px) {
   .top_frame {
-    height: 50%;
+    height: 75%;
   }
   .frame_inner {
     padding-left: 5rem;
