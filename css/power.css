@@ -192,7 +192,6 @@ p {
 }
 @media (max-width:1440px) {
   .frame_inner {
-    padding: 0;
   }
 }
 @media (max-width:1300px) {
