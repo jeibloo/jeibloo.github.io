@@ -218,11 +218,11 @@ p {
 }
 @media (max-width:450px) {
   .top_frame {
-    height: 75%;
+    height: 60%;
   }
   .frame_inner {
+    padding: 0;
     padding-top: 20%;
-    padding-bottom: 5%;
   }
   .bot_frame {
     padding-top: 20px;
