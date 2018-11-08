@@ -34,7 +34,7 @@ p {
   border-bottom: 1px solid;
 }
 .frame_inner {
-  padding-top: 5em;
+  padding-top: 2em;
   justify-content: center;
 }
 .bot_frame {
@@ -114,7 +114,7 @@ p {
 #right_text > p {
 }
 #profile {
-  width: 450px;
+  width: 420px;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -161,7 +161,7 @@ p {
     padding-right: 15em;
   }
   #profile {
-    width: 400px;
+    width: 475px;
   }
   .top_frame {
     height: 65%;
