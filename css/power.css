@@ -1,10 +1,14 @@
 .wf-nicomoji { font-family: "Nico Moji"; }
-.wf-sawarabimincho { font-family: "Sawarabi Mincho"; }
+.wf-notosansjapanese { font-family: "Noto Sans JP"; }
 
 html, body {
+  /*
   background-color: rgba(230, 230, 025, 1);
   background-image: radial-gradient(#3F219E 6%, transparent 2%), radial-gradient(#3F219E 5%, transparent 6%);
+  */
   /* Do yourself a favour and go to http://haya2now.jp/en.html */
+  background-color: rgba(240,240,025,1);
+  background-image: radial-gradient(rgba(200, 220, 025, 1) 10%, transparent 2%), radial-gradient(rgba(230, 230, 025, 1) 5%, transparent 6%);
   background-size: 15px 15px;
   height: 100%;
 }
@@ -15,7 +19,13 @@ h1,h2,h3 {
   font-family: "VT323", "Nico Moji", sans-serif;
 }
 h4,p,a {
-  font-family: "VT323", "Nico Moji", sans-serif;
+  /*font-family: "VT323", "Nico Moji", sans-serif;
+  */
+  font-family: "VT323", "Noto Sans JP", sans-serif;
+  line-height: 1.5;
+}
+a {
+  text-decoration: underline;
 }
 h1 {
 }
@@ -31,8 +41,6 @@ p {
   width: 100%;
   height: 50%;
   position: relative;
-  border-bottom: 1px solid;
-  padding-top: 1em;
 }
 .frame_inner {
   justify-content: center;
@@ -60,9 +68,11 @@ p {
 .row{
   width: 100%;
 }
+#bot_text_dark {
+  box-shadow: 0px 2px 1px 1px rgba(0, 0, 0, 0.5);
+}
 #hi_light {
-  color: #2E157D;
-  border: 1px solid #000000;
+  border: 1px dotted #000000;
 }
 #jyuukou {
   margin-left: 95%;
@@ -77,7 +87,6 @@ p {
   position: fixed;
 }
 #jyuukou > p {
-  font-family: "VT323", "Sawarabi Mincho", sans-serif;
 }
 #focus {
   width: 75px;
@@ -103,8 +112,10 @@ p {
 
 /* CONTENT */
 #right_text, #left_text {
+  /*
   padding-left: 5em;
   padding-right: 5em;
+  */
   position: relative;
   z-index: 2;
 }
@@ -120,8 +131,10 @@ p {
   display: block;
 }
 #left_text {
-  border-right: 2.5px solid;
   text-align: left;
+  /*
+  padding-left: 10em;
+  */
 }
 /* */
 
@@ -157,11 +170,9 @@ p {
 /* SCREEN SIZES */
 @media (min-width:2500px) {
   #right_text, #left_text {
-    padding-left: 15em;
-    padding-right: 15em;
   }
   #profile {
-    width: 475px;
+    width: 600px;
   }
   .top_frame {
     height: 65%;
@@ -173,6 +184,7 @@ p {
   #right_text > p {
     font-size: calc(1em + .20vw);
   }
+
 }
 @media (max-width:1440px) {
   .frame_inner {
@@ -181,7 +193,7 @@ p {
 @media (max-width:1300px) {
   #jyuukou {
     margin-left: 0;
-    margin-right: 95%;
+    margin-right: 90%;
   }
   #focus {
     display: none;
