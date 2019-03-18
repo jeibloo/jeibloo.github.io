@@ -72,6 +72,7 @@ h4,p,a {
   width: 18.5em;
   height: 35em;
   padding: 2em;
+  padding-top: 3em;
   position: relative;
 }
 .container_en_white {
@@ -84,6 +85,7 @@ h4,p,a {
   margin-top: 0;
   margin-left: 0;
   position: relative;
+  overflow: hidden;
 }
 #shape {
   background: black;
@@ -176,6 +178,7 @@ h4,p,a {
     width: 15em;
     height: 25em;
     padding: 1em;
+    padding-top: 2em;
     position: relative;
   }
   .container_en_white {
