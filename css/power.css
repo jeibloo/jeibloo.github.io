@@ -69,15 +69,17 @@ h4,p,a {
 
 /* テクスト */
 .container_jp_white {
-  width: 20em;
+  width: 18.5em;
   height: 35em;
-  padding: 1em;
+  padding: 2em;
   position: relative;
 }
 .container_en_white {
-  width: 30em;
+  width: 27.5em;
   height: 20em;
   padding: 1em;
+  padding-top: 3em;
+  padding-left: 2em;
   margin: 1em;
   margin-top: 0;
   margin-left: 0;
@@ -155,6 +157,12 @@ h4,p,a {
   .top_frame {
     height: 70%;
   }
+  .container_en_white {
+    width: 30em;
+  }
+  .container_jp_white {
+    width: 20em;
+  }
   #main_title {
     font-size: 15em;
   }
@@ -201,7 +209,7 @@ h4,p,a {
 /*ケイタイ電話の*/
 @media (max-width:450px) {
   .top_frame {
-    height: 45%;
+    height: 55%;
   }
   .frame_inner {
     padding: 0;
@@ -212,11 +220,12 @@ h4,p,a {
     height: 60%;
   }
   .row {
-    margin: 0px;
+    margin: 1.5em;
+    justify-content: center;
   }
   .container_en_white {
     width: 15em;
-    height: 15em;
+    height: 20em;
   }
   #profile {
     width: 100%;
@@ -229,7 +238,7 @@ h4,p,a {
   }
   #qr {
     width: 175px;
-    margin-top: 3.5em;
+    margin-top: 15em;
   }
   #right_text {
     padding: 1.5em;
