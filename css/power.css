@@ -49,9 +49,9 @@ h4,p,a {
 }
 #main_title {
   font-size: 10em;
-  text-shadow: 0 2px 0px rgba(184,20,113,1) ;
+  text-shadow: 0 4px 0px rgba(184,20,113,1) ;
   text-align: right;
-  animation: title 1.5s ease-in-out infinite alternate;
+  animation: title 3s ease-out infinite alternate;
 }
 #profile {
   display: block;
@@ -135,9 +135,8 @@ h4,p,a {
 
 /*Animations for ブルトラン title*/
 @keyframes title {
-  0% {text-shadow: 0 2px 0px rgba(184,20,113,1) ;}
-  50% {}
-  100% {text-shadow: 0 2px 0px rgba(184,20,113,.15) ;}
+  0% {text-shadow: 0 6px 0px rgba(184,20,113,1) ;}
+  100% {text-shadow: 0 6px 0px rgba(184,20,113,.25) ;}
 }
 /* LoD */
 @keyframes fade_jyuukou {
@@ -153,11 +152,11 @@ h4,p,a {
 
 /* 2K Displays */
 @media (min-width:2500px) {
-  /*#profile {
-    width: 600px;
-  }*/
   .top_frame {
     height: 70%;
+  }
+  #main_title {
+    font-size: 15em;
   }
 }
 
