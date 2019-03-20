@@ -38,13 +38,10 @@ h4,p,a {
   padding-bottom: .5%;
   border-radius: 0 0 10px 0;
   border: 1px dotted rgba(220,220,220,.75);
-  font-size: 1rem;
-  color: rgba(245, 245, 245, 1);
-  animation: fade_jyuukou 4s ease-in 1;
-  animation-fill-mode: forwards;
+  font-size: .90rem;
   position: fixed;
-}
-#jyuukou > p {
+  color: rgba(245, 245, 245, 1);
+  background-color: #B81471;
 }
 #main_title {
   font-size: 10em;
@@ -52,11 +49,22 @@ h4,p,a {
   text-align: right;
   animation: title 3s ease-out infinite alternate;
 }
-#profile {
+#profile1 {
   display: block;
   position: absolute;
   width: 55%;
-  animation: rotate 2s ease-in-out infinite alternate;
+}
+#profile2 {
+  display: block;
+  position: absolute;
+  width: 55%;
+  transform: rotate(35deg);
+}
+.opacity1 {
+  animation: opaque_forward 5s infinite;
+}
+.opacity2 {
+  animation: opaque_back 5s infinite;
 }
 
 /* 下のcontainer */
@@ -142,22 +150,18 @@ h4,p,a {
   0% {text-shadow: 0 6px 0px rgba(184,20,113,1) ;}
   100% {text-shadow: 0 6px 0px rgba(184,20,113,.25) ;}
 }
-/* LoD */
-@keyframes fade_jyuukou {
-  0% {}
-  100% {
-    border: 1px dotted rgba(0,0,0,1);
-    color: rgba(245, 245, 245, 1);
-    background-color: #B81471;
-  }
+@keyframes opaque_forward {
+  0% {filter: opacity(100%);
+      filter: hue-rotate(180deg);}
+  49% {filter: opacity(100%);}
+  50% {filter: opacity(5%);}
+  100% {filter: opacity(5%);}
 }
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100%{
-    transform: rotate(10deg);
-  }
+@keyframes opaque_back {
+  0% {filter: opacity(2.5%);}
+  49% {filter: opacity(2.5%);}
+  50% {filter: opacity(100%);}
+  100% {filter: opacity(100%);}
 }
 
 /* Display {sizes} */
@@ -207,7 +211,7 @@ h4,p,a {
 @media (max-width:1300px) {
   #jyuukou {
     margin-left: 0;
-    margin-right: 90%
+    margin-right: 98.5%
   }
   #focus {
     display: none;
