@@ -33,12 +33,13 @@ h4,p,a {
   width: 1em;
 }
 #jyuukou {
-  margin-left: 95%;
+  margin-left: 99%;
   padding-top: .5%;
   padding-bottom: .5%;
-  border-radius: 0 0 10px 0;
-  border: 1px dotted rgba(220,220,220,.75);
+  border-radius: 10px 0px 10px 0px;
+  border: 1px solid rgba(220,220,220,.75);
   font-size: .90rem;
+  bottom: 0px;
   position: fixed;
   color: rgba(245, 245, 245, 1);
   background-color: #B81471;
@@ -47,7 +48,7 @@ h4,p,a {
   font-size: 10em;
   text-shadow: 0 4px 0px rgba(184,20,113,1) ;
   text-align: right;
-  animation: title 3s ease-out infinite alternate;
+  animation: title 2s ease-out infinite alternate;
 }
 #profile1 {
   display: block;
@@ -95,6 +96,9 @@ h4,p,a {
   position: relative;
   overflow: hidden;
 }
+.container_en_white > p {
+  font-size: 1.25em;
+}
 #shape {
   background: black;
   height: 1em;
@@ -116,8 +120,6 @@ h4,p,a {
 }
 #right_text {
   text-align: left;
-}
-#right_text > p {
 }
 #left_text {
   text-align: left;
@@ -172,10 +174,10 @@ h4,p,a {
     height: 70%;
   }
   .container_en_white {
-    width: 30em;
+    width: 50em;
   }
   .container_en_white > p {
-    font-size: 1.25em;
+    font-size: 1.75em;
   }
   .container_jp_white {
     width: 20em;
@@ -200,18 +202,25 @@ h4,p,a {
     width: 20em;
   }
 }
-@media (max-width:1980px) {
+@media (max-width:1990px) {
   #right_text > p {
     font-size: calc(1em + .20vw);
   }
-
+}
+@media (max-height:1080px) {
+  .container_en_white {
+    width: 30em;
+  }
+  .container_en_white > p {
+    font-size: 1.50em;
+  }
 }
 
 /* 1920x1080 Displays */
 @media (max-width:1300px) {
   #jyuukou {
-    margin-left: 0;
-    margin-right: 96.5%
+    margin-left: 1%;
+    margin-right: 95%
   }
   #focus {
     display: none;
@@ -227,11 +236,8 @@ h4,p,a {
 /*ケイタイ電話の*/
 @media (max-width:450px) {
   .top_frame {
-    height: 55%;
-  }
-  .frame_inner {
+    height: 45%;
     padding: 0;
-    padding-top: 20%;
   }
   .bot_frame {
     padding-top: 20px;
@@ -242,31 +248,34 @@ h4,p,a {
     justify-content: center;
   }
   .container_en_white {
-    width: 15em;
+    width: 18em;
     height: 20em;
+    justify-content: center;
   }
-  #profile {
-    width: 100%;
+  .container_en_white > p {
+    font-size: 1.25em;
   }
-  #right_text > p {
-    font-size: calc(1em + .25vw);
+  .ashi {
+    padding-top: 0;
   }
-  #center_text, #left_text, #trapperz {
+  #profile1, #profile2 {
+    width: 8.5%;
+    right: 45%;
+    bottom: 57%;
+  }
+  #left_text, #trapperz {
     display: none;
   }
   #qr {
     width: 175px;
     margin-top: 15em;
   }
-  #right_text {
-    padding: 1.5em;
-  }
   #focus, #shape {
     display: none;
   }
   #main_title {
-    font-size: 4em;
-    padding-left: 0;
+    font-size: 5em;
+    overflow: hidden;
     text-align: center;
   }
 }
