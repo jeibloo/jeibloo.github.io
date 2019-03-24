@@ -36,7 +36,7 @@ h4,p,a {
   margin-left: 99%;
   padding-top: .5%;
   padding-bottom: .5%;
-  border-radius: 10px 0px 10px 0px;
+  border-radius: 10px 0px 0px 10px;
   border: 1px solid rgba(220,220,220,.75);
   font-size: .90rem;
   bottom: 0px;
@@ -140,7 +140,7 @@ h4,p,a {
   bottom: 0;
 }
 #qr {
-  width: 12.5em;
+  width: 10em;
   text-align: center;
   display: block;
   margin-left: auto;
