@@ -36,7 +36,7 @@ h4,p,a {
   margin-left: 99%;
   padding-top: .5%;
   padding-bottom: .5%;
-  border-radius: 10px 0px 0px 10px;
+  border-radius: 10px 10px 10px 10px;
   border: 1px solid rgba(220,220,220,.75);
   font-size: .90rem;
   bottom: 0px;
@@ -79,17 +79,15 @@ h4,p,a {
 /* テクスト */
 .container_jp_white {
   width: 18.5em;
-  height: 35em;
+  height: 32em;
   padding: 2em;
   padding-top: 3em;
   position: relative;
 }
 .container_en_white {
-  width: 27.5em;
+  width: 25em;
   height: 20em;
-  padding: 1em;
-  padding-top: 3em;
-  padding-left: 2em;
+  padding: 2em;
   margin: 1em;
   margin-top: 0;
   margin-left: 0;
@@ -209,7 +207,7 @@ h4,p,a {
 }
 @media (max-height:1080px) {
   .container_en_white {
-    width: 30em;
+    width: 26em;
   }
   .container_en_white > p {
     font-size: 1.50em;
@@ -236,16 +234,11 @@ h4,p,a {
 /*ケイタイ電話の*/
 @media (max-width:450px) {
   .top_frame {
-    height: 45%;
-    padding: 0;
-  }
-  .bot_frame {
-    padding-top: 20px;
+    padding-top: 20%;
     height: 60%;
   }
-  .row {
-    margin: 1.5em;
-    justify-content: center;
+  .bot_frame {
+    height: 40%;
   }
   .container_en_white {
     width: 18em;
@@ -255,27 +248,24 @@ h4,p,a {
   .container_en_white > p {
     font-size: 1.25em;
   }
-  .ashi {
-    padding-top: 0;
-  }
-  #profile1, #profile2 {
-    width: 8.5%;
-    right: 45%;
-    bottom: 57%;
-  }
-  #left_text, #trapperz {
-    display: none;
-  }
-  #qr {
-    width: 175px;
-    margin-top: 15em;
-  }
-  #focus, #shape {
+  #left_text, #trapperz, #focus, #shape, #jyuukou, #profile1, #profile2, #qr {
     display: none;
   }
   #main_title {
     font-size: 5em;
     overflow: hidden;
     text-align: center;
+  }
+}
+@media (max-width:340px) {
+  #left_text, #trapperz, #focus, #shape, #jyuukou, #profile1, #profile2, #qr {
+    display: none;
+  }
+  .container_en_white {
+    width: 16em;
+    height: 23em;
+  }
+  #main_title {
+    font-size: 3em;
   }
 }
