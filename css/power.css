@@ -11,7 +11,7 @@ html, body {
 }
 h1,h2,h3,h6,a,p {font-family: "VT323", "Nico Moji", sans-serif;}
 p {
-  font-size: .75em;
+  font-size: 1em;
 }
 a, a:hover {
   color: inherit;
