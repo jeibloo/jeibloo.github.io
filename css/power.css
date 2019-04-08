@@ -195,7 +195,7 @@ h4,p,a {
     width: 20em;
   }
 }
-@media (max-width:1990px) {
+@media (max-width:1900px) {
   #right_text > p {
     font-size: calc(1em + .20vw);
   }
