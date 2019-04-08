@@ -36,7 +36,7 @@ a, a:hover {
   margin: 0;
 }
 #main_title {
-  font-size: 12em;
+  font-size: 15em;
   text-shadow: 0 4px 0px rgba(184,20,113,1) ;
   animation: title 2s ease-out infinite alternate;
   z-index: 1000;
