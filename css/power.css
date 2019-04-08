@@ -22,7 +22,7 @@ a, a:hover {
 .rotate_jp {
   writing-mode: vertical-rl;
 }
-.top_frame {
+.frame {
   background-color: rgba(245, 245, 245, 1);
   text-align: center;
   width: 100%;
