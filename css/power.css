@@ -167,7 +167,7 @@ h4,p,a {
 /* Display {sizes} */
 
 /* 2K Displays */
-@media (min-width:2500px) {
+@media (min-width:2000px) {
   .top_frame {
     height: 70%;
   }
