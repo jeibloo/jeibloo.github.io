@@ -74,7 +74,7 @@ a, a:hover {
   and (min-device-width: 600px)
   and (max-device-width: 767px) {
     #main_title {
-      font-size: 10em;
+      font-size: 13em;
     }
 }
 /* Tablets */
