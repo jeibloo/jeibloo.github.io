@@ -45,7 +45,7 @@ h4,p,a {
   background-color: #B81471;
 }
 #main_title {
-  font-size: 10em;
+  font-size: 15em;
   text-shadow: 0 4px 0px rgba(184,20,113,1) ;
   text-align: right;
   animation: title 2s ease-out infinite alternate;
@@ -167,7 +167,7 @@ h4,p,a {
 /* Display {sizes} */
 
 /* 2K Displays */
-@media (min-width:2000px) {
+@media (max-width:10000px) {
   .container_en_white {
     width: 50em;
   }
@@ -177,9 +177,6 @@ h4,p,a {
   .container_jp_white {
     width: 20em;
     height: 40em;
-  }
-  #main_title {
-    font-size: 15em;
   }
 }
 
