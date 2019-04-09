@@ -10,17 +10,13 @@ html, body {
   height: 100%;
 }
 h1,h2,h3,h6,a,p {font-family: "VT323", "Nico Moji", sans-serif;}
-p {
-  font-size: 1vw;
-}
+p {font-size: 1vw;}
 a, a:hover {
   color: inherit;
   text-decoration: none;
 }
-/* 上のcontainer */
-.rotate_jp {
-  writing-mode: vertical-rl;
-}
+
+.rotate_jp {writing-mode: vertical-rl;}
 .frame {
   background-color: rgba(245, 245, 245, 1);
   text-align: center;
@@ -35,26 +31,18 @@ a, a:hover {
   top: 10px;
 }
 #jyuukou {
-  font-size: .85em;
-  color: rgba(220, 220, 220, .5);
-  position: 100px;
-  margin: 0;
+  font-size: 1vw;
+  color: rgba(230, 230, 230, .5);
 }
 #main_title_1, #main_title_2, #main_title_3 {
   z-index: 1000;
   transform: rotate(15deg);
 }
-#main_title_1 {
-  font-size: 15vw;
-}
-#main_title_2 {
-  font-size: 10vw;
-}
-#main_title_3 {
-  font-size: 5vw;
-}
-#bu, #ruto, #ron {
-}
+#main_title_1 {font-size: 15vw;}
+#main_title_2 {font-size: 10vw;}
+#main_title_3 {font-size: 5vw;}
+
+#bu, #ruto, #ron {}
 #bu {font-size: 25vw; color: rgba(42, 230, 234, 1);}
 #ruto {color: rgba(230, 42, 234, 1);}
 #ron {color: rgba(234, 230, 42, 1);}
@@ -70,27 +58,33 @@ a, a:hover {
 @media screen
   and (min-device-width: 200px)
   and (max-device-width: 450px) {
-    #main_title {
-      font-size: 5em;
-      text-align: center;
-      padding-top: 5%;
-    }
+    p {font-size: 5vw;}
+    .top{padding-bottom: 25%;}
+    #bu {font-size: 30vw;}
+    #main_title_1 {font-size: 25vw;}
+    #main_title_2 {font-size: 20vw;}
+    #main_title_3 {font-size: 18.5vw;}
 }
 /*Weird portrait screens*/
 @media screen
   and (min-device-width: 600px)
   and (max-device-width: 767px) {
-    #main_title {
-      font-size: 13em;
-    }
+    p {font-size: 2vw;}
+    .top{padding-bottom: 20%;}
+    #bu {font-size: 30vw;}
+    #main_title_1 {font-size: 20vw;}
+    #main_title_2 {font-size: 15vw;}
+    #main_title_3 {font-size: 10vw;}
 }
 /* Tablets */
 @media screen
   and (min-device-width: 768px)
   and (max-device-width: 1366px) {
-    #main_title {
-      font-size: 5em;
-    }
+    p {font-size: 2vw;}
+    .top{padding-bottom: 2%;}
+    #main_title_1 {font-size: 30vw;}
+    #main_title_2 {font-size: 15vw;}
+    #main_title_3 {font-size: 10vw;}
   }
 }
 /*non-retina*/
