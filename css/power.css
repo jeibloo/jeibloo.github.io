@@ -9,7 +9,7 @@ html, body {
 html {background-color: rgba(0,0,0,1);}
 body{
   margin-left: 2%; margin-right: 2%; height: 98%;
-  border-radius: 0px 0px 25px 25px;}
+  border-radius: 0px 0px 45px 45px;}
 h1,h2,h3,h6,a,p {font-family: "VT323", "Nico Moji", sans-serif;}
 p {font-size: 1vw;}
 h1 {line-height: .1em;}
