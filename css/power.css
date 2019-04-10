@@ -66,7 +66,7 @@ a, a:hover {
 #main_title_3 {font-size: 10vw;}
 
 #bu {font-size: 35vw; color: rgba(42, 230, 234, 1);
-background-image: radial-gradient(rgba(0, 0, 025, .25) 10%, transparent 1%), radial-gradient(rgba(230, 230, 025, 1) 5%, transparent 6%);
+background-image: radial-gradient(rgba(0, 0, 025, .25) 15%, transparent 1%), radial-gradient(rgba(230, 230, 025, 1) 5%, transparent 6%);
 background-size: 10px 10px;
 }
 #ruto {color: rgba(230, 42, 234, 1);}
@@ -141,8 +141,4 @@ background-size: 10px 10px;
 @media screen
   and (min-device-width: 1600px)
   and (max-device-width: 3600px) {
-
-    #main_title {
-      font-size: 20vw;
-    }
 }
