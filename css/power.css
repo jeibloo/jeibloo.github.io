@@ -42,16 +42,19 @@ a, a:hover {
   background-color: rgba(245, 245, 245, 1);
   text-align: center;
   padding-top: 7.5%;
+  height: 35%;
   width: 100%;
+  padding-top: 10%;
   z-index: 2;
 }
 .frame_body_foot {
   text-align: center;
-  bottom: 0;
-  margin-top: 7.5%;
+  margin-top: 15%;
   background-color: rgba(0, 0, 0, 0);
-  height: 5%;
-  overflow: auto;
+  overflow-y: visible;
+  position: fixed;
+  height: 10%;
+  white-space: nowrap;
 }
 #jyuukou {font-size: .5vw; color: rgba(240, 240, 245, 1);}
 #main_title_1, #main_title_2, #main_title_3 {
