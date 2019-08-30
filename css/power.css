@@ -2,12 +2,14 @@
 .wf-notosansjapanese { font-family: "Noto Sans JP"; }
 
 html, body {
-  background-color: rgba(245, 245, 245, 1);
-  height: 100%; line-height: 1.5em;
+  height: 100%;
+  background-color: rgba(0,0,0,1);
 }
-html {background-color: rgba(0,0,0,1);}
 body{
-  margin-left: 2%; margin-right: 2%; height: 95.5%; margin-top: 0%;
+  /*
+  Height is set here so that the div can fill.
+  */
+  margin-left: 2%; margin-right: 2%; height: 100%; margin-top: 0%;
   border-radius: 15px 15px 55px 55px;}
 h1,h2,h3,h6,a,p {font-family: "VT323", "Nico Moji", sans-serif;}
 h1 {line-height: .1em;}
@@ -17,13 +19,35 @@ a, a:hover {
   text-decoration: none;
 }
 
-.rotate_jp {writing-mode: vertical-rl;}
+.frame {
+  background-color: rgba(245, 245, 245, 1);
+  height: 90%;
+  line-height: 1.5em;
+  border-radius: 35px 15px 55px 55px;
+  margin-right: 1rem; margin-top: 5rem; margin-left: 4rem;
+  z-index: 2;
+  position: absolute;
+}
+.frame_background {
+  position: absolute;
+  height: 80rem; width: 94%;
+  overflow: hidden;
+  background-image: radial-gradient(rgba(111, 111, 250, .25) 20%, transparent 1%), radial-gradient(rgba(230, 230, 025, 1) 5%, transparent 4%);
+  background-size: 10px 10px;
+  border-radius: 55px 15px 100px 55px;
+  margin-left: 2rem; margin-right: 5rem; margin-top: 3.5rem;
+  background-color: rgba(180, 180, 180, 1);
+  z-index: 0;
+}
+.rotate_jp {
+  writing-mode: vertical-rl;
+  padding-left: 5rem; padding-top: 1rem;
+}
 .frame_head {
   background-color: rgba(245, 245, 245, 1);
   text-align: center;
-  border-radius: 45px 45px 0px 0px;
+  border-radius: 55px 45px 0px 0px;
   width: 100%; height: 20%;
-  margin-top: 2%;
   z-index: 2;
 }
 .frame_head_tippytop {
@@ -34,7 +58,6 @@ a, a:hover {
   position: relative;
   text-align: center;
   top: 10px;
-  margin-left: 45%; margin-right: 45%;
 }
 .frame_body {
   background-color: rgba(245, 245, 245, 1);
