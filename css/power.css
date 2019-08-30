@@ -30,11 +30,11 @@ a, a:hover {
 }
 .frame_background {
   position: absolute;
-  height: 60rem; width: 85%;
+  height: 70rem; width: 85%;
   overflow: hidden;
   background-image: radial-gradient(rgba(55, 55, 55, .25) 20%, transparent 1%), radial-gradient(rgba(230, 230, 025, 1) 5%, transparent 4%);
   background-size: 10px 10px;
-  border-radius: 15px 15px 100px 100px;
+  border-radius: 15px 15px 50px 100px;
   margin-left: 10rem; margin-right: 2rem; margin-top: 3.5rem;
   background-color: rgba(180, 180, 180, 1);
   z-index: 0;
