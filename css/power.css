@@ -11,7 +11,7 @@ body{
   */
   margin-left: 2%; margin-right: 2%; height: 100%; margin-top: 0%;
   border-radius: 15px 15px 55px 55px;}
-h1,h2,h3,h6,a,p {font-family: "VT323", "Nico Moji", sans-serif;}
+h1,h2,h3,h5,h6,a,p {font-family: "VT323", "Nico Moji", sans-serif;}
 h1 {line-height: .1em;}
 p {font-size: 1vw;}
 a, a:hover {
@@ -21,27 +21,34 @@ a, a:hover {
 
 .frame {
   background-color: rgba(245, 245, 245, 1);
-  height: 90%;
+  height: 90.5%;
   line-height: 1.5em;
   border-radius: 35px 15px 55px 55px;
-  margin-right: 1rem; margin-top: 5rem; margin-left: 4rem;
+  margin-right: 4rem; margin-top: 5rem; margin-left: 2rem;
   z-index: 2;
   position: absolute;
 }
 .frame_background {
   position: absolute;
-  height: 80rem; width: 94%;
+  height: 60rem; width: 85%;
   overflow: hidden;
-  background-image: radial-gradient(rgba(111, 111, 250, .25) 20%, transparent 1%), radial-gradient(rgba(230, 230, 025, 1) 5%, transparent 4%);
+  background-image: radial-gradient(rgba(55, 55, 55, .25) 20%, transparent 1%), radial-gradient(rgba(230, 230, 025, 1) 5%, transparent 4%);
   background-size: 10px 10px;
-  border-radius: 55px 15px 100px 55px;
-  margin-left: 2rem; margin-right: 5rem; margin-top: 3.5rem;
+  border-radius: 15px 15px 100px 100px;
+  margin-left: 10rem; margin-right: 2rem; margin-top: 3.5rem;
   background-color: rgba(180, 180, 180, 1);
   z-index: 0;
 }
-.rotate_jp {
+.lod_special {
   writing-mode: vertical-rl;
-  padding-left: 5rem; padding-top: 1rem;
+  margin-left: 5rem;
+  padding-right: .25rem;
+  height: 5rem;
+  top: -5px;
+  position: absolute;
+  border-radius: 2.5px 2.5px 5px 5px;
+  background-color: #b81471;
+  color: rgba(240, 240, 245, 1);
 }
 .frame_head {
   background-color: rgba(245, 245, 245, 1);
@@ -76,20 +83,21 @@ a, a:hover {
   height: 10%;
   white-space: nowrap;
 }
-#jyuukou {font-size: .5vw;
-          color: rgba(240, 240, 245, 1);}
 #main_title_1, #main_title_2, #main_title_3 {
   z-index: 1000;
   /*animation: rotate 25s ease infinite alternate;
   */
 }
 
-#main_title_3 {
-  animation: glitch .025s alternate infinite;
+#main_title_2 {
+  animation: glitch2 60s alternate infinite;
 }
-#main_title_1 {font-size: 30vw;}
-#main_title_2 {font-size: 20vw;}
-#main_title_3 {font-size: 10vw;}
+#main_title_3 {
+  animation: glitch 60s alternate infinite;
+}
+#main_title_1 {font-size: 26vw;}
+#main_title_2 {font-size: 18vw;}
+#main_title_3 {font-size: 12vw;}
 
 #bu {
   font-size: 35vw; color: rgba(42, 230, 234, 1);
@@ -111,8 +119,11 @@ a, a:hover {
 }
 @keyframes glitch {
   0% {}
-  100% {transform: translateX(20px);
-        transform: scale(.99);}
+  100% {transform: rotate(25deg);;}
+}
+@keyframes glitch2 {
+  0% {}
+  100% {transform: skewX(5deg);}
 }
 
 /* Display {sizes} */
