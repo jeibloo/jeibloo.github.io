@@ -46,11 +46,11 @@ a, a:hover {
   bottom: -3rem; right: 20rem; width: 30%; height: 7%;
   overflow: hidden;
   background-color: rgba(0,0,0, 1);
-  border-left: 2px solid black; border-right: 2px solid black; 
+  border-left: 2px solid black; border-right: 2px solid black;
 }
-.foreground_object2 { /* Yellower */
+.foreground_object2 { /* Gradient */
   height: 85%;
-  background-color: rgba(244, 62, 62, 1);
+  background-color: rgba(200, 190, 190, 1);
   border-top: 2px dotted black;
   background-image: linear-gradient(
     90deg,
