@@ -42,7 +42,7 @@ a, a:hover {
 .foreground_object1 { /* Border and background*/
   position: absolute;
   z-index: 3;
-  bottom: -3rem; right: 20rem; width: 30%;
+  bottom: -3rem; right: 20rem; width: 25%;
   overflow: hidden;
   background-color: rgba(0,0,0, 1);
   border-left: 2px solid black; border-right: 2px solid black;
@@ -79,6 +79,16 @@ a, a:hover {
   padding-right: .25rem;
   height: 5rem;
   top: -5px;
+  background-image: linear-gradient(
+    45deg,
+    white 25%,
+    transparent 25%,
+    transparent 50%,
+    white 50%,
+    white 75%,
+    transparent 75%,
+    transparent);
+  background-size: 4px 4px;
 }
 /* END OF TAG */
 .frame_head {
