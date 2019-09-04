@@ -43,7 +43,7 @@ a, a:hover {
 .foreground_object1 { /* Border and background*/
   position: absolute;
   z-index: 3;
-  bottom: -3rem; right: 20rem; width: 30%; height: 7%;
+  bottom: -3rem; right: 20rem; width: 30%; 
   overflow: hidden;
   background-color: rgba(0,0,0, 1);
   border-left: 2px solid black; border-right: 2px solid black;
