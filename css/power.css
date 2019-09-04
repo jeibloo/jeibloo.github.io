@@ -24,7 +24,7 @@ a, a:hover {
   height: 90.5%;
   line-height: 1.5em;
   border-radius: 35px 15px 55px 55px;
-  margin-right: 3rem; margin-top: 5rem; margin-left: 3rem;
+  margin-right: 3rem; margin-top: 3.5rem; margin-left: 3rem;
   z-index: 2;
   position: absolute;
 }
@@ -35,7 +35,7 @@ a, a:hover {
   background-image: radial-gradient(rgba(0, 0, 025, .25) 15%, transparent 1%), radial-gradient(rgba(230, 230, 025, 1) 5%, transparent 6%);
   background-size: 10px 10px;
   border-radius: 25px 15px 15px 15px;
-  margin-top: 3rem; margin-left: 16rem;
+  margin-top: 2rem; margin-left: 18rem;
   background-color: rgba(180, 180, 180, 1);
   z-index: 0;
 }
