@@ -1,5 +1,6 @@
 .wf-nicomoji { font-family: "Nico Moji"; }
 .wf-notosansjapanese { font-family: "Noto Sans JP"; }
+.wf-dohyeon { font-family: "Do Hyeon"; }
 
 html, body {
   height: 100%;
@@ -11,7 +12,7 @@ body{
   */
   margin-left: 2%; margin-right: 2%; height: 100%; margin-top: 0%;
   border-radius: 15px 15px 55px 55px;}
-h1,h2,h3,h5,h6,a,p {font-family: "VT323", "Nico Moji", sans-serif;}
+h1,h2,h3,h5,h6,a,p {font-family: "VT323", "Nico Moji", "Do Hyeon", sans-serif;}
 h1 {line-height: .1em;}
 p {font-size: 1vw;}
 a, a:hover {
@@ -32,36 +33,36 @@ a, a:hover {
   position: absolute;
   height: 80%; width: 75%;
   overflow: hidden;
+  background-image: radial-gradient(rgba(0, 0, 025, .25) 15%, transparent 1%), radial-gradient(rgba(230, 230, 025, 1) 5%, transparent 6%);
+  background-size: 10px 10px;
   border-radius: 25px 15px 15px 15px;
   margin-top: 3rem; margin-left: 16rem;
   background-color: rgba(180, 180, 180, 1);
   z-index: 0;
 }
-.foreground_object1, .foreground_object2, .foreground_object3 {
-  /*DEFAULT
-  STREAM TWICE BTW*/
-  position: absolute; width: 7.5rem; height: 3.5rem;
-  background-color: rgba(204, 200, 42, 1); border-radius: 0px 0px 0px 0px;
-  box-shadow: -1px -1px 3px 0px rgba(50, 50, 50, 0.75);
+.foreground_object1 { /* Border and background*/
+  position: absolute;
   z-index: 3;
+  bottom: -3rem; right: 20rem; width: 30%; height: 7%;
+  overflow: hidden;
+  background-color: rgba(0,0,0, 1);
+  border-left: 2px solid black; border-right: 2px solid black; 
 }
-.foreground_object1 { /* Yellower */
-  bottom: -2.5rem; right: 20rem; width: 7.5rem; height: 3.5rem;
-  background-color: rgba(204, 200, 42, 1); background-size: 10px 10px;
-  background-image: radial-gradient(rgba(55, 55, 55, .25) 20%, transparent 1%), radial-gradient(rgba(230, 230, 025, 1) 5%, transparent 4%);
-  border-radius: 5px 5px 5px 5px; box-shadow: -1px -1px 3px 0px rgba(50, 50, 50, 0.75);
-}
-.foreground_object2 { /* Greenie */
-  top:3rem; left:25rem; width: 2.5rem; height: 2.5rem;
-  background-color: rgba(42, 200, 42, 1); background-size: 10px 10px;
-  background-image: radial-gradient(rgba(55, 55, 55, .25) 20%, transparent 1%), radial-gradient(rgba(230, 230, 025, 1) 5%, transparent 4%);
-  border-radius: 5px 50px 5px 5px; box-shadow: -1px 2px 2px 0px rgba(50, 50, 50, 0.75);
-}
-.foreground_object3 { /* Reddie */
-  top:15rem; right:25rem; width: 2.5rem; height: 3.5rem;
-  background-color: rgba(242, 50, 42, 1); background-size: 10px 10px;
-  background-image: radial-gradient(rgba(55, 55, 55, .25) 20%, transparent 1%), radial-gradient(rgba(230, 230, 025, 1) 5%, transparent 4%);
-  border-radius: 2px 2px 10px 5px; box-shadow: 1px 2px 1px 0px rgba(50, 50, 50, 0.75);
+.foreground_object2 { /* Yellower */
+  height: 85%;
+  background-color: rgba(244, 62, 62, 1);
+  border-top: 2px dotted black;
+  background-image: linear-gradient(
+    90deg,
+    black 25%,
+    transparent 25%,
+    transparent 50%,
+    black 50%,
+    black 75%,
+    transparent 75%,
+    transparent);
+  background-size: 4px 4px;
+  border-radius: 0px 0px 20px 5px;
 }
 /* SPECIAL TAG */
 .lod_special {
@@ -97,24 +98,17 @@ a, a:hover {
   text-align: center;
   top: 10px;
 }
-.frame_body {
-  background-color: rgba(245, 245, 245, 1);
-  text-align: center;
-  height: 25%; width: 100%;
-  /*height: 35%; width: 100%;
-  */
-  padding-top: 10%;
-  z-index: 2;
-}
 .frame_body_foot {
   text-align: center;
-  margin-top: 15%;
+  margin-top: 5%;
   background-color: rgba(0, 0, 0, 0);
   overflow-y: visible;
   height: 10%;
   white-space: nowrap;
 }
 #main_title_1, #main_title_2, #main_title_3 {
+  text-align: center;
+  padding-top: 4rem;
   z-index: 1000;
 }
 
