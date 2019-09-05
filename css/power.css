@@ -4,7 +4,10 @@
 
 html, body {
   height: 100%;
-  background-color: rgba(0,0,0,1);
+  background-color: rgba(245, 245, 245, 1);
+  background: url(../test.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 body{
   /*
@@ -24,19 +27,15 @@ a, a:hover {
 }
 
 .frame {
-  height: 98%; width: 100%;
+  height: 100%; width: 100%;
   line-height: 1.5em;
-  margin-top: 1rem; padding-left: 2rem;
+  padding-left: 2rem;
   z-index: 2;
-  background-color: rgba(245, 245, 245, 1);
   position: absolute;
 }
 .inner_frame {
   height: 100%; width: 85%;
   margin-left: 10%;
-  background: url(../test.png);
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 .foreground_object1 { /* Border and background*/
   position: absolute;
@@ -80,8 +79,7 @@ a, a:hover {
 }
 /* END OF TAG */
 .frame_head {
-  text-align: center;
-  border-radius: 55px 45px 0px 0px;
+  text-align: left;
   width: 100%; height: 20%;
   z-index: 2;
 }
@@ -90,17 +88,6 @@ a, a:hover {
   text-align: center;
   top: 10px;
 }
-
-#a1, #a2, #a3, #b1 {
-  text-align: left;
-  padding-top: 15%;
-  z-index: 1000;
-  position: absolute;
-}
-#a1 {left: 20%; font-size: 40vw;}
-#b1 {left: 55%; font-size: 6vw; color: rgba(42,230,234,1);}
-#a2 {left: 65%; font-size: 3vw;}
-#a3 {left: 75%; font-size: 2vw;}
 
 /* Display {sizes} */
 /* Thx css-tricks yeet */
