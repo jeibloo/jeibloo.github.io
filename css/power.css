@@ -9,7 +9,7 @@ html, body {
 body{
   /* Height and position and bottom here so that we
   can remove space from the bottom*/
-  height: 98%; width: 100%;
+  height: 97%; width: 100%;
   position: fixed;
   bottom: 0;
   background: url(../test.png);
