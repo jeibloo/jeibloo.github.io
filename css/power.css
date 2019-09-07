@@ -5,15 +5,16 @@
 html, body {
   height: 100%;
   background-color: rgba(245, 245, 245, 1);
+}
+body{
+  /* Height and position and bottom here so that we
+  can remove space from the bottom*/
+  height: 98%; width: 100%;
+  position: fixed;
+  bottom: 0;
   background: url(../test.png);
   background-size: contain;
   background-repeat: no-repeat;
-}
-body{
-  /*
-  Height is set here so that the div can fill.
-  */
-  height: 100%; width: 100%; margin-top: 0%;
   border-radius: 15px 15px 55px 55px;}
 h1,h2,h3,h4,h5,h6,a,p {font-family: "VT323", "Nico Moji", "Do Hyeon", sans-serif;}
 h1 {line-height: .1em;}
