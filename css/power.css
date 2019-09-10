@@ -4,7 +4,7 @@ html, body {
 body{
   /* Height and position and bottom here so that we
   can remove space from the bottom*/
-  height: 100%; position: fixed; bottom: 0;
+  height: 98%; position: fixed; bottom: 0;
   background: url(../test.png);
   background-size: 100%, auto; background-repeat: no-repeat;
 }
