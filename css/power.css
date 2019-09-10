@@ -4,9 +4,9 @@ html, body {
 body{
   /* Height and position and bottom here so that we
   can remove space from the bottom*/
-  height: 96%; position: fixed; bottom: 0;
+  height: 100%; position: fixed; bottom: 0;
   background: url(../test.png);
-  background-size: contain; background-repeat: no-repeat;
+  background-size: 100%, auto; background-repeat: no-repeat;
 }
 h1,h2,h3,h4,h5,h6,a,p {font-family: "Source Code Pro", monospace;}
 h1 {line-height: .1em;}
