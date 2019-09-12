@@ -5,7 +5,7 @@ body{
   /* Height and position and bottom here so that we
   can remove space from the bottom*/
   height: 98%; position: fixed; bottom: 0;
-  background: url(../test.png);
+  background: url(../horz.png);
   background-size: 100%, auto; background-repeat: no-repeat;
 }
 h1,h2,h3,h4,h5,h6,a,p {font-family: "Source Code Pro", monospace;}
