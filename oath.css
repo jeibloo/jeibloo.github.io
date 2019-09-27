@@ -13,6 +13,7 @@ h5,h3 {
 #lod {
   margin: auto auto;
   float: none;
+  cursor: pointer;
   position: absolute;
   top: 40%;
   left: 46.5vw;
