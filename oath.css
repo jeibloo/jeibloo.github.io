@@ -1,0 +1,19 @@
+
+body {
+  /**/
+  background-color: #fdfdfd;
+}
+h5,h3 {
+  font-size: 5%;
+}
+.frame {
+  text-align: center;
+}
+
+#lod {
+  margin: auto auto;
+  float: none;
+  position: absolute;
+  top: 40%;
+  left: 46.5vw;
+}
