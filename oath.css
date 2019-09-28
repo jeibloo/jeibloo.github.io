@@ -13,9 +13,6 @@ html, body {
   height: 100%; width: 100%;
   overflow: hidden;
 }
-body {
-  height: 100%; width: 100%;
-}
 .col {
   text-align: center;
 }
@@ -34,7 +31,7 @@ body {
   float: none;
   cursor: pointer;
   position: fixed;
-  bottom: 15px; right: 20px;
+  bottom: 45px; right: 20px;
 }
 
 #urighti, #ulefti, #drighti, #dlefti {
