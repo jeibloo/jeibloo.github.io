@@ -11,7 +11,9 @@ h1, h2, h3, h4, h5, p, a {
 html, body {
   background-color: #fcfcfc;
   height: 100%; width: 100%;
-  overflow: hidden;
+}
+body {
+  height: 90%;
 }
 .col {
   text-align: center;
@@ -36,5 +38,5 @@ html, body {
 
 #urighti, #ulefti, #drighti, #dlefti {
   padding: 10%;
-  padding-top: 25%;
+  padding-top: 20%;
 }
