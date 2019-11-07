@@ -43,3 +43,35 @@ body {
   padding: 10%;
   padding-top: 20%;
 }
+
+/* Phone screens */
+@media screen
+  and (min-device-width: 200px)
+  and (max-device-width: 450px) {
+}
+/* Portrait screens */
+@media screen
+  and (min-device-width: 600px)
+  and (max-device-width: 767px) {
+}
+/* Tablet screens */
+@media screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1366px) {
+  }
+}
+/* Non-retina screens */
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ration: 1) {
+}
+
+@media screen
+  and (min-device-width: 1600px)
+  and (max-device-width: 3600px) {
+    #urighti, #ulefti, #drighti, #dlefti {
+      padding: 10%;
+      padding-top: 12.5%;
+    }
+}
