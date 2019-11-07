@@ -47,14 +47,25 @@ body {
 /* Phone and Portrait screens */
 @media screen
   and (min-device-width: 200px)
-  and (max-device-width: 450px)
+  and (max-device-width: 450px) {
+    h1, h2, h3, h4, h5, p, a {
+      font-size: 125%;
+    }
+    #urighti, #ulefti, #drighti, #dlefti {
+      padding: 5%; padding-top: 10%;
+    }
+    #bigCol {
+      border-radius: 0px;
+    }
+}
+@media screen
   and (min-device-width: 600px)
   and (max-device-width: 767px) {
     h1, h2, h3, h4, h5, p, a {
-      font-size: 100%;
+      font-size: 125%;
     }
     #urighti, #ulefti, #drighti, #dlefti {
-      padding: 5%; padding-top: 7.5%;
+      padding: 5%; padding-top: 10%;
     }
     #bigCol {
       border-radius: 0px;
