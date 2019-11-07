@@ -44,15 +44,21 @@ body {
   padding-top: 20%;
 }
 
-/* Phone screens */
+/* Phone and Portrait screens */
 @media screen
   and (min-device-width: 200px)
-  and (max-device-width: 450px) {
-}
-/* Portrait screens */
-@media screen
+  and (max-device-width: 450px)
   and (min-device-width: 600px)
   and (max-device-width: 767px) {
+    h1, h2, h3, h4, h5, p, a {
+      font-size: 100%;
+    }
+    #urighti, #ulefti, #drighti, #dlefti {
+      padding: 5%; padding-top: 7.5%;
+    }
+    #bigCol {
+      border-radius: 0px;
+    }
 }
 /* Tablet screens */
 @media screen
@@ -71,7 +77,6 @@ body {
   and (min-device-width: 1600px)
   and (max-device-width: 3600px) {
     #urighti, #ulefti, #drighti, #dlefti {
-      padding: 10%;
-      padding-top: 12.5%;
+      padding: 10%; padding-top: 12.5%;
     }
 }
