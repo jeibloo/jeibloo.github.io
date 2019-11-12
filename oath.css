@@ -44,6 +44,10 @@ body {
   padding-top: 20%;
 }
 
+#infobar {
+  text-align: center;
+}
+
 /* Phone and Portrait screens */
 @media screen
   and (min-device-width: 200px)
