@@ -21,4 +21,29 @@ console.log("+---------------------------+\n| ///////////////////////// |\n+----
 +---------------------------+\n
 */
 
-// Let's get LoDjyuukou workin.
+// Makes things disappear and vertically elongates box.
+var words_id = document.getElementById("words");
+words_id.addEventListener('click', function(event){
+    // Get all the boxes with text.
+    var upr = document.getElementById('urighti');
+    var upl = document.getElementById('ulefti');
+    var dwr = document.getElementById('drighti');
+    var dwl = document.getElementById('dlefti');
+    // Goes through them and toggle class to hidden.
+    element_list = [upr, upl, dwr, dwl];
+    for (let index = 0; index < element_list.length; index++) {
+        const element = element_list[index];
+        element.classList.toggle("hidden");
+    }
+    // Make big column full height.
+    var bigCol = document.getElementById("bigCol");
+    bigCol.classList.toggle("tall");
+    // And make sure the header is above it and whitish.
+    var header = document.getElementById("header");
+    header.classList.toggle("absolute");
+    // Make sure the bottom button thingies are white too
+    var words = document.getElementById("words");
+    words.classList.toggle("activated");
+    // No idea
+    event.preventDefault();
+})

@@ -15,9 +15,6 @@ html, body {
   background-color: #fcfcfc;
   height: 100%; width: 100%;
 }
-body {
-  height: 90%;
-}
 .col {
   text-align: center;
 }
@@ -26,14 +23,23 @@ body {
   height: 90%;
 }
 #header {
-  margin-top: 5rem;
+  padding-top: 5rem;
   text-align: center;
+}
+#header.absolute {
+  position: absolute;
+  color: #fcfcfc;
+  left: 0;
+  right: 0;
 }
 #bigCol {
   position: static;
-  height: 90%;
+  height: 80%;
   border-radius: 5px;
   background-color: #ef008b;
+}
+#bigCol.tall {
+  height: 100%;
 }
 
 #lod {
@@ -48,12 +54,22 @@ body {
   position: relative;
   padding: 10%;
 }
+#urighti.hidden, #ulefti.hidden, #drighti.hidden, #dlefti.hidden {
+  display: none;
+}
 #urighti, #ulefti {
   padding-top: 20%;
 }
 
+/* Info bar with the two options */
 #infobar {
   text-align: center;
+}
+#words {
+  cursor: pointer;
+}
+#words.activated {
+  color: #fcfcfc;
 }
 
 /* Phone and Portrait screens */

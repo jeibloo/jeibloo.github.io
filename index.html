@@ -7,9 +7,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="icon" href="img/hako.png">
     <link rel="stylesheet" href="oath.css">
-
-    <!-- -->
-    <script src="js/power.js"></script>
   </head>
   <body>
 
@@ -55,21 +52,22 @@
           </p>
         </div>
       </div>
-      <div id='infobar'>
-        <div><a href="https://blootron.com/words.html">▴Words</a></div>
-        <div><a href="https://blootron.com/picts.html">▴Picts</a></div>
+      <div id="infobar">
+        <div><p>▴<span id="words">Words</span></p></div>
+        <div><p>▴<span id="picts">Picts</span></p></div>
       </div>
     </div>
 
     <audio id='weep'><source src="music/lod.mp3" type="audio/mp3"></audio>
     <a onclick="playAudio()"><img id='lod' alt="LoD" src="img/rlogo_dclear24.png"></a>
 
-    <!--  -->
+    <!-- Lil' and Big Script -->
     <script>
       var x = document.getElementById("weep");
       function playAudio() {
         x.play();
       }
     </script>
+    <script src="js/power.js"></script>
   </body>
 </html>
