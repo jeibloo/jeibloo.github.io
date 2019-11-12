@@ -40,7 +40,7 @@ body {
   margin: auto auto;
   float: none;
   cursor: pointer;
-  position: fixed;
+  position: absolute;
   bottom: 15px; right: 20px;
 }
 
