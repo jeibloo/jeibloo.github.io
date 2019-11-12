@@ -21,11 +21,16 @@ body {
 .col {
   text-align: center;
 }
+.row {
+  /*same as bigCol*/
+  height: 90%;
+}
 #header {
   margin-top: 5rem;
   text-align: center;
 }
 #bigCol {
+  position: static;
   height: 90%;
   border-radius: 5px;
   background-color: #ef008b;
@@ -40,7 +45,10 @@ body {
 }
 
 #urighti, #ulefti, #drighti, #dlefti {
+  position: relative;
   padding: 10%;
+}
+#urighti, #ulefti {
   padding-top: 20%;
 }
 
