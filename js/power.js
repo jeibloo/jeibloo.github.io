@@ -34,6 +34,23 @@ var uniqueSessionId = Math.random().toString().slice(-5);
 // bro these JS slices tho...
 document.getElementById("uin").innerHTML = "UIN - " + uniqueSessionId.slice(-3) + " " + uniqueSessionId.slice(-2);
 
+/* Lmao CORS
+function getBlog() {
+    const Http = new XMLHttpRequest();
+    const mediumUrl = 'https://medium.com/@jsn404';
+    Http.open("GET", mediumUrl);
+    Http.send();
+    // Get the response allegedly...not a clue as to what this does
+    Http.onreadystatechange = (e) => {
+        console.log(Http.responseText)
+    }
+}*/
+
+function moveBall() {
+    let ball = document.getElementById('ball');
+    console.log(ball.offsetTop);
+}
+
 function removeText(text) { // This function removes all main screen text
     // Get all the boxes with text.
     let upr = document.getElementById('urighti');
@@ -69,13 +86,22 @@ function toggleArrow(wpChoice, triType) {
     }
 }
 
-// VERT
+// VERT blog
 wordsId.addEventListener('click', function(event){
     console.log("Here's a 'blog'");
     // ------ Reset everything
     let bigCol = document.getElementById("bigCol");
     let header = document.getElementById("header");
     let orient = document.getElementById("orient");
+    let ball = document.getElementById("ball");
+
+    // Allow ball to scroll
+    window.onscroll = function() {
+        // Try and detect when scrolling up...
+        // https://stackoverflow.com/questions/31223341/detecting-scroll-direction
+        console.log(ball.offsetTop);
+        ball.style.top=ball.offsetTop+10+"px";
+    };
 
     removeText("picts"); // Remove text (duh)
     pictsToggle = 0; // So disgusting I'm sorry
@@ -83,6 +109,7 @@ wordsId.addEventListener('click', function(event){
 
     bigCol.classList.toggle("tall");
     header.classList.toggle("absolute");
+    ball.classList.toggle("show");
 
     let randoN = bigCol.scrollHeight * bigCol.scrollWidth;
     randoN = randoN.toString();
@@ -91,10 +118,10 @@ wordsId.addEventListener('click', function(event){
     } else {
         orient.innerHTML = "NORM: " + randoN.slice(0,6) + "-" + randoN.slice(0,3,1) ;
     }
-    
+
     event.preventDefault(); // I don't know what this does
 })
-// HORZ 
+// HORZ pictures, projects
 pictsId.addEventListener('click', function(event){
     console.log("Here's some picts!!!");
     // ------ Reset everything

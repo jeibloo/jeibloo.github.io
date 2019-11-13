@@ -20,16 +20,26 @@ html, body {
 }
 .row {
   /*same as bigCol*/
-  height: 90%;
+  height: 100%;
 }
 #header {
   padding-top: 5rem;
   text-align: center;
 }
 #header.absolute {
-  position: absolute;
+  position: fixed;
+  padding-top: 2.5rem;
   left: 0;
   right: 0;
+}
+#ball {
+  display: none;
+  position: fixed;
+}
+#ball.show {
+  display: inherit;
+  margin: auto;
+  float: none;
 }
 #bigCol {
   position: static;
@@ -38,7 +48,8 @@ html, body {
   background-color: #ef008b;
 }
 #bigCol.tall {
-  height: 100%;
+  /* This number will be calculated based off how big the text is.*/
+  height: 200%;
   border-radius: 0px;
 }
 #bigCol.wide {
@@ -50,7 +61,7 @@ html, body {
   margin: auto auto;
   float: none;
   cursor: pointer;
-  position: absolute;
+  position: fixed;
   bottom: 25px; right: 20px;
 }
 
@@ -68,6 +79,7 @@ html, body {
 /* Info bar with the two options */
 #infobar {
   text-align: center;
+  padding: 20px;
 }
 #words, #picts {
   cursor: pointer;
