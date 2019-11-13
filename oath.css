@@ -41,6 +41,9 @@ html, body {
   height: 100%;
   border-radius: 0px;
 }
+#bigCol.wide {
+  max-width: 80%;
+}
 
 #lod {
   margin: auto auto;
@@ -68,6 +71,9 @@ html, body {
 #words, #picts {
   cursor: pointer;
   user-select: none;
+}
+#words.hidden, #picts.hidden {
+  display: none;
 }
 #words.activated {
   /*I can do what I want*/

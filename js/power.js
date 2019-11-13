@@ -32,18 +32,21 @@ var pictsId = document.getElementById("picts");
 console.log(wordsId);
 console.log(pictsId);
 
-function removeText() { // This function removes all main screen text
+function removeText(text) { // This function removes all main screen text
     // Get all the boxes with text.
-    var upr = document.getElementById('urighti');
-    var upl = document.getElementById('ulefti');
-    var dwr = document.getElementById('drighti');
-    var dwl = document.getElementById('dlefti');
+    let upr = document.getElementById('urighti');
+    let upl = document.getElementById('ulefti');
+    let dwr = document.getElementById('drighti');
+    let dwl = document.getElementById('dlefti');
     // Goes through them and toggle class to hidden.
     elementList = [upr, upl, dwr, dwl];
     for (let index = 0; index < elementList.length; index++) {
         const element = elementList[index];
         element.classList.toggle("hidden");
     }
+    // Hide other button so user doesn't scream when everything breaks.
+    text = document.getElementById(text);
+    text.classList.toggle("hidden");
 }
 
 function toggleArrow(wpChoice, triType) {
@@ -53,7 +56,7 @@ function toggleArrow(wpChoice, triType) {
 
     if (wpChoice == 0) {
         wpChoice = 1; // Choice is 1 then make triangle solid
-        document.getElementById(triType).innerHTML = "▴";
+        document.getElementById(triType).innerHTML = "▾";
         // Need to return wpChoice so it can register changes
         return wpChoice;
     } else {
@@ -68,28 +71,52 @@ function toggleArrow(wpChoice, triType) {
 wordsId.addEventListener('click', function(event){
     console.log("Here's a 'blog'");
     // ------ Reset everything
-    var bigCol = document.getElementById("bigCol");
-    var header = document.getElementById("header");
-    // ------ Reset everything
-    removeText(); // Remove text (duh)
-    console.log(wordsToggle); // debug
+    let bigCol = document.getElementById("bigCol");
+    let header = document.getElementById("header");
+    let orient = document.getElementById("orient");
+
+    removeText("picts"); // Remove text (duh)
     pictsToggle = 0; // So disgusting I'm sorry
     wordsToggle = toggleArrow(wordsToggle, "tri1"); // Change arrows to hollow
-    console.log(wordsToggle); // debug
+
     bigCol.classList.toggle("tall");
     header.classList.toggle("absolute");
+
+    let randoN = bigCol.scrollHeight * bigCol.scrollWidth;
+    randoN = randoN.toString();
+    if (wordsToggle == 1) {
+        orient.innerHTML = "VERT: " + randoN.slice(0,6) + "-" + randoN.slice(0,3,1) ;
+    } else {
+        orient.innerHTML = "NORM: " + randoN.slice(0,6) + "-" + randoN.slice(0,3,1) ;
+    }
+    
     event.preventDefault(); // I don't know what this does
 })
 // HORZ 
 pictsId.addEventListener('click', function(event){
     console.log("Here's some picts!!!");
     // ------ Reset everything
-    var bigCol = document.getElementById("bigCol");
-    var header = document.getElementById("header");
-    bigCol.className = "container";
-    header.className = "container";
-    removeText(); // Remove text (duh)
+    let bigCol = document.getElementById("bigCol");
+    let header = document.getElementById("header");
+    let orient = document.getElementById("orient");
+
+    removeText("words"); // Remove text (duh)
     wordsToggle = 0;
     pictsToggle = toggleArrow(pictsToggle, "tri2"); // Change arrows to hollow
+
+    bigCol.classList.toggle("wide");
+
+    let randoN = bigCol.scrollHeight * bigCol.scrollWidth;
+    randoN = randoN.toString();
+    if (pictsToggle == 1) {
+        orient.innerHTML = "HORZ: " + randoN.slice(0,6) + "-" + randoN.slice(-4,-1) ;
+    } else {
+        orient.innerHTML = "NORM: " + randoN.slice(0,6) + "-" + randoN.slice(-4,-1) ;
+    }
+
     event.preventDefault(); // I don't know what this does
 })
+
+if (wordsToggle && pictsToggle) {
+    console.log("Wow you hacker, good job...can't believe it.")
+}
