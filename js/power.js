@@ -29,8 +29,10 @@ var pictsToggle = 0;
 var wordsId = document.getElementById("words");
 var pictsId = document.getElementById("picts");
 
-console.log(wordsId);
-console.log(pictsId);
+// Fake cookie, want to do something with this
+var uniqueSessionId = Math.random().toString().slice(-5);
+// bro these JS slices tho...
+document.getElementById("uin").innerHTML = "UIN - " + uniqueSessionId.slice(-3) + " " + uniqueSessionId.slice(-2);
 
 function removeText(text) { // This function removes all main screen text
     // Get all the boxes with text.
