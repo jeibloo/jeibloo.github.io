@@ -28,7 +28,6 @@ html, body {
 }
 #header.absolute {
   position: absolute;
-  color: #fcfcfc;
   left: 0;
   right: 0;
 }
@@ -40,6 +39,7 @@ html, body {
 }
 #bigCol.tall {
   height: 100%;
+  border-radius: 0px;
 }
 
 #lod {
@@ -65,11 +65,13 @@ html, body {
 #infobar {
   text-align: center;
 }
-#words {
+#words, #picts {
   cursor: pointer;
+  user-select: none;
 }
 #words.activated {
-  color: #fcfcfc;
+  /*I can do what I want*/
+  color: 0;
 }
 
 /* Phone and Portrait screens */
