@@ -18,10 +18,6 @@ html, body {
 .col {
   text-align: center;
 }
-.row {
-  /*same as bigCol*/
-  height: 100%;
-}
 #header {
   padding-top: 5rem;
   text-align: center;
@@ -32,24 +28,22 @@ html, body {
   left: 0;
   right: 0;
 }
-#ball {
-  display: none;
-  position: fixed;
-}
-#ball.show {
-  display: inherit;
-  margin: auto;
-  float: none;
-}
 #bigCol {
   position: static;
   height: 80%;
   border-radius: 5px;
-  background-color: #ef008b;
+  background-color: #368AD5;
+  /*
+  #368AD5 Blue
+  #E72D9A Reddish
+  #FFC132 Orangy
+  #88F230 Lime
+  */
 }
+#bigColInside {height: 100%; margin: 0;} /* Just to override row */
 #bigCol.tall {
   /* This number will be calculated based off how big the text is.*/
-  height: 200%;
+  height: 100%;
   border-radius: 0px;
 }
 #bigCol.wide {
@@ -62,7 +56,7 @@ html, body {
   float: none;
   cursor: pointer;
   position: fixed;
-  bottom: 25px; right: 20px;
+  bottom: 25px; left: 20px;
 }
 
 #urighti, #ulefti, #drighti, #dlefti {
@@ -79,9 +73,9 @@ html, body {
 /* Info bar with the two options */
 #infobar {
   text-align: center;
-  padding: 20px;
+  padding-top: 25px;
 }
-#words, #picts {
+#words, #picts, #colour {
   cursor: pointer;
   user-select: none;
 }
@@ -91,6 +85,14 @@ html, body {
 #words.activated {
   /*I can do what I want*/
   color: 0;
+}
+#colour {
+  position: fixed;
+  text-orientation: upright;
+  writing-mode: vertical-rl;
+  top: 20px;
+  right: 20px;
+  font-size: 65%;
 }
 
 /* Phone and Portrait screens */

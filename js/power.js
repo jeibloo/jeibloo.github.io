@@ -4,6 +4,9 @@ console.log("+---------------------------+\n| ///////////////////////// |\n+----
 // To tell when the state is toggled
 var wordsToggle = 0;
 var pictsToggle = 0;
+var bigCol = document.getElementById("bigCol");
+var header = document.getElementById("header");
+var orient = document.getElementById("orient");
 
 // Fake cookie, want to do something with this
 window.onload = function uniqueID() {
@@ -57,10 +60,6 @@ function windowCalc(orientWord, toggle, sl1, sl2) {
     }
 }
 
-var bigCol = document.getElementById("bigCol");
-var header = document.getElementById("header");
-var orient = document.getElementById("orient");
-
 // VERT blog
 // Makes things disappear and vertically elongates box.
 var wordsId = document.getElementById("words");
@@ -73,9 +72,9 @@ wordsId.addEventListener('click', function(event){
 
     bigCol.classList.toggle("tall"); // Make bigCol elongate
     header.classList.toggle("absolute"); // Make sure header stays in place
-    ball.classList.toggle("show");
 
     windowCalc("VERT", wordsToggle, 0, 3);
+    anchorColour();
 
     event.preventDefault(); // I don't know what this does
 })
@@ -92,7 +91,12 @@ pictsId.addEventListener('click', function(event){
 
     bigCol.classList.toggle("wide");
 
-    windowCalc("HORZ", wordsToggle, -4, -1);
+    windowCalc("HORZ", pictsToggle, -4, -1);
 
     event.preventDefault(); // I don't know what this does
 })
+
+// ----------------------------------------------------------------------------
+// --------------------------------We-go-old-skool-here------------------------
+// ----------------------------------------------------------------------------
+
