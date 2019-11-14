@@ -1,14 +1,36 @@
 // Special console surprise :)
 console.log("+---------------------------+\n| ///////////////////////// |\n+---------------------------+\n| [ Raw Energy WOW ]\t\t|\n+---------------------------+\n| \t\t\t\t\t\t\t|\n| \t\t\t\t\t\t\t|\n| [sto] [rcl] [<--] [AC/ON] |\n| \t\t\t\t\t\t\t|\n| [ ( ] [ ) ] [sqr] [ / ] \t|\n| \t\t\t\t\t\t\t|\n| [ 7 ] [ 8 ] [ 9 ] [ * ] \t|\n| \t\t\t\t\t\t\t|\n| [ 4 ] [ 5 ] [ 6 ] [ - ] \t|\n| \t\t\t\t\t\t\t|\n| [ 1 ] [ 2 ] [ 3 ] [ + ] \t|\n| \t\t\t\t\t\t\t|\n| [ 0 ] [ . ] [+/-] [ = ] \t|\n| \t\t\t\t\t\t\t|\n+---------------------------+\n")
 
+// -------------------------------Global Variable Storage----------------------
+// ----------------------------------------------------------------------------
+
 // To tell when the state is toggled
 var wordsToggle = 0;
 var pictsToggle = 0;
+// Global variable storage
+var gridList = ['urighti','ulefti','drighti','dlefti'];
+var colourId = document.getElementById("colour");
 var bigCol = document.getElementById("bigCol");
 var header = document.getElementById("header");
 var orient = document.getElementById("orient");
 var saying = document.getElementById("saying");
 var uin = document.getElementById("uin");
+var colourList = [];
+
+// Preparation for the COLOUR event listener.
+var colourDict = { //honestly just an excuse to use a dict
+    redy: "#E72D9A",
+    orng: "#FFC132",
+    lime: "#88F230",
+    blak: "#2F353A",
+    blue: "#368AD5"
+}; // Maybe make a hex maker so it's always random?
+for (const [key, value] of Object.entries(colourDict)) {
+    colourList.push(value);
+}
+
+// -------------------------------Window onload stuff--------------------------
+// ----------------------------------------------------------------------------
 
 // Fake cookie, want to do something with this
 window.onload = function uniqueID() {
@@ -16,6 +38,10 @@ window.onload = function uniqueID() {
     // bro these JS slices tho...
     document.getElementById("uin").innerHTML = "UIN - " + uniqueSessionId.slice(-3) + " " + uniqueSessionId.slice(-2);
 }
+
+// -------------------------------Functions------------------------------------
+// ----------------------------------------------------------------------------
+
 function removeText(text) { // Removes all main screen text
     // Get all the boxes with text.
     let upr = document.getElementById('urighti');
@@ -65,20 +91,11 @@ function iterateCs(className, color) {
         e.style.color = color;
     });
 }
-// COLOUR STUFF!!!! WEEEEEE
-var colourId = document.getElementById("colour");
-var colourDict = { //honestly just an excuse to use a dict
-    redy: "#E72D9A",
-    orng: "#FFC132",
-    lime: "#88F230",
-    blak: "#2F353A",
-    blue: "#368AD5"
-}; // Maybe make a hex maker so it's always random?
-var colourList = [];
-var gridList = ['urighti','ulefti','drighti','dlefti'];
-for (const [key, value] of Object.entries(colourDict)) {
-    colourList.push(value);
-}
+
+// -------------------------------Event Listeners------------------------------
+// ----------------------------------------------------------------------------
+
+// COLOUR: Let's user click through bigCol colours.
 colourId.addEventListener('click', function(event) {
     // Make sure we're switching colours and moving the first
     // one to the last spot etc etc
@@ -107,8 +124,7 @@ colourId.addEventListener('click', function(event) {
     }
 })
 
-// VERT blog
-// Makes things disappear and vertically elongates box.
+// VERT blog: Makes text disappear and vertically elongates box.
 var wordsId = document.getElementById("words");
 wordsId.addEventListener('click', function(event){
     console.log("Here's a 'blog'");
@@ -125,8 +141,7 @@ wordsId.addEventListener('click', function(event){
     event.preventDefault(); // I don't know what this does
 })
 
-// HORZ pictures, projects
-// Makes things disappear and horizontally elongates box.
+// HORZ pictures, projects: Wipes text and horizontally elongates box.
 var pictsId = document.getElementById("picts");
 pictsId.addEventListener('click', function(event){
     console.log("Here's some picts!!!");
@@ -142,6 +157,6 @@ pictsId.addEventListener('click', function(event){
     event.preventDefault(); // I don't know what this does
 })
 
-// ----------------------------------------------------------------------------
-// --------------------------------We-go-old-skool-here------------------------
-// ----------------------------------------------------------------------------
+// --0----------------------------------------------------------------------0--
+// -0------------------------------We-go-old-skool-here----------------------0-
+// 0------------------------------------M47kd0wn------------------------------0
