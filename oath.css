@@ -9,14 +9,20 @@ h1, h2, h3, h4, h5, p, a {
   font-size: 150%;
 }
 a {
+  text-decoration: none;
   color: #212529;
 }
 html, body {
   background-color: #fcfcfc;
   height: 100%; width: 100%;
+  margin: 0;
+  padding: 0;
 }
 .col {
   text-align: center;
+}
+.links {
+  color: #212529;
 }
 #header {
   padding-top: 5rem;
@@ -24,6 +30,7 @@ html, body {
 }
 #header.absolute {
   position: fixed;
+  color: #fcfcfc;
   padding-top: 2.5rem;
   left: 0;
   right: 0;
@@ -90,6 +97,7 @@ html, body {
   position: fixed;
   text-orientation: upright;
   writing-mode: vertical-rl;
+  color: #212529;
   top: 20px;
   right: 20px;
   font-size: 65%;
