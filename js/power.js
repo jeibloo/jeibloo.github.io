@@ -1,54 +1,15 @@
+// Special console surprise :)
 console.log("+---------------------------+\n| ///////////////////////// |\n+---------------------------+\n| [ Raw Energy WOW ]\t\t|\n+---------------------------+\n| \t\t\t\t\t\t\t|\n| \t\t\t\t\t\t\t|\n| [sto] [rcl] [<--] [AC/ON] |\n| \t\t\t\t\t\t\t|\n| [ ( ] [ ) ] [sqr] [ / ] \t|\n| \t\t\t\t\t\t\t|\n| [ 7 ] [ 8 ] [ 9 ] [ * ] \t|\n| \t\t\t\t\t\t\t|\n| [ 4 ] [ 5 ] [ 6 ] [ - ] \t|\n| \t\t\t\t\t\t\t|\n| [ 1 ] [ 2 ] [ 3 ] [ + ] \t|\n| \t\t\t\t\t\t\t|\n| [ 0 ] [ . ] [+/-] [ = ] \t|\n| \t\t\t\t\t\t\t|\n+---------------------------+\n")
-/*+---------------------------+\n
-| ///////////////////////// |\n
-+---------------------------+\n
-| [              1,264.45 ] |\n
-+---------------------------+\n
-|                           |\n
-|                           |\n
-| [sto] [rcl] [<--] [AC/ON] |\n
-|                           |\n
-| [ ( ] [ ) ] [sqr] [  /  ] |\n
-|                           |\n
-| [ 7 ] [ 8 ] [ 9 ] [  *  ] |\n
-|                           |\n
-| [ 4 ] [ 5 ] [ 6 ] [  -  ] |\n
-|                           |\n
-| [ 1 ] [ 2 ] [ 3 ] [  +  ] |\n
-|                           |\n
-| [ 0 ] [ . ] [+/-] [  =  ] |\n
-|                           |\n
-+---------------------------+\n
-*/
 
-// I don't know how else to toggle things in JS
+// To tell when the state is toggled
 var wordsToggle = 0;
 var pictsToggle = 0;
 
-// Makes things disappear and vertically/horizontally elongates box.
-var wordsId = document.getElementById("words");
-var pictsId = document.getElementById("picts");
-
 // Fake cookie, want to do something with this
-var uniqueSessionId = Math.random().toString().slice(-5);
-// bro these JS slices tho...
-document.getElementById("uin").innerHTML = "UIN - " + uniqueSessionId.slice(-3) + " " + uniqueSessionId.slice(-2);
-
-/* Lmao CORS
-function getBlog() {
-    const Http = new XMLHttpRequest();
-    const mediumUrl = 'https://medium.com/@jsn404';
-    Http.open("GET", mediumUrl);
-    Http.send();
-    // Get the response allegedly...not a clue as to what this does
-    Http.onreadystatechange = (e) => {
-        console.log(Http.responseText)
-    }
-}*/
-
-function moveBall() {
-    let ball = document.getElementById('ball');
-    console.log(ball.offsetTop);
+window.onload = function uniqueID() {
+    var uniqueSessionId = Math.random().toString().slice(-5);
+    // bro these JS slices tho...
+    document.getElementById("uin").innerHTML = "UIN - " + uniqueSessionId.slice(-3) + " " + uniqueSessionId.slice(-2);
 }
 
 function removeText(text) { // This function removes all main screen text
@@ -86,48 +47,44 @@ function toggleArrow(wpChoice, triType) {
     }
 }
 
+function windowCalc(orientWord, toggle, sl1, sl2) {
+    let randoN = bigCol.scrollHeight * bigCol.scrollWidth;
+    randoN = randoN.toString();
+    if (toggle == 1) {
+        orient.innerHTML = orientWord + ": " + randoN.slice(0,6) + "-" + randoN.slice(sl1, sl2) ;
+    } else {
+        orient.innerHTML = "NORM: " + randoN.slice(0,6) + "-" + randoN.slice(sl1, sl2) ;
+    }
+}
+
+var bigCol = document.getElementById("bigCol");
+var header = document.getElementById("header");
+var orient = document.getElementById("orient");
+
 // VERT blog
+// Makes things disappear and vertically elongates box.
+var wordsId = document.getElementById("words");
 wordsId.addEventListener('click', function(event){
     console.log("Here's a 'blog'");
-    // ------ Reset everything
-    let bigCol = document.getElementById("bigCol");
-    let header = document.getElementById("header");
-    let orient = document.getElementById("orient");
-    let ball = document.getElementById("ball");
-
-    // Allow ball to scroll
-    window.onscroll = function() {
-        // Try and detect when scrolling up...
-        // https://stackoverflow.com/questions/31223341/detecting-scroll-direction
-        console.log(ball.offsetTop);
-        ball.style.top=ball.offsetTop+10+"px";
-    };
 
     removeText("picts"); // Remove text (duh)
     pictsToggle = 0; // So disgusting I'm sorry
     wordsToggle = toggleArrow(wordsToggle, "tri1"); // Change arrows to hollow
 
-    bigCol.classList.toggle("tall");
-    header.classList.toggle("absolute");
+    bigCol.classList.toggle("tall"); // Make bigCol elongate
+    header.classList.toggle("absolute"); // Make sure header stays in place
     ball.classList.toggle("show");
 
-    let randoN = bigCol.scrollHeight * bigCol.scrollWidth;
-    randoN = randoN.toString();
-    if (wordsToggle == 1) {
-        orient.innerHTML = "VERT: " + randoN.slice(0,6) + "-" + randoN.slice(0,3,1) ;
-    } else {
-        orient.innerHTML = "NORM: " + randoN.slice(0,6) + "-" + randoN.slice(0,3,1) ;
-    }
+    windowCalc("VERT", wordsToggle, 0, 3);
 
     event.preventDefault(); // I don't know what this does
 })
+
 // HORZ pictures, projects
+// Makes things disappear and horizontally elongates box.
+var pictsId = document.getElementById("picts");
 pictsId.addEventListener('click', function(event){
     console.log("Here's some picts!!!");
-    // ------ Reset everything
-    let bigCol = document.getElementById("bigCol");
-    let header = document.getElementById("header");
-    let orient = document.getElementById("orient");
 
     removeText("words"); // Remove text (duh)
     wordsToggle = 0;
@@ -135,17 +92,7 @@ pictsId.addEventListener('click', function(event){
 
     bigCol.classList.toggle("wide");
 
-    let randoN = bigCol.scrollHeight * bigCol.scrollWidth;
-    randoN = randoN.toString();
-    if (pictsToggle == 1) {
-        orient.innerHTML = "HORZ: " + randoN.slice(0,6) + "-" + randoN.slice(-4,-1) ;
-    } else {
-        orient.innerHTML = "NORM: " + randoN.slice(0,6) + "-" + randoN.slice(-4,-1) ;
-    }
+    windowCalc("HORZ", wordsToggle, -4, -1);
 
     event.preventDefault(); // I don't know what this does
 })
-
-if (wordsToggle && pictsToggle) {
-    console.log("Wow you hacker, good job...can't believe it.")
-}
