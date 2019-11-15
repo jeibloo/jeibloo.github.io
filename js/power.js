@@ -8,7 +8,7 @@ console.log("+---------------------------+\n| ///////////////////////// |\n+----
 var wordsToggle = 0;
 var pictsToggle = 0;
 // Global variable storage
-var gridList = ['urighti','ulefti','drighti','dlefti'];
+var gridList = ['right','left', 'middle', 'bottom'];
 var colourId = document.getElementById("colour");
 var bigCol = document.getElementById("bigCol");
 var header = document.getElementById("header");
@@ -43,16 +43,8 @@ window.onload = function uniqueID() {
 // ----------------------------------------------------------------------------
 
 function removeText(text) { // Removes all main screen text
-    // Get all the boxes with text.
-    let upr = document.getElementById('urighti');
-    let upl = document.getElementById('ulefti');
-    let dwr = document.getElementById('drighti');
-    let dwl = document.getElementById('dlefti');
-    // Goes through them and toggle class to hidden.
-    elementList = [upr, upl, dwr, dwl];
-    for (let index = 0; index < elementList.length; index++) {
-        const element = elementList[index];
-        element.classList.toggle("hidden");
+    for (let index = 0; index < gridList.length; index++) {
+        document.getElementById(gridList[index]).classList.toggle("hidden");
     }
     // Hide other button so user doesn't scream when everything breaks.
     text = document.getElementById(text);
@@ -84,6 +76,9 @@ function windowCalc(orientWord, toggle, sl1, sl2) {
     } else {
         orient.innerHTML = "NORM: " + randoN.slice(0,6) + "-" + randoN.slice(sl1, sl2) ;
     }
+}
+// List the contents of the text folder.
+function listDir() {
 }
 // Iterate through the collections for a specified class and changes its colour
 function iterateCs(className, color) {

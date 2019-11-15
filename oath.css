@@ -6,7 +6,9 @@
 }
 h1, h2, h3, h4, h5, p, a {
   font-family: "Kinako";
-  font-size: 150%;
+}
+p, a {
+  font-size: 125%;
 }
 a {
   text-decoration: none;
@@ -17,9 +19,6 @@ html, body {
   height: 100%; width: 100%;
   margin: 0;
   padding: 0;
-}
-.col {
-  text-align: center;
 }
 .links {
   color: #212529;
@@ -38,7 +37,7 @@ html, body {
 #bigCol {
   position: static;
   height: 80%;
-  border-radius: 5px;
+  border-radius: 100px 5px 5px 5px;
   background-color: #368AD5;
   /*
   #368AD5 Blue
@@ -66,17 +65,32 @@ html, body {
   bottom: 25px; left: 20px;
 }
 
-#urighti, #ulefti, #drighti, #dlefti {
+#left, #right, #middle {
   position: relative;
-  padding: 10%;
+  padding: 5%;
+  padding-top: 15%;
+  text-align: center;
 }
-#urighti.hidden, #ulefti.hidden, #drighti.hidden, #dlefti.hidden {
+#left {
+  border-right: #212529;
+  padding-top: 2.5%;
+}
+#middle {
+  padding-left: 0; padding-right: 0;
+}
+#right {
+  padding-top: 25%;
+  text-align: center;
+}
+#bottom {
+  padding-left: 7.5%; padding-right: 7.5%;
+}
+#left.hidden, #right.hidden, #middle.hidden, #bottom.hidden {
   display: none;
 }
-#urighti, #ulefti {
-  padding-top: 20%;
+#name {
+  font-size: 150%;
 }
-
 /* Info bar with the two options */
 #infobar {
   text-align: center;
