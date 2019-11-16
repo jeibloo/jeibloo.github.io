@@ -38,7 +38,7 @@ html, body {
   position: static;
   height: 80%;
   border-radius: 2.5px 2.5px 2.5px 2.5px;
-  background-color: #368AD5;
+  background-color: #FFC132;
   /*
   #368AD5 Blue
   #E72D9A Reddish
@@ -122,10 +122,10 @@ html, body {
 
 /* Minor animations */
 @keyframes jiggleboi {
-  0% {rotate: 0;}
-  33% {rotate: 25deg;}
-  66% {rotate: -25deg;}
-  100% {rotate: 0;}
+  0% {transform: rotate(5deg);}
+  33% {transform: rotate(10deg);}
+  66% {transform: rotate(0deg);}
+  100% {transform: rotate(5deg);}
 }
 
 /* Phone and Portrait screens */

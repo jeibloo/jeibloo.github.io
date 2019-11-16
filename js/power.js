@@ -23,11 +23,11 @@ var cBlack = "#2F353A";
 
 // Preparation for the COLOUR event listener.
 var colourDict = { //honestly just an excuse to use a dict
+    blue: "#368AD5",
     redy: "#E72D9A",
-    orng: "#FFC132",
     lime: "#88F230",
     blak: "#2F353A",
-    blue: "#368AD5"
+    orng: "#FFC132"
 }; // Maybe make a hex maker so it's always random?
 for (const [key, value] of Object.entries(colourDict)) {
     colourList.push(value);
