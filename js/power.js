@@ -9,6 +9,7 @@ var wordsToggle = 0;
 var pictsToggle = 0;
 // Global variable storage
 var gridList = ['right','left', 'middle', 'bottom'];
+var specialLinks = document.getElementsByClassName("links");
 var colourId = document.getElementById("colour");
 var bigCol = document.getElementById("bigCol");
 var header = document.getElementById("header");
@@ -16,6 +17,9 @@ var orient = document.getElementById("orient");
 var saying = document.getElementById("saying");
 var uin = document.getElementById("uin");
 var colourList = [];
+// Separate colours cause they so important
+var cWhite = "#fcfcfc";
+var cBlack = "#2F353A";
 
 // Preparation for the COLOUR event listener.
 var colourDict = { //honestly just an excuse to use a dict
@@ -42,6 +46,9 @@ window.onload = function uniqueID() {
 // -------------------------------Functions------------------------------------
 // ----------------------------------------------------------------------------
 
+function spitTakes(type) { // DEBUG stuff
+    console.log(type + " triggered!");
+}
 function removeText(text) { // Removes all main screen text
     for (let index = 0; index < gridList.length; index++) {
         document.getElementById(gridList[index]).classList.toggle("hidden");
@@ -67,8 +74,7 @@ function toggleArrow(wpChoice, triType) { // Toggles arrows for the two 'menus'
         return wpChoice;
     }
 }
-// Calculates and sets the numbers in the header
-function windowCalc(orientWord, toggle, sl1, sl2) {
+function windowCalc(orientWord, toggle, sl1, sl2) { // Calculates and sets the numbers in the header
     let randoN = bigCol.scrollHeight * bigCol.scrollWidth;
     randoN = randoN.toString();
     if (toggle == 1) {
@@ -77,74 +83,67 @@ function windowCalc(orientWord, toggle, sl1, sl2) {
         orient.innerHTML = "NORM: " + randoN.slice(0,6) + "-" + randoN.slice(sl1, sl2) ;
     }
 }
-// List the contents of the text folder.
-function listDir() {
-}
-// Iterate through the collections for a specified class and changes its colour
-function iterateCs(className, color) {
-    Array.from(document.getElementsByClassName(className)).forEach(e => {
-        e.style.color = color;
+// TODO: make into a class
+function iterateCs(className, colour) { // shortcut way of turning collection into array and iterating
+    Array.from(document.getElementsByClassName(className)).forEach(it => {
+        it.style.color = colour;
     });
 }
+function changeGridColours(colour) { // Change text colour of grids(textboxes)
+    for(let n of gridList) {
+        document.getElementById(n).style.color = colour;
+    }
+}
+function colourRotate() { // Make sure we're switching colours and moving the first to last...like a carousel
+    let cc = colourList.shift();
+    bigCol.style.backgroundColor = cc;
+    colourList.push(cc);
+    return cc;
+}
+
 
 // -------------------------------Event Listeners------------------------------
 // ----------------------------------------------------------------------------
 
-// COLOUR: Let's user click through bigCol colours.
+// COLOUR LISTENER: cycle thru colours
 colourId.addEventListener('click', function(event) {
-    // Make sure we're switching colours and moving the first
-    // one to the last spot etc etc
-    daColour = colourList.shift()
-    console.log("SWITCHING COLOUR: " + daColour)
-    bigCol.style.backgroundColor = daColour;
-    colourList.push(daColour);
+    daColour = colourRotate();
+    spitTakes(daColour);
 
-    // Switching when it turns black + going back when it ain't
-    whiteness = "#fcfcfc";
-    blackness = "#2F353A";
-    specialLinks = document.getElementsByClassName("links");
-    if (daColour == blackness) {
-        for(let n of gridList) {
-            document.getElementById(n).style.color = whiteness;
-        }
-        // Special case for those stupid links
-        iterateCs("links",whiteness);
+    // Switching when it turns black + going back when it ain't except links cause they need special treatment
+    if (daColour == cBlack) {
+        changeGridColours(cWhite);
+        iterateCs("links",cWhite);
     } else {
-        // I can do it this way to revert cause I want it all to be black.
-        for(let n of gridList) {
-            document.getElementById(n).style.color = blackness;
-        }
-        // Special case for those stupid links
-        iterateCs("links",blackness);
+        changeGridColours(cBlack);
+        iterateCs("links",cBlack);
     }
 })
 
-// VERT blog: Makes text disappear and vertically elongates box.
+// BLOG(WORDS) LISTENER: allows directory to be listed and interacted w/
 var wordsId = document.getElementById("words");
 wordsId.addEventListener('click', function(event){
-    console.log("Here's a 'blog'");
+    spitTakes("BLOG(WORDS)")
 
-    removeText("picts"); // Remove text (duh)
-    pictsToggle = 0; // So disgusting I'm sorry
-    wordsToggle = toggleArrow(wordsToggle, "tri1"); // Change arrows to hollow
-
-    bigCol.classList.toggle("tall"); // Make bigCol elongate
-    header.classList.toggle("absolute"); // Make sure header stays in place
+    removeText("picts");
+    pictsToggle = 0;
+    wordsToggle = toggleArrow(wordsToggle, "tri1");
+    bigCol.classList.toggle("tall");
+    header.classList.toggle("absolute");
 
     windowCalc("VERT", wordsToggle, 0, 3);
 
     event.preventDefault(); // I don't know what this does
 })
 
-// HORZ pictures, projects: Wipes text and horizontally elongates box.
+// PICTS(IDK) LISTENER: unsure of what to do with this yet
 var pictsId = document.getElementById("picts");
 pictsId.addEventListener('click', function(event){
-    console.log("Here's some picts!!!");
+    spitTakes("PICTS(IDK)");
 
-    removeText("words"); // Remove text (duh)
+    removeText("words");
     wordsToggle = 0;
-    pictsToggle = toggleArrow(pictsToggle, "tri2"); // Change arrows to hollow
-
+    pictsToggle = toggleArrow(pictsToggle, "tri2");
     bigCol.classList.toggle("wide");
 
     windowCalc("HORZ", pictsToggle, -4, -1);

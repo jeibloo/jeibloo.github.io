@@ -91,6 +91,9 @@ html, body {
 #name {
   font-size: 150%;
 }
+#prfpic {
+  animation: jiggleboi 10s infinite alternate ease-in-out;
+}
 /* Info bar with the two options */
 #infobar {
   text-align: center;
@@ -115,6 +118,14 @@ html, body {
   top: 20px;
   right: 20px;
   font-size: 65%;
+}
+
+/* Minor animations */
+@keyframes jiggleboi {
+  0% {rotate: 0;}
+  33% {rotate: 25deg;}
+  66% {rotate: -25deg;}
+  100% {rotate: 0;}
 }
 
 /* Phone and Portrait screens */
