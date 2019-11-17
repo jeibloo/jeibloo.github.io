@@ -132,28 +132,25 @@ html, body {
 @media screen
   and (min-device-width: 200px)
   and (max-device-width: 450px) {
-    h1, h2, h3, h4, h5, p, a {
-      font-size: 125%;
+    h1, h2, h3, h4, h5, p, a {font-size: 100%;}
+    #colour {
+      text-orientation: upright;
+      writing-mode: horizontal-tb;
     }
-    #urighti, #ulefti, #drighti, #dlefti {
-      padding: 5%; padding-top: 10%;
-    }
-    #bigCol {
-      border-radius: 0px;
-    }
+    #right, #extra_words, #left, #words, #picts {display: none;}
+    #lod {max-width: 10%;}
+    #bigCol {border-radius: 0px;}
 }
 @media screen
   and (min-device-width: 600px)
   and (max-device-width: 767px) {
-    h1, h2, h3, h4, h5, p, a {
-      font-size: 125%;
+    h1, h2, h3, h4, h5, p, a {font-size: 125%;}
+    #colour {
+      text-orientation: upright;
+      writing-mode: horizontal-tb;
     }
-    #urighti, #ulefti, #drighti, #dlefti {
-      padding: 5%; padding-top: 10%;
-    }
-    #bigCol {
-      border-radius: 0px;
-    }
+    #right, #words, #picts, #extra_words {display: none;}
+    #bigCol {border-radius: 0px;}
 }
 /* Tablet screens */
 @media screen
@@ -170,7 +167,7 @@ html, body {
 @media screen
   and (min-device-width: 1600px)
   and (max-device-width: 3600px) {
-    #urighti, #ulefti, #drighti, #dlefti {
+    #right, #left, #middle, #bottom {
       padding: 10%; padding-top: 17.5%;
     }
 }
