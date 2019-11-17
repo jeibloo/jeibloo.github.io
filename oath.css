@@ -167,7 +167,4 @@ html, body {
 @media screen
   and (min-device-width: 1600px)
   and (max-device-width: 3600px) {
-    #right, #left, #middle, #bottom {
-      padding: 10%; padding-top: 17.5%;
-    }
 }
