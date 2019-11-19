@@ -12,6 +12,7 @@ var gridList = ['right','left', 'middle', 'bottom'];
 var specialLinks = document.getElementsByClassName("links");
 var colourId = document.getElementById("colour");
 var bigCol = document.getElementById("bigCol");
+var bigColInside = document.getElementById("bigColInside");
 var header = document.getElementById("header");
 var orient = document.getElementById("orient");
 var saying = document.getElementById("saying");
@@ -100,6 +101,20 @@ function colourRotate() { // Make sure we're switching colours and moving the fi
     colourList.push(cc);
     return cc;
 }
+function tempDivDestroy(tempId='temp') {
+    let tempDiv = document.getElementById(tempId);
+    try {
+        tempDiv.parentNode.removeChild(tempDiv);
+    } catch (error) {
+        console.log("Holy hell..."+error);
+    }
+}
+function tempDivCreate(tempId='temp',innerText='<p>test</p>') {
+    let tempDiv = document.createElement('div');
+    tempDiv.id = tempId; tempDiv.className = 'container';
+    tempDiv.innerHTML = innerText;
+    bigColInside.appendChild(tempDiv);
+}
 
 
 // -------------------------------Event Listeners------------------------------
@@ -130,6 +145,14 @@ wordsId.addEventListener('click', function(event){
     wordsToggle = toggleArrow(wordsToggle, "tri1");
     bigCol.classList.toggle("tall");
     header.classList.toggle("absolute");
+
+    text = "<h4>In progress...</h4><br><a class='links' href='https://medium.com/@jsn404'>Temporary Blog: Medium</a>";
+    if (wordsToggle == 0) {
+        tempDivDestroy();
+    }
+    else {
+        tempDivCreate('temp',text);
+    }
 
     windowCalc("VERT", wordsToggle, 0, 3);
 

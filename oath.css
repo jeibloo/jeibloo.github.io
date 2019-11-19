@@ -50,6 +50,7 @@ html, body {
 #bigCol.tall {
   /* This number will be calculated based off how big the text is.*/
   height: 100%;
+  padding-top: 10rem;
   border-radius: 0px;
 }
 #bigCol.wide {
@@ -85,6 +86,9 @@ html, body {
 }
 #bottom {
   padding-left: 7.5%; padding-right: 7.5%;
+}
+#temp {
+  text-align: center;
 }
 #left.hidden, #right.hidden, #middle.hidden, #bottom.hidden {
   display: none;
