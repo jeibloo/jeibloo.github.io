@@ -76,10 +76,11 @@ html, body {
   padding-top: 2.5%;
 }
 #middle {
+  padding-top: 20%;
   padding-left: 0; padding-right: 0;
 }
 #right {
-  padding-top: 25%;
+  padding-top: 20%;
   text-align: center;
 }
 #bottom {
