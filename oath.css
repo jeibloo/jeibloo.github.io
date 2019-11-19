@@ -28,7 +28,7 @@ html, body {
   text-align: center;
 }
 #header.absolute {
-  position: fixed;
+  position: absolute;
   color: #fcfcfc;
   padding-top: 2.5rem;
   left: 0;
