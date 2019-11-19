@@ -154,7 +154,7 @@ html, body {
       text-orientation: upright;
       writing-mode: horizontal-tb;
     }
-    #right, #words, #picts, #extra_words {display: none;}
+    #right, #words, #picts, #extra_words, #audioQ, #weep {display: none;}
     #bigCol {border-radius: 0px;}
 }
 /* Tablet screens */
