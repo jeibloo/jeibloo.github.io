@@ -50,7 +50,7 @@ window.onload = function uniqueID() {
 function spitTakes(type) { // DEBUG stuff
     console.log(type + " triggered!");
 }
-function removeText(text) { // Removes all main screen text
+function removeMSText(text) { // Removes all main screen text
     for (let index = 0; index < gridList.length; index++) {
         document.getElementById(gridList[index]).classList.toggle("hidden");
     }
@@ -122,6 +122,7 @@ function tempDivCreate(tempId='temp',innerText='<p>test</p>') {
 
 // COLOUR LISTENER: cycle thru colours
 colourId.addEventListener('click', function(event) {
+    // Rotate colours first so that next colour chosen is diff from initial
     daColour = colourRotate();
     spitTakes(daColour);
 
@@ -139,8 +140,8 @@ colourId.addEventListener('click', function(event) {
 var wordsId = document.getElementById("words");
 wordsId.addEventListener('click', function(event){
     spitTakes("BLOG(WORDS)")
+    removeMSText("picts");
 
-    removeText("picts");
     pictsToggle = 0;
     wordsToggle = toggleArrow(wordsToggle, "tri1");
     bigCol.classList.toggle("tall");
@@ -163,8 +164,8 @@ wordsId.addEventListener('click', function(event){
 var pictsId = document.getElementById("picts");
 pictsId.addEventListener('click', function(event){
     spitTakes("PICTS(IDK)");
+    removeMSText("words");
 
-    removeText("words");
     wordsToggle = 0;
     pictsToggle = toggleArrow(pictsToggle, "tri2");
     bigCol.classList.toggle("wide");
