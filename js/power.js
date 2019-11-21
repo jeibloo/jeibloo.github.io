@@ -39,7 +39,7 @@ for (const [key, value] of Object.entries(colourDict)) {
 
 // Fake cookie, want to do something with this
 window.onload = function uniqueID() {
-    var uniqueSessionId = Math.random().toString().slice(-5);
+    let uniqueSessionId = Math.random().toString().slice(-5);
     // bro these JS slices tho...
     document.getElementById("uin").innerHTML = "UIN - " + uniqueSessionId.slice(-3) + " " + uniqueSessionId.slice(-2);
 }
