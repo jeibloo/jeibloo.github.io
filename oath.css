@@ -141,6 +141,7 @@ html, body {
     #colour {
       text-orientation: upright;
       writing-mode: horizontal-tb;
+      position: relative;
     }
     #right, #extra_words, #left, #words, #picts {display: none;}
     #lod {max-width: 10%;}
@@ -153,6 +154,7 @@ html, body {
     #colour {
       text-orientation: upright;
       writing-mode: horizontal-tb;
+      position: relative;
     }
     #right, #words, #picts, #extra_words, #audioQ, #weep {display: none;}
     #bigCol {border-radius: 0px;}
