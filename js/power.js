@@ -41,15 +41,27 @@ for (const [key, value] of Object.entries(colourDict)) {
 window.onload = function uniqueID() {
     let uniqueSessionId = Math.random().toString().slice(-5);
     // bro these JS slices tho...
-    document.getElementById("uin").innerHTML = "UIN - " + uniqueSessionId.slice(-3) + " " + uniqueSessionId.slice(-2);
+    document.getElementById("uin").innerHTML = `UIN - ${uniqueSessionId.slice(-3)} ${uniqueSessionId.slice(-2)}`;
+}
+
+// -------------------------------'Classes'------------------------------------
+// ----------------------------------------------------------------------------
+
+// Uhhhh I guess this is fine
+class Debug {
+    constructor(name, misc) {
+        this.name = name;
+        this.misc = misc;
+    }
+    // Spitout method
+    spitOut() {
+        console.log(`${this.name} has been triggered.\n:::${this.misc}`)
+    }
 }
 
 // -------------------------------Functions------------------------------------
 // ----------------------------------------------------------------------------
 
-function spitTakes(type) { // DEBUG stuff
-    console.log(type + " triggered!");
-}
 function removeMSText(text) { // Removes all main screen text
     for (let index = 0; index < gridList.length; index++) {
         document.getElementById(gridList[index]).classList.toggle("hidden");
@@ -79,9 +91,9 @@ function windowCalc(orientWord, toggle, sl1, sl2) { // Calculates and sets the n
     let randoN = bigCol.scrollHeight * bigCol.scrollWidth;
     randoN = randoN.toString();
     if (toggle == 1) {
-        orient.innerHTML = orientWord + ": " + randoN.slice(0,6) + "-" + randoN.slice(sl1, sl2) ;
+        orient.innerHTML = `${orientWord}: ${randoN.slice(0,6)}-${randoN.slice(sl1,sl2)}`;
     } else {
-        orient.innerHTML = "NORM: " + randoN.slice(0,6) + "-" + randoN.slice(sl1, sl2) ;
+        orient.innerHTML = `NORM: ${randoN.slice(0,6)}-${randoN.slice(sl1,sl2)}`;
     }
 }
 // TODO: make into a class
@@ -121,10 +133,13 @@ function tempDivCreate(tempId='temp',innerText='<p>test</p>') {
 // ----------------------------------------------------------------------------
 
 // COLOUR LISTENER: cycle thru colours
-colourId.addEventListener('click', function(event) {
+const colourDebug = new Debug('ColourListener', null);
+colourId.addEventListener('click', function() {
     // Rotate colours first so that next colour chosen is diff from initial
     daColour = colourRotate();
-    spitTakes(daColour);
+    // Debug stuff
+    colourDebug.misc = daColour;
+    colourDebug.spitOut()
 
     // Switching when it turns black + going back when it ain't except links cause they need special treatment
     if (daColour == cBlack) {
@@ -134,12 +149,15 @@ colourId.addEventListener('click', function(event) {
         changeGridColours(cBlack);
         iterateCs("links",cBlack);
     }
-})
+
+    return false; // preventDefault & stopProp etc all rolled into one yeehaw!
+});
 
 // BLOG(WORDS) LISTENER: allows directory to be listed and interacted w/
+const wordsDebug = new Debug('WordsListener', null);
 var wordsId = document.getElementById("words");
-wordsId.addEventListener('click', function(event){
-    spitTakes("BLOG(WORDS)");
+wordsId.addEventListener('click', function(){
+    wordsDebug.spitOut();
     removeMSText("picts"); // Remove mainscreen text
 
     pictsToggle = 0;
@@ -157,13 +175,14 @@ wordsId.addEventListener('click', function(event){
 
     windowCalc("VERT", wordsToggle, 0, 3); // Nums are places in string to cut 
 
-    event.preventDefault(); // I don't know what this does
-})
+    return false; // preventDefault & stopProp etc all rolled into one yeehaw!
+});
 
 // PICTS(IDK) LISTENER: unsure of what to do with this yet
+const pictsDebug = new Debug('PictsListener', null);
 var pictsId = document.getElementById("picts");
-pictsId.addEventListener('click', function(event){
-    spitTakes("PICTS(IDK)");
+pictsId.addEventListener('click', function(){
+    pictsDebug.spitOut();
     removeMSText("words"); // Remove mainscreen text
 
     wordsToggle = 0;
@@ -172,8 +191,8 @@ pictsId.addEventListener('click', function(event){
 
     windowCalc("HORZ", pictsToggle, -4, -1); // Nums are places in string to cut 
 
-    event.preventDefault(); // I don't know what this does
-})
+    return false; // preventDefault & stopProp etc all rolled into one yeehaw!
+});
 
 // --0----------------------------------------------------------------------0--
 // -0------------------------------We-go-old-skool-here----------------------0-
