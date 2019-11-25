@@ -139,8 +139,8 @@ colourId.addEventListener('click', function(event) {
 // BLOG(WORDS) LISTENER: allows directory to be listed and interacted w/
 var wordsId = document.getElementById("words");
 wordsId.addEventListener('click', function(event){
-    spitTakes("BLOG(WORDS)")
-    removeMSText("picts");
+    spitTakes("BLOG(WORDS)");
+    removeMSText("picts"); // Remove mainscreen text
 
     pictsToggle = 0;
     wordsToggle = toggleArrow(wordsToggle, "tri1");
@@ -155,7 +155,7 @@ wordsId.addEventListener('click', function(event){
         tempDivCreate('temp',text);
     }
 
-    windowCalc("VERT", wordsToggle, 0, 3);
+    windowCalc("VERT", wordsToggle, 0, 3); // Nums are places in string to cut 
 
     event.preventDefault(); // I don't know what this does
 })
@@ -164,13 +164,13 @@ wordsId.addEventListener('click', function(event){
 var pictsId = document.getElementById("picts");
 pictsId.addEventListener('click', function(event){
     spitTakes("PICTS(IDK)");
-    removeMSText("words");
+    removeMSText("words"); // Remove mainscreen text
 
     wordsToggle = 0;
     pictsToggle = toggleArrow(pictsToggle, "tri2");
     bigCol.classList.toggle("wide");
 
-    windowCalc("HORZ", pictsToggle, -4, -1);
+    windowCalc("HORZ", pictsToggle, -4, -1); // Nums are places in string to cut 
 
     event.preventDefault(); // I don't know what this does
 })
