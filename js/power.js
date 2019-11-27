@@ -165,7 +165,9 @@ wordsId.addEventListener('click', function(){
     bigCol.classList.toggle("tall");
     header.classList.toggle("absolute");
 
-    text = "<h4>In progress...</h4><br><a class='links' href='https://medium.com/@jsn404'>Temporary Blog: Medium</a>";
+    // Wow multiline coolness
+    text = `<h4>In progress...</h4><br>
+    <a class='links' href='https://medium.com/@jsn404'>Temporary Blog: Medium</a>`;
     if (wordsToggle == 0) {
         tempDivDestroy();
     }
