@@ -35,7 +35,7 @@ html, body {
   right: 0;
 }
 #bigCol {
-  position: static;
+  position: relative;
   height: 80%;
   border-radius: 2.5px 2.5px 2.5px 2.5px;
   background-color: #FFC132;
@@ -171,7 +171,11 @@ html, body {
   and (-webkit-min-device-pixel-ration: 1) {
 }
 
+/* Retina I guess screens */
 @media screen
   and (min-device-width: 1600px)
   and (max-device-width: 3600px) {
+    #lod {max-width: 50%;}
+    #header {padding-top: 1rem;}
+    #bigCol {height: 120%;}
 }
