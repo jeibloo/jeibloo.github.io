@@ -171,11 +171,20 @@ html, body {
   and (-webkit-min-device-pixel-ration: 1) {
 }
 
-/* Retina I guess screens */
+/* High-res screens (but not retina)*/
 @media screen
   and (min-device-width: 1600px)
   and (max-device-width: 3600px) {
-    #lod {max-width: 50%;}
+    /*#lod {max-width: 50%;}
     #header {padding-top: 1rem;}
     #bigCol {height: 120%;}
+    */
+}
+/* Retina! Thx CSS tricks*/
+@media 
+(-webkit-min-device-pixel-ration: 2),
+(min-resolution: 192dpi) {
+  #lod {max-width: 50%;}
+  #header {padding-top: 1rem;}
+  #bigCol {height: 120%;}
 }
