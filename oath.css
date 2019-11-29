@@ -68,6 +68,7 @@ html, body {
 
 #left, #right, #middle {
   position: relative;
+  height: 20rem;;
   padding: 5%;
   padding-top: 15%;
   text-align: center;
@@ -97,6 +98,8 @@ html, body {
   font-size: 175%;
 }
 #prfpic {
+  max-width: 100%;
+  max-height: 100%;
   animation: jiggleboi 10s infinite alternate ease-in-out;
 }
 /* Info bar with the two options */
@@ -175,16 +178,15 @@ html, body {
 @media screen
   and (min-device-width: 1600px)
   and (max-device-width: 3600px) {
-    /*#lod {max-width: 50%;}
-    #header {padding-top: 1rem;}
-    #bigCol {height: 120%;}
-    */
 }
 /* Retina! Thx CSS tricks*/
 @media 
 (-webkit-min-device-pixel-ration: 2),
 (min-resolution: 192dpi) {
+  h1, h2, h3, h4, h5, p, a {font-size: 120%;}
   #lod {max-width: 50%;}
-  #header {padding-top: 1rem;}
-  #bigCol {height: 120%;}
+  #header {padding-top: 2rem;}
+  #bigCol {height: 100%;}
+  #middle, #right {padding-top: 15%; height: auto;}
+  #left {height: 50%;}
 }
