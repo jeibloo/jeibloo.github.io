@@ -76,6 +76,7 @@ html, body {
 #left {
   border-right: #212529;
   padding-top: 2.5%;
+  height: 35rem;
 }
 #middle {
   padding-top: 20%;
@@ -178,10 +179,6 @@ html, body {
 @media screen
   and (min-device-width: 1600px)
   and (max-device-width: 3600px) {
-<<<<<<< HEAD
-    #left {height: 40rem;}
-=======
->>>>>>> 00d5ef95c60f762b18729db0e5c592745ac2d9d3
 }
 /* Retina! Thx CSS tricks*/
 @media 
