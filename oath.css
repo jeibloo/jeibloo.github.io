@@ -175,10 +175,7 @@ html, body {
 @media screen
   and (min-device-width: 1600px)
   and (max-device-width: 3600px) {
-    /*#lod {max-width: 50%;}
-    #header {padding-top: 1rem;}
-    #bigCol {height: 120%;}
-    */
+    #left {height: 40rem;}
 }
 /* Retina! Thx CSS tricks*/
 @media 
