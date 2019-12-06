@@ -54,6 +54,7 @@ html, body {
   border-radius: 0px;
 }
 #bigCol.wide {
+  height: 80%;
   max-width: 100%;
   border-radius: 0px;
 }
