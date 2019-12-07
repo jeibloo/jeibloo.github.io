@@ -21,6 +21,9 @@ var colourList = [];
 // Separate colours cause they so important
 var cWhite = "#fcfcfc";
 var cBlack = "#2F353A";
+// Setting the elements for use by event listener section
+var pictsId = document.getElementById("picts");
+var wordsId = document.getElementById("words");
 
 // Preparation for the COLOUR event listener.
 var colourDict = { //honestly just an excuse to use a dict
@@ -47,13 +50,11 @@ window.onload = function uniqueID() {
 // -------------------------------'Classes'------------------------------------
 // ----------------------------------------------------------------------------
 
-// Uhhhh I guess this is fine
-class Debug {
+class DebugConstruct {
     constructor(name, misc) {
         this.name = name;
         this.misc = misc;
     }
-    // Spitout method
     spitOut() {
         console.log(`${this.name} has been triggered.\n:::${this.misc}`)
     }
@@ -96,7 +97,7 @@ function windowCalc(orientWord, toggle, sl1, sl2) { // Calculates and sets the n
         orient.innerHTML = `NORM: ${randoN.slice(0,6)}-${randoN.slice(sl1,sl2)}`;
     }
 }
-// TODO: make into a class
+// TODO: make into a class???
 function iterateCs(className, colour) { // shortcut way of turning collection into array and iterating
     Array.from(document.getElementsByClassName(className)).forEach(it => {
         it.style.color = colour;
@@ -133,40 +134,25 @@ function tempDivCreate(tempId='temp',innerText='<p>test</p>') {
 // ----------------------------------------------------------------------------
 
 // COLOUR LISTENER: cycle thru colours
-const colourDebug = new Debug('ColourListener', null);
 colourId.addEventListener('click', function() {
     // Rotate colours first so that next colour chosen is diff from initial
-    daColour = colourRotate();
-    // Debug stuff
-    colourDebug.misc = daColour;
-    colourDebug.spitOut()
-
+    let daColour = colourRotate();
     // Switching when it turns black + going back when it ain't except links cause they need special treatment
     if (daColour == cBlack) {
-        changeGridColours(cWhite);
-        iterateCs("links",cWhite);
+        changeGridColours(cWhite); iterateCs("links",cWhite);
     } else {
-        changeGridColours(cBlack);
-        iterateCs("links",cBlack);
+        changeGridColours(cBlack); iterateCs("links",cBlack);
     }
-
     return false; // preventDefault & stopProp etc all rolled into one yeehaw!
 });
 
 // BLOG(WORDS) LISTENER: allows directory to be listed and interacted w/
-const wordsDebug = new Debug('WordsListener', null);
-var wordsId = document.getElementById("words");
 wordsId.addEventListener('click', function(){
-    wordsDebug.spitOut();
     removeMSText("picts"); // Remove mainscreen text
-
-    pictsToggle = 0;
+    pictsToggle = 0; // can't be 1 if wordsToggle is 1
     wordsToggle = toggleArrow(wordsToggle, "tri1");
-    bigCol.classList.toggle("tall");
-    header.classList.toggle("absolute");
-
-    // Wow multiline coolness
-    text = `<h4>In progress...</h4><br>
+    bigCol.classList.toggle("tall"); header.classList.toggle("absolute");
+    let text = `<h4>In progress...</h4><br>
     <a class='links' href='https://medium.com/@jsn404'>Temporary Blog: Medium</a>`;
     if (wordsToggle == 0) {
         tempDivDestroy();
@@ -174,28 +160,17 @@ wordsId.addEventListener('click', function(){
     else {
         tempDivCreate('temp',text);
     }
-
     windowCalc("VERT", wordsToggle, 0, 3); // Nums are places in string to cut 
-
     return false; // preventDefault & stopProp etc all rolled into one yeehaw!
 });
 
-// PICTS(IDK) LISTENER: unsure of what to do with this yet
-const pictsDebug = new Debug('PictsListener', null);
-var pictsId = document.getElementById("picts");
+// PICTS LISTENER: unsure of what to do with this
 pictsId.addEventListener('click', function(){
     pictsDebug.spitOut();
     removeMSText("words"); // Remove mainscreen text
-
-    wordsToggle = 0;
+    wordsToggle = 0; // can't be 1 if pictsToggle is 1
     pictsToggle = toggleArrow(pictsToggle, "tri2");
     bigCol.classList.toggle("wide");
-
     windowCalc("HORZ", pictsToggle, -4, -1); // Nums are places in string to cut 
-
     return false; // preventDefault & stopProp etc all rolled into one yeehaw!
 });
-
-// --0----------------------------------------------------------------------0--
-// -0------------------------------We-go-old-skool-here----------------------0-
-// 0------------------------------------M47kd0wn------------------------------0
