@@ -37,7 +37,7 @@ html, body {
 #bigCol {
   position: relative;
   border-radius: 2.5px 2.5px 2.5px 2.5px;
-  background-color: #FFC132;
+  background-color: #fcfcfc;
   padding-bottom: 1rem;
   /*
   #368AD5 Blue
@@ -48,8 +48,7 @@ html, body {
 }
 #bigColInside {height: 100%; margin: 0;} /* Just to override row */
 #bigCol.tall {
-  /* This number will be calculated based off how big the text is.*/
-  height: 100%;
+  height: 80%;
   padding-top: 10rem;
   border-radius: 0px;
 }
@@ -88,7 +87,7 @@ html, body {
   text-align: center;
 }
 #bottom {
-  padding-left: 7.5%; padding-right: 7.5%;
+  padding-left: 5%; padding-right: 5%;
 }
 #temp {
   text-align: center;
@@ -125,8 +124,7 @@ html, body {
   text-orientation: upright;
   writing-mode: vertical-rl;
   color: #212529;
-  top: 20px;
-  right: 20px;
+  top: 20px; right: 20px;
   font-size: 65%;
 }
 

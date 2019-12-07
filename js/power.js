@@ -18,9 +18,6 @@ var orient = document.getElementById("orient");
 var saying = document.getElementById("saying");
 var uin = document.getElementById("uin");
 var colourList = [];
-// Separate colours cause they so important
-var cWhite = "#fcfcfc";
-var cBlack = "#2F353A";
 // Setting the elements for use by event listener section
 var pictsId = document.getElementById("picts");
 var wordsId = document.getElementById("words");
@@ -30,8 +27,8 @@ var colourDict = { //honestly just an excuse to use a dict
     blue: "#368AD5",
     redy: "#E72D9A",
     lime: "#88F230",
-    blak: "#2F353A",
-    orng: "#FFC132"
+    orng: "#FFC132",
+    whte: "#FCFCFC"
 }; // Maybe make a hex maker so it's always random?
 for (const [key, value] of Object.entries(colourDict)) {
     colourList.push(value);
@@ -135,14 +132,7 @@ function tempDivCreate(tempId='temp',innerText='<p>test</p>') {
 
 // COLOUR LISTENER: cycle thru colours
 colourId.addEventListener('click', function() {
-    // Rotate colours first so that next colour chosen is diff from initial
     let daColour = colourRotate();
-    // Switching when it turns black + going back when it ain't except links cause they need special treatment
-    if (daColour == cBlack) {
-        changeGridColours(cWhite); iterateCs("links",cWhite);
-    } else {
-        changeGridColours(cBlack); iterateCs("links",cBlack);
-    }
     return false; // preventDefault & stopProp etc all rolled into one yeehaw!
 });
 
@@ -152,7 +142,7 @@ wordsId.addEventListener('click', function(){
     pictsToggle = 0; // can't be 1 if wordsToggle is 1
     wordsToggle = toggleArrow(wordsToggle, "tri1");
     bigCol.classList.toggle("tall"); header.classList.toggle("absolute");
-    let text = `<h4>In progress...</h4><br>
+    let text = `<p>In progress...</p><br>
     <a class='links' href='https://medium.com/@jsn404'>Temporary Blog: Medium</a>`;
     if (wordsToggle == 0) {
         tempDivDestroy();
@@ -166,7 +156,6 @@ wordsId.addEventListener('click', function(){
 
 // PICTS LISTENER: unsure of what to do with this
 pictsId.addEventListener('click', function(){
-    pictsDebug.spitOut();
     removeMSText("words"); // Remove mainscreen text
     wordsToggle = 0; // can't be 1 if pictsToggle is 1
     pictsToggle = toggleArrow(pictsToggle, "tri2");
