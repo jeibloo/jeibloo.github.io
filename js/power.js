@@ -39,7 +39,7 @@ for (const [key, value] of Object.entries(colourDict)) {
 // Fake cookie, want to do something with this
 window.onload = function uniqueID() {
     let uniqueSessionId = Math.random().toString().slice(-5);
-    // bro these JS slices tho...
+    // these JS slices tho...
     document.getElementById("uin").innerHTML = `UIN - ${uniqueSessionId.slice(-3)} ${uniqueSessionId.slice(-2)}`;
 }
 
@@ -63,8 +63,7 @@ function removeMSText(text) { // Removes all main screen text
     for (let index = 0; index < gridList.length; index++) {
         document.getElementById(gridList[index]).classList.toggle("hidden");
     }
-    // Hide other button so user doesn't scream when everything breaks.
-    text = document.getElementById(text);
+    text = document.getElementById(text); // hide other button
     text.classList.toggle("hidden");
 }
 function toggleArrow(wpChoice, triType) { // Toggles arrows for the two 'menus'
@@ -93,7 +92,6 @@ function windowCalc(orientWord, toggle, sl1, sl2) { // Calculates and sets the n
         orient.innerHTML = `NORM: ${randoN.slice(0,6)}-${randoN.slice(sl1,sl2)}`;
     }
 }
-// TODO: make into a class???
 function iterateCs(className, colour) { // shortcut way of turning collection into array and iterating
     Array.from(document.getElementsByClassName(className)).forEach(it => {
         it.style.color = colour;
