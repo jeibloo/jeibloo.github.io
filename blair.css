@@ -1,0 +1,99 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+h1, h2, h3 { font-weight: 900; color: #ffffff; text-shadow: 2px 15px 0px #ffffaa; }
+h1 { font-size: 20rem; } h2 { font-size: 15rem; } h3 { font-size: 10rem; }
+p {font-weight: 700;}
+body {
+  overflow: hidden;
+  background-image: radial-gradient(rgba(125, 15, 025, .5) 15%, transparent 1%), radial-gradient(rgba(000, 000, 025, 1) 5%, transparent 6%);
+  background-size: 10px 10px;
+}
+#abc {
+  background-color: #a4fea4;
+  text-align: center;
+  height: 44rem;
+  margin: 15rem; margin-bottom: 5rem; margin-top: 5rem;
+  border-radius: 5px;
+}
+#efg {
+  background-color: #f3a4fe;
+  text-align: center;
+  position: relative; bottom: 4rem; left: 7rem;
+  margin-left: 15rem; margin-right: auto;
+  padding: 3rem;
+  width: 25rem; height: 10rem;
+}
+#hij {
+  background-color: #fea4a4;
+  text-align: left;
+  position: relative; bottom: 10rem; right: 5rem;
+  margin-right: 15rem; margin-left: auto;
+  padding: 2rem;
+  width: 10rem; height: 15rem;
+}
+#hij2 {
+  background-color: #fea4a4;
+  position: relative;
+  bottom: 1rem;
+  padding: 1rem;
+  width: 15rem; height: 5rem;
+}
+#lod {
+  margin: auto auto;
+  float: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 25px; left: 20px;
+}
+/* Phone and Portrait screens */
+@media screen
+  and (min-device-width: 200px)
+  and (max-device-width: 450px) {
+    h1, h2, h3 {font-size: 6.5rem;}
+    p {font-size: 1rem;}
+    #abc {
+      margin: 0; padding: 0;
+      height: 19rem; width: 100%;
+    }
+    #efg {
+      margin: 0; padding: 0;
+      height: 5rem; width: 15rem;
+      bottom: -10rem; left: 3rem;
+    }
+    #hij, #hij2 {
+      margin: 0; padding: 0;
+      height: 5rem;
+    }
+    #hij {
+      bottom: -20rem;
+      width: 5rem;
+      right: -8rem;
+    }
+}
+@media screen
+  and (min-device-width: 600px)
+  and (max-device-width: 767px) {
+}
+/* Tablet screens */
+@media screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1366px) {
+}
+/* Non-retina screens */
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ration: 1) {
+}
+
+/* High-res screens (but not retina)*/
+@media screen
+  and (min-device-width: 1600px)
+  and (max-device-width: 3600px) {
+}
+/* Retina! Thx CSS tricks*/
+@media 
+(-webkit-min-device-pixel-ration: 2),
+(min-resolution: 192dpi) {
+}
