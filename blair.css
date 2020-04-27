@@ -3,7 +3,7 @@ body {
   background-color: #fffeef;
 }
 h1, h2, h3 { font-weight: 900; color: #ffffff;}
-h1 { font-size: 35rem; } h2 { font-size: 20rem; } h3 { font-size: 15rem; }
+h1 { font-size: 35rem; } h2 { font-size: 20rem; } h3 { font-size: 10rem; }
 h1 {
   background: url(img/MCE027.gif); background-clip: text;
   -webkit-background-clip: text; -webkit-text-fill-color: transparent;
@@ -19,7 +19,7 @@ h3 {
 p {font-weight: 700; background-color: black; color: #ffffff;}
 body {
   background-image: radial-gradient(rgba(125, 15, 025, .5) 15%, transparent 1%), radial-gradient(rgba(000, 000, 025, 1) 5%, transparent 6%);
-  background: url(img/rlogo_dclear24.png);
+  background: url(img/text994.png);
 }
 #abc {
   text-align: center;
