@@ -2,8 +2,8 @@ body {
   font-family: 'Inter', sans-serif;
   background-color: #fffeef;
 }
-h1, h2, h3 { font-weight: 900; color: #ffffff;}
-h1 { font-size: 35rem; } h2 { font-size: 20rem; } h3 { font-size: 10rem; }
+h1, h2, h3 { font-weight: 900; color: #ffffff; height: auto;}
+h1 { font-size: 40rem; } h2 { font-size: 15rem; } h3 { font-size: 10rem; }
 h1 {
   background: url(img/MCE027.gif); background-clip: text;
   -webkit-background-clip: text; -webkit-text-fill-color: transparent;
@@ -25,6 +25,15 @@ body {
   text-align: center;
   height: 75rem;
   border-radius: 5px;
+}
+#abc2 {
+  line-height: 10%;
+}
+#NVdi {
+  position: relative; bottom: 5rem;
+}
+#doto {
+  position: relative; bottom: 2.5rem;
 }
 #efg, #hij, #hij2 {
   background-image: url(img/XYZ1.gif);
@@ -63,8 +72,9 @@ body {
 @media screen
   and (min-device-width: 200px)
   and (max-device-width: 450px) {
-    h1 {font-size: 8rem;}
-    h2 {font-size: 5.5rem;}
+    body {background-size: 3rem;}
+    h1 {font-size: 10rem;}
+    h2 {font-size: 8rem;}
     h3 {font-size: 3rem;}
     p {font-size: 1rem;}
     #abc {
