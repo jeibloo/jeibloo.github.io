@@ -74,24 +74,26 @@ body {
   and (max-device-width: 450px) {
     body {background-size: 3rem;}
     h1 {font-size: 10rem;}
-    h2 {font-size: 8rem;}
-    h3 {font-size: 3rem;}
+    h2 {font-size: 5rem;}
+    h3 {font-size: 2rem;}
     p {font-size: 1rem;}
     #abc {
       margin: 0; padding: 0;
       height: 19rem; width: 100%;
     }
+    #NVdi {position: relative; bottom: 0rem;}
+    #doto {position: relative; bottom: 0rem;}
     #efg {
       margin: 0; padding: 0;
       height: 5rem; width: 15rem;
-      bottom: -5rem; left: 3rem;
+      bottom: -3rem; left: 3rem;
     }
     #hij, #hij2 {
       margin: 0; padding: 0;
       height: 5rem;
     }
     #hij {
-      bottom: -10rem;
+      bottom: -7rem;
       width: 5rem;
       right: -8rem;
     }
